@@ -8,7 +8,7 @@ export default function Logo() {
       width={0}
       height={0}
       sizes="100vw"
-      className="lg:h-12 w-auto"
+      className="lg:h-12 w-auto h-8"
     />
   );
 }
