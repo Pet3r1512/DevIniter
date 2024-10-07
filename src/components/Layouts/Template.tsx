@@ -19,7 +19,7 @@ export default function Template({
   pageName?: string;
   className?: string;
 }) {
-  const fullPageName = `WebIniter | ${pageName}`;
+  const fullPageName = `DevIniter | ${pageName}`;
   return (
     <>
       <Head>
