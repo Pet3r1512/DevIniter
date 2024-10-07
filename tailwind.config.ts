@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-import colors from "tailwindcss/colors";
+// import colors from "tailwindcss/colors";
 
 const config: Config = {
   content: [
@@ -11,7 +11,6 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        gray: colors.gray,
         primary: "#11998E",
         secondary: "#38EF7D",
         gold: "#FFDD43",
@@ -21,6 +20,11 @@ const config: Config = {
         },
         white: {
           DEFAULT: "#FFFFFF",
+        },
+        gray: {
+          DEFAULT: "#6c757d",
+          light: "#dee2e6",
+          dark: "#212529",
         },
       },
     },
