@@ -46,7 +46,7 @@ export default function SearchModal({
         onClick={handleOverlayClick}
         className="fixed inset-0 bg-black bg-opacity-60 backdrop-blur-sm flex items-center justify-center z-50"
       >
-        <div className="bg-white dark:bg-black-main p-6 rounded-lg shadow-2xl transition-transform transform scale-100 sm:scale-110 lg:w-1/3">
+        <div className="bg-white dark:bg-black-main p-6 rounded-lg shadow-2xl transition-transform transform scale-100 sm:scale-110 lg:w-1/3 w-full">
           <h2 className="text-xl font-semibold mb-4">Search</h2>
           <input
             type="text"
