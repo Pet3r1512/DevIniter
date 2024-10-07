@@ -29,16 +29,14 @@ export default function SearchBar() {
 
   return (
     <>
-      <div className="flex items-center justify-center p-4">
+      <div className="flex items-center justify-center lg:p-4">
         <button
           onClick={() => setIsOpen(true)}
-          className="flex items-center py-2 px-4 rounded-2xl shadow-2xl dark:bg-dark bg-gray-light dark:text-gray-light text-gray"
+          className="flex items-center py-2 px-4 rounded-2xl shadow-2xl dark:bg-gray-dark bg-gray-light dark:text-gray-light text-gray"
         >
-          <Search size={20} className="dark:text-gray-light mr-2" />
-          <span className="dark:text-gray-light">Search</span>
-          <p className="ml-4 px-2 py-1 dark:text-gray-light rounded-lg">
-            Ctrl K
-          </p>
+          <Search size={20} className="lg:mr-2" />
+          <span className="hidden lg:block">Search</span>
+          <p className="ml-4 px-2 py-1 rounded-lg hidden lg:block">Ctrl K</p>
         </button>
       </div>
       <SearchModal
