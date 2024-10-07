@@ -1,18 +1,18 @@
-import { Menu } from "lucide-react";
 import Github from "./Github";
 import Logo from "./Logo";
 import Navigation from "./Navigations";
 import SearchBar from "./SearchBar/_index";
 import ThemeToggle from "../ThemeToggle";
+import Sidebar from "./Sidebar/_index";
 
 export default function Header() {
   return (
     <header className="flex items-center justify-between py-5 px-5 lg:px-0">
+      <Sidebar />
       <Logo />
       <Navigation />
-      <div className="flex items-center gap-x-5 lg:hidden">
+      <div className="flex items-center gap-x-5 lg:hidden w-1/3 justify-end">
         <SearchBar />
-        <Menu size={20} />
       </div>
       <div className="lg:flex items-center gap-x-5 hidden">
         <SearchBar />
