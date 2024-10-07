@@ -2,26 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  outline: none !important;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Global variables for light mode */
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #181c14;
+  --primary-color: #11998e;
+  --secondary-color: #38ef7d;
+  --text-color: black;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* When dark mode is enabled (via the .dark class on <html>) */
+.dark {
+  --background: #181c14;
+  --foreground: #ffffff;
+  --primary-color: #11998e;
+  --secondary-color: #38ef7d;
+  --text-color: white;
 }
 
+/* Apply the variables to body */
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+  background-color: var(--background);
+  color: var(--text-color);
 }
