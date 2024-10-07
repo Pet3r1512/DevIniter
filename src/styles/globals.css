@@ -33,3 +33,8 @@ body {
   background-color: var(--background);
   color: var(--text-color);
 }
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}

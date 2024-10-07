@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
-import colors from "tailwindcss/colors";
+import animate from "tailwindcss-animate";
+// import colors from "tailwindcss/colors";
 
 const config: Config = {
   content: [
@@ -7,11 +8,10 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode: "class", // Enabling dark mode with 'class' strategy
+  darkMode: ["selector"],
   theme: {
     extend: {
       colors: {
-        gray: colors.gray,
         primary: "#11998E",
         secondary: "#38EF7D",
         gold: "#FFDD43",
@@ -22,10 +22,20 @@ const config: Config = {
         white: {
           DEFAULT: "#FFFFFF",
         },
+        gray: {
+          DEFAULT: "#6c757d",
+          light: "#dee2e6",
+          dark: "#212529",
+        },
+      },
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
       },
     },
   },
-  plugins: [],
-};
+  plugins: [animate],
+} satisfies Config;
 
 export default config;
