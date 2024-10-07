@@ -12,7 +12,7 @@ export default function Header() {
       <Navigation />
       <div className="flex items-center gap-x-5 lg:hidden">
         <SearchBar />
-        <Menu className="lg:hidden" size={20} />
+        <Menu size={20} />
       </div>
       <div className="lg:flex items-center gap-x-5 hidden">
         <SearchBar />
