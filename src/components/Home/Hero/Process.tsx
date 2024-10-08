@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Process() {
   return (
-    <section className="flex items-center justify-center w-screen lg:mt-16 mt-36">
+    <section className="flex items-center justify-center w-screen lg:mt-16 mt-20">
       <div className="dark:bg-white bg-black-main w-screen absolute h-[0.5px] backdrop-blur-xl">
         <motion.div
           initial={{
@@ -31,7 +31,7 @@ export default function Process() {
             duration: 4.5,
             delay: 4.5,
           }}
-          className="absolute top-[-40px] lg:top-[-25px] -translate-x-1/2 lg:w-max"
+          className="absolute top-[-40px] lg:top-[-25px] -translate-x-1/2 lg:w-max hidden lg:block"
         >
           DevIniter Template
         </motion.p>
@@ -61,7 +61,7 @@ export default function Process() {
             duration: 4.5,
             delay: 0.5,
           }}
-          className="absolute top-[-25px] -translate-x-1/2"
+          className="absolute top-[-25px] -translate-x-1/2 hidden lg:block"
         >
           React
         </motion.p>
@@ -92,7 +92,7 @@ export default function Process() {
               duration: 4.5,
               delay: 0.5,
             }}
-            className="absolute top-[-25px] -translate-x-1/2"
+            className="absolute top-[-25px] -translate-x-1/2 hidden lg:block"
           >
             Prettier
           </motion.p>
@@ -124,7 +124,7 @@ export default function Process() {
               duration: 4.5,
               delay: 0.5,
             }}
-            className="absolute top-[-25px] -translate-x-1/2"
+            className="absolute top-[-25px] -translate-x-1/2 hidden lg:block"
           >
             ShadCN
           </motion.p>
@@ -156,7 +156,7 @@ export default function Process() {
               duration: 4.5,
               delay: 0.5,
             }}
-            className="absolute bottom-[-25px] -translate-x-1/2"
+            className="absolute bottom-[-25px] -translate-x-1/2 hidden lg:block"
           >
             ESLint
           </motion.p>
@@ -188,7 +188,7 @@ export default function Process() {
               duration: 4.5,
               delay: 0.5,
             }}
-            className="absolute bottom-[-25px] -translate-x-1/2 blur-none"
+            className="absolute bottom-[-25px] -translate-x-1/2 blur-none hidden lg:block"
           >
             Tailwind
           </motion.p>
