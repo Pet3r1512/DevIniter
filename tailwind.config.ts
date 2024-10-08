@@ -11,8 +11,17 @@ const config: Config = {
   darkMode: ["selector"],
   theme: {
     extend: {
+      backgroundImage: {
+        "custom-radial":
+          "radial-gradient(closest-side at 50% 50%, #11998E 20%, #247b7b, #38EF7D, #181C14 65%)",
+        "custom-radial-light":
+          "radial-gradient(closest-side at 50% 50%, #11998E 20%, #247b7b, #38EF7D, #FFF 65%)",
+      },
       colors: {
-        primary: "#11998E",
+        primary: {
+          DEFAULT: "#11998E",
+          light: "#247b7b",
+        },
         secondary: "#38EF7D",
         gold: "#FFDD43",
         black: {
@@ -33,6 +42,11 @@ const config: Config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+    },
+  },
+  variants: {
+    extend: {
+      backdropBlur: ["responsive"],
     },
   },
   plugins: [animate],
