@@ -13,10 +13,12 @@ export const kanit = Kanit({
 export default function Template({
   children,
   pageName = "Home",
+  sectionClassName,
   className,
 }: {
   children: ReactNode;
   pageName?: string;
+  sectionClassName?: string;
   className?: string;
 }) {
   const fullPageName = `DevIniter | ${pageName}`;
@@ -26,11 +28,16 @@ export default function Template({
         <title>{fullPageName}</title>
       </Head>
       <main className={cn("scrollbar-hide", kanit.className)}>
-        <section className="flex flex-col max-w-[1440px] mx-auto lg:min-h-screen light:bg-white">
-          <Header />
+        <Header />
+        <section
+          className={cn(
+            "flex flex-col lg:min-h-screen light:bg-white bg-black-main",
+            sectionClassName
+          )}
+        >
           <div
             className={cn(
-              "mx-auto my-12 w-full max-w-7xl px-6 min-h-screen",
+              "mx-auto w-full max-w-7xl px-6 min-h-screen",
               className
             )}
           >
