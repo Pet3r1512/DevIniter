@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Process() {
   return (
-    <section className="flex items-center justify-center w-full lg:w-screen lg:mt-16">
+    <section className="flex items-center justify-center w-screen lg:mt-16 mt-36">
       <div className="dark:bg-white bg-black-main w-screen absolute h-[0.5px] backdrop-blur-xl">
         <motion.div
           initial={{
@@ -17,7 +17,7 @@ export default function Process() {
             duration: 4.5,
             delay: 4.5,
           }}
-          className="size-3 bg-gradient-to-tr from-primary to-secondary rounded-full absolute left-[5%] top-[-4px] blur-[1.5px]"
+          className="size-3 bg-gradient-to-tr from-primary to-secondary rounded-full absolute left-[5%] top-[-4px]"
         ></motion.div>
         <motion.p
           initial={{
@@ -31,7 +31,7 @@ export default function Process() {
             duration: 4.5,
             delay: 4.5,
           }}
-          className="absolute top-[-25px] -translate-x-1/2 w-max"
+          className="absolute top-[-40px] lg:top-[-25px] -translate-x-1/2 lg:w-max"
         >
           DevIniter Template
         </motion.p>
@@ -47,7 +47,7 @@ export default function Process() {
             duration: 4.5,
             delay: 0.5,
           }}
-          className="size-3 bg-[#00b4d8] rounded-full absolute left-[5%] top-[-4px] blur-[1.5px]"
+          className="size-3 bg-[#00b4d8] rounded-full absolute left-[5%] top-[-4px]"
         ></motion.div>
         <motion.p
           initial={{
@@ -65,7 +65,7 @@ export default function Process() {
         >
           React
         </motion.p>
-        <div className="dark:bg-white bg-black-main w-1/2 absolute h-[0.5px] backdrop-blur-xl rotate-[5deg] top-[-75px]">
+        <div className="dark:bg-white bg-black-main w-1/2 absolute h-[0.5px] backdrop-blur-xl rotate-[5deg] top-[-35px] lg:top-[-75px]">
           <motion.div
             initial={{
               left: "5%",
@@ -78,7 +78,7 @@ export default function Process() {
               duration: 4.5,
               delay: 0.5,
             }}
-            className="size-3 bg-red-500 rounded-full absolute left-[5%] top-[-4.5px] blur-[1.5px]"
+            className="size-3 bg-red-500 rounded-full absolute left-[5%] top-[-4.5px]"
           ></motion.div>
           <motion.p
             initial={{
@@ -97,7 +97,7 @@ export default function Process() {
             Prettier
           </motion.p>
         </div>
-        <div className="dark:bg-white bg-black-main w-1/2 absolute h-[0.5px] backdrop-blur-xl rotate-[2.75deg] top-[-35px]">
+        <div className="dark:bg-white bg-black-main w-1/2 absolute h-[0.5px] backdrop-blur-xl rotate-[2.75deg] top-[-15px] lg:top-[-35px]">
           <motion.div
             initial={{
               left: "5%",
@@ -110,7 +110,7 @@ export default function Process() {
               duration: 4.5,
               delay: 0.5,
             }}
-            className="size-3 bg-[#a6808c] rounded-full absolute left-[5%] top-[-4.5px] blur-[1.5px]"
+            className="size-3 bg-[#a6808c] rounded-full absolute left-[5%] top-[-4.5px]"
           ></motion.div>
           <motion.p
             initial={{
@@ -129,7 +129,7 @@ export default function Process() {
             ShadCN
           </motion.p>
         </div>
-        <div className="dark:bg-white bg-black-main w-1/2 absolute h-[0.5px] backdrop-blur-xl -rotate-3 top-[40px]">
+        <div className="dark:bg-white bg-black-main w-1/2 absolute h-[0.5px] backdrop-blur-xl -rotate-3 top-[20px] lg:top-[40px]">
           <motion.div
             initial={{
               left: "5%",
@@ -142,7 +142,7 @@ export default function Process() {
               duration: 4.5,
               delay: 0.5,
             }}
-            className="size-3 bg-[#7400b8] rounded-full absolute left-[5%] top-[-4.5px] blur-[1.5px]"
+            className="size-3 bg-[#7400b8] rounded-full absolute left-[5%] top-[-4.5px]"
           ></motion.div>
           <motion.p
             initial={{
@@ -161,7 +161,7 @@ export default function Process() {
             ESLint
           </motion.p>
         </div>
-        <div className="dark:bg-white bg-black-main w-1/2 absolute h-[0.5px] -rotate-6 top-[80px]">
+        <div className="dark:bg-white bg-black-main w-1/2 absolute h-[0.5px] -rotate-6 top-[37px] lg:top-[80px]">
           <motion.div
             initial={{
               left: "5%",
@@ -174,7 +174,7 @@ export default function Process() {
               duration: 4.5,
               delay: 0.5,
             }}
-            className="size-3 bg-[#ffd60a] rounded-full absolute left-[5%] top-[-4.5px] blur-[1.5px]"
+            className="size-3 bg-[#ffd60a] rounded-full absolute left-[5%] top-[-4.5px]"
           ></motion.div>
           <motion.p
             initial={{
@@ -202,7 +202,7 @@ export default function Process() {
         sizes="100vw"
         quality={100}
         priority
-        className="h-32 w-auto z-10 relative"
+        className="h-24 lg:h-32 w-auto z-10 relative"
       />
     </section>
   );
