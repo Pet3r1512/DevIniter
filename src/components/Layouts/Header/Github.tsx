@@ -1,6 +1,9 @@
 export default function Github({ size = 256 }: { size?: number }) {
   return (
-    <div className="rounded-full p-1 flex items-center justify-center bg-gray-light opacity-65 lg:hover:opacity-100 transition-all duration-150 ease-linear">
+    <div
+      data-testid="github-logo"
+      className="rounded-full p-1 flex items-center justify-center bg-gray-light opacity-65 lg:hover:opacity-100 transition-all duration-150 ease-linear"
+    >
       <svg
         width={size}
         height={size}

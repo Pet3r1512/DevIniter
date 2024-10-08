@@ -7,7 +7,7 @@ import Sidebar from "./Sidebar/_index";
 
 export default function Header() {
   return (
-    <header className="flex items-center justify-between py-5 px-5 lg:px-0">
+    <header className="flex items-center justify-between py-5 px-5 lg:px-0 sticky top-0 z-10 !backdrop-filter !backdrop-blur-sm">
       <Sidebar />
       <Logo />
       <Navigation />
@@ -26,6 +26,9 @@ export default function Header() {
 
 function VerticalLine() {
   return (
-    <div className="border-l-2 border-black-main dark:border-white h-[25px]"></div>
+    <div
+      data-testid="vt"
+      className="border-l-2 border-black-main dark:border-white h-[25px]"
+    ></div>
   );
 }
