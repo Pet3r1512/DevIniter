@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 export default function Introduction() {
   return (
     <section className="w-screen flex justify-center">
-      <div className="lg:py-24 flex flex-col items-center gap-y-8">
+      <div className="lg:pt-20 lg:pb-24 flex flex-col items-center gap-y-8">
         <p className=""></p>
         <HeroHighlight>
           <motion.h1
