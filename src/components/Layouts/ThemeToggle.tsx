@@ -5,6 +5,7 @@ const ThemeToggle = () => {
 
   return (
     <button
+      data-testid="theme-togger"
       onClick={toggleTheme}
       className="size-8 lg:size-10 rounded-full lg:text-lg bg-gray-500 dark:bg-gray-200 transition-all"
     >

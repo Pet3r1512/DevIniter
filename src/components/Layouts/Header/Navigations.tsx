@@ -7,16 +7,12 @@ export default function Navigation() {
       href: "/document",
     },
     {
-      name: "Our Team",
-      href: "/ourteam",
-    },
-    {
       name: "Contribution",
       href: "/contribution",
     },
   ];
   return (
-    <nav className="hidden lg:flex items-center gap-x-5">
+    <nav data-testid="navbar" className="hidden lg:flex items-center gap-x-5">
       {navs.map((nav, index) => {
         return (
           <Link
