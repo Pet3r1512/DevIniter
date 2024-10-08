@@ -23,7 +23,7 @@ export default function Introduction() {
               duration: 0.5,
               ease: [0.4, 0.0, 0.2, 1],
             }}
-            className="text-5xl lg:text-7xl lg:w-[650px] text-center bg-gradient-to-b dark:from-white dark:via-gray-light dark:to-gray from-primary via-primary-light to-secondary inline-block text-transparent bg-clip-text font-extrabold leading-relaxed lg:leading-snug mx-auto"
+            className="text-4xl md:text-5xl lg:text-7xl lg:w-[650px] text-center bg-gradient-to-b dark:from-white dark:via-gray-light dark:to-gray from-primary via-primary-light to-secondary inline-block text-transparent bg-clip-text font-extrabold leading-relaxed lg:leading-snug mx-auto"
           >
             The Ultimate <br />
             <Highlight className="dark:text-white text-black-main">
