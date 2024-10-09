@@ -29,7 +29,7 @@
 <h3 align="center">DevIniter</h3>
 
   <p align="center">
-    project_description
+    Initialize Developer's Projects with Pre-built Templates
     <br />
     <a href="https://github.com/Pet3r1512/DevIniter"><strong>Explore the docs »</strong></a>
     <br />
