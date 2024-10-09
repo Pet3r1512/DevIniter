@@ -23,7 +23,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Pet3r1512/DevIniter">
-    <img src="images/logos/FullLogo.png" alt="Logo" width="278.7" height="80">
+    <img src="public/images/logos/FullLogo.png" alt="Logo" width="278.7" height="80">
   </a>
 
 <h3 align="center">DevIniter</h3>
