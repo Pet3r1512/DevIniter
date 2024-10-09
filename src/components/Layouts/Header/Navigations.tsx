@@ -1,16 +1,17 @@
 import Link from "next/link";
 
+export const navs = [
+  {
+    name: "Documents",
+    href: "/document",
+  },
+  {
+    name: "Contribution",
+    href: "/contribution",
+  },
+];
+
 export default function Navigation() {
-  const navs = [
-    {
-      name: "Documents",
-      href: "/document",
-    },
-    {
-      name: "Contribution",
-      href: "/contribution",
-    },
-  ];
   return (
     <nav data-testid="navbar" className="hidden lg:flex items-center gap-x-5">
       {navs.map((nav, index) => {
