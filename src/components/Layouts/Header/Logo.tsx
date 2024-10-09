@@ -1,6 +1,7 @@
+import { cn } from "@/utils/utils";
 import Image from "next/image";
 
-export default function Logo() {
+export default function Logo({ className }: { className?: string }) {
   return (
     <Image
       src={"/images/logos/FullLogo.png"}
@@ -11,7 +12,7 @@ export default function Logo() {
       quality={85}
       priority
       data-testid="Logo"
-      className="lg:h-12 w-auto h-10 max-w-1/3 lg:max-w-none"
+      className={cn("lg:h-12 w-auto h-10 max-w-1/3 lg:max-w-none", className)}
     />
   );
 }

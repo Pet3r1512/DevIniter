@@ -1,12 +1,22 @@
+import { cn } from "@/utils/utils";
 import Link from "next/link";
 
-export default function Github({ size = 256 }: { size?: number }) {
+export default function Github({
+  size = 256,
+  className,
+}: {
+  size?: number;
+  className?: string;
+}) {
   return (
     <Link
       href={"https://github.com/Pet3r1512/DevIniter"}
       target="_blank"
       data-testid="github-logo"
-      className="rounded-full p-1 flex items-center justify-center bg-gray-light opacity-65 lg:hover:opacity-100 transition-all duration-150 ease-linear"
+      className={cn(
+        "rounded-full p-1 flex items-center justify-center bg-gray-light opacity-65 lg:hover:opacity-100 transition-all duration-150 ease-linear",
+        className
+      )}
     >
       <svg
         width={size}
