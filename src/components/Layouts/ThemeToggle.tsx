@@ -7,9 +7,9 @@ const ThemeToggle = () => {
     <button
       data-testid="theme-togger"
       onClick={toggleTheme}
-      className="size-8 lg:size-10 rounded-full lg:text-lg bg-gray-500 dark:bg-gray-200 transition-all"
+      className="h-8 lg:h-10 w-auto rounded-full lg:text-lg bg-gray-500 dark:bg-gray-200 transition-all dark:text-black text-white px-2.5"
     >
-      {theme === "light" ? "🌙" : "☀️"}
+      {theme === "light" ? "🌙 Dark" : "☀️ Light"}
     </button>
   );
 };
