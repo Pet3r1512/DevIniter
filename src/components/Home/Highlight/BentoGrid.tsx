@@ -25,6 +25,7 @@ export default function BentoGrid() {
           viewBox="0 0 600 445"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          className="lg:w-[660px] lg:h-[445px] w-auto h-[250px]"
         >
           <g filter="url(#filter0_d_52_8)">
             <rect
@@ -217,7 +218,7 @@ export default function BentoGrid() {
           viewBox="0 0 708 515"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="lg:h-[250px] lg:w-auto"
+          className="lg:h-[250px] w-[185px] h-auto lg:w-auto"
         >
           <path
             opacity="0.21"
