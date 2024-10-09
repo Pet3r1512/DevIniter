@@ -12,7 +12,7 @@
 
 /* Global variables for light mode */
 :root {
-  --background: #ffffff;
+  --background: #f0f0f0;
   --foreground: #181c14;
   --primary-color: #11998e;
   --secondary-color: #38ef7d;
