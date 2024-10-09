@@ -133,7 +133,8 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Contact
 
-Peter Pham - [@twitter_handle](https://twitter.com/twitter_handle) - peter1512.dev@gmail.com
+Peter Pham - [X Profile](https://x.com/Thnh_Phng_) - peter1512.dev@gmail.com
+Phong Pham - [LinkedIn](https://www.linkedin.com/in/peter-pham-6b02a2229)
 
 Project Link: [https://github.com/Pet3r1512/DevIniter](https://github.com/Pet3r1512/DevIniter)
 
