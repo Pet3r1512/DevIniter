@@ -457,7 +457,7 @@ export default function BentoGrid() {
   ];
 
   return (
-    <section className="grid max-w-7xl mx-auto lg:grid-cols-3 lg:grid-rows-2 lg:gap-14">
+    <section className="grid max-w-7xl mx-auto md:grid-cols-2 md:grid-rows-2 lg:grid-cols-3 lg:grid-rows-2 gap-10 lg:gap-14">
       {content.map((ctn, idx) => {
         return (
           <BackgroundGradient
@@ -467,7 +467,7 @@ export default function BentoGrid() {
             )}
             key={idx}
             className={cn(
-              "dark:bg-gray-dark bg-white rounded-[20px] lg:p-5 shadow-2xl lg:h-96 flex flex-col justify-center items-center gap-y-8"
+              "dark:bg-gray-dark bg-white rounded-[20px] p-2.5 md:p-3.5 lg:p-5 shadow-2xl md:h-96 md:w-96 lg:w-auto h-80 w-80 flex flex-col justify-center items-center gap-y-8"
             )}
           >
             {ctn.image && ctn.image}
