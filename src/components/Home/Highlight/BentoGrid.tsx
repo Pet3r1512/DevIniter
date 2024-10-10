@@ -44,8 +44,8 @@ export default function BentoGrid() {
           <path
             d="M1 170.759C1 170.759 37.5 138.6 79.5244 138.6C114.5 138.6 147.113 215.811 204.861 216.987C281.949 218.557 303.52 79.3083 351.34 84.8355C399.159 90.3627 401.636 151 437.5 151C486.326 151 494.084 53.956 549.664 67.2488C580.5 74.6237 600 97.3974 600 97.3974"
             stroke="#06d6a0"
-            stroke-width="5"
-            stroke-linecap="round"
+            strokeWidth="5"
+            strokeLinecap="round"
           />
           <path
             opacity="0.3"
@@ -54,7 +54,7 @@ export default function BentoGrid() {
           />
           <g filter="url(#filter1_d_52_8)">
             <circle cx="384" cy="99" r="25" fill="#06d6a0" />
-            <circle cx="384" cy="99" r="22" stroke="white" stroke-width="6" />
+            <circle cx="384" cy="99" r="22" stroke="white" strokeWidth="6" />
           </g>
           <path
             opacity="0.5"
