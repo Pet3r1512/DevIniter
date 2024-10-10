@@ -1,7 +1,8 @@
 /* eslint-disable import/no-anonymous-default-export */
 import Logo from "@/components/Layouts/Header/Logo";
+import { DocsThemeConfig } from "nextra-theme-docs";
 
-export default {
+const themeConfig: DocsThemeConfig = {
   head: (
     <>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,14 +18,23 @@ export default {
     link: "https://github.com/Pet3r1512/DevIniter",
   },
   footer: {
-    text: (
+    content: (
       <span>
         MIT {new Date().getFullYear()} ©{" "}
-        <a href="https://deviniter.vercel.app/" target="_blank">
+        <a
+          href="https://github.com/Pet3r1512/DevIniter"
+          target="_blank"
+          style={{
+            fontWeight: 800,
+            color: "#11998E",
+          }}
+        >
           DevIniter
         </a>
-        .
+        . All Rights Reserved.
       </span>
     ),
   },
 };
+
+export default themeConfig;
