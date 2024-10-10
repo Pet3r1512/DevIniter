@@ -3,7 +3,7 @@ import Link from "next/link";
 export const navs = [
   {
     name: "Documents",
-    href: "/document",
+    href: "/docs/introduction",
   },
   {
     name: "Contribution",
