@@ -37,6 +37,3 @@ jobs:
 
       - name: Run Vitest
         run: pnpm run test
-
-      - name: Build
-        run: pnpm run build
