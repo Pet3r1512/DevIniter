@@ -11,7 +11,7 @@ export default function BentoGrid() {
       image: <Lightning />,
     },
     {
-      title: "Rich TnT",
+      title: "Various TnT",
       desc: "Several tools and packages have been installed for foundational use.",
       image: <TnT />,
     },

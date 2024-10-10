@@ -3,12 +3,12 @@ export default function TnT() {
     <section className="flex flex-wrap gap-3.5 lg:gap-7 justify-center">
       <div className="hidden lg:size-[85px] size-[75px] bg-white dark:bg-black rounded-lg blur-[2.5px] p-4 lg:flex items-center justify-center shadow-2xl transition-transform duration-300 hover:scale-105"></div>
       <div className="hidden lg:size-[85px] size-[75px] bg-white dark:bg-black rounded-lg blur-[2.25px] p-4 lg:flex items-center justify-center shadow-2xl transition-transform duration-300 hover:scale-105"></div>
-      <div className="lg:size-[85px] size-[75px] bg-white dark:bg-black lg:hover:bg-gradient-to-br from-gray-light dark:to-black to-gray rounded-lg p-4 flex items-center justify-center shadow-2xl transition-transform duration-300 hover:scale-105">
+      <div className="group/nextjs lg:size-[85px] size-[75px] bg-white dark:bg-black lg:hover:drop-shadow-2xl lg:dark:hover:shadow-[#fff] lg:hover:shadow-black-main to-gray rounded-lg p-4 flex items-center justify-center shadow-2xl transition-transform duration-300 hover:scale-105">
         <svg
           viewBox="0 0 24 24"
           fill="currentColor"
           xmlns="http://www.w3.org/2000/svg"
-          className="size-[50px]"
+          className="size-[50px] lg:grayscale lg:group-hover/nextjs:grayscale-0"
         >
           <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
           <g
@@ -28,12 +28,12 @@ export default function TnT() {
           </g>
         </svg>
       </div>
-      <div className="lg:size-[85px] size-[75px] bg-white dark:bg-black lg:hover:bg-gradient-to-br from-white to-[#44a8b3]/50 rounded-lg p-4 flex items-center justify-center shadow-2xl transition-transform duration-300 hover:scale-105">
+      <div className="group/tailwind lg:size-[85px] size-[75px] bg-white dark:bg-black lg:hover:drop-shadow-2xl lg:hover:shadow-[#44a8b3] rounded-lg p-4 flex items-center justify-center shadow-2xl transition-transform duration-300 hover:scale-105">
         <svg
           viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
-          className="h-[50px] w-auto max-w-[50px]"
+          className="h-[50px] w-auto max-w-[50px] lg:grayscale lg:group-hover/tailwind:grayscale-0"
         >
           <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
           <g
@@ -53,12 +53,12 @@ export default function TnT() {
       <div className="hidden lg:size-[85px] size-[75px] bg-white dark:bg-black rounded-lg blur-[2.25px] p-4 lg:flex items-center justify-center shadow-2xl transition-transform duration-300 hover:scale-105"></div>
       <div className="hidden lg:size-[85px] size-[75px] bg-white dark:bg-black rounded-lg blur-[2.5px] p-4 lg:flex items-center justify-center shadow-2xl transition-transform duration-300 hover:scale-105"></div>
       <div className="hidden lg:size-[85px] size-[75px] bg-white dark:bg-black rounded-lg blur-[2.5px] p-4 lg:flex items-center justify-center shadow-2xl transition-transform duration-300 hover:scale-105"></div>
-      <div className="lg:size-[85px] size-[75px] bg-white dark:bg-black lg:hover:bg-gradient-to-br from-white to-[#3178c6]/65 rounded-lg p-4 flex items-center justify-center shadow-2xl transition-transform duration-300 hover:scale-105">
+      <div className="group/ts lg:size-[85px] size-[75px] bg-white dark:bg-black lg:hover:drop-shadow-2xl lg:hover:shadow-[#3178c6] rounded-lg p-4 flex items-center justify-center shadow-2xl transition-transform duration-300 hover:scale-105">
         <svg
           viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
-          className="size-[50px]"
+          className="size-[50px] lg:grayscale lg:group-hover/ts:grayscale-0"
         >
           <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
           <g
@@ -84,12 +84,12 @@ export default function TnT() {
           </g>
         </svg>
       </div>
-      <div className="lg:size-[85px] size-[75px] bg-white dark:bg-black lg:hover:bg-gradient-to-br from-white to-[#4b32c3]/75 rounded-lg p-4 flex items-center justify-center shadow-2xl transition-transform duration-300 hover:scale-105">
+      <div className="group/eslint lg:size-[85px] size-[75px] bg-white dark:bg-black lg:hover:drop-shadow-2xl lg:hover:shadow-[#4b32c3] rounded-lg p-4 flex items-center justify-center shadow-2xl transition-transform duration-300 hover:scale-105">
         <svg
           viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
-          className="size-[50px]"
+          className="size-[50px] lg:grayscale lg:group-hover/eslint:grayscale-0"
         >
           <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
           <g
@@ -110,12 +110,12 @@ export default function TnT() {
           </g>
         </svg>
       </div>
-      <div className="lg:size-[85px] size-[75px] bg-white dark:bg-black lg:hover:bg-gradient-to-br from-white to-[#ea5e5e]/85 rounded-lg p-4 flex items-center justify-center shadow-2xl transition-transform duration-300 hover:scale-105">
+      <div className="group/prettier lg:size-[85px] size-[75px] bg-white dark:bg-black lg:hover:drop-shadow-2xl lg:hover:shadow-[#ea5e5e] rounded-lg p-4 flex items-center justify-center shadow-2xl transition-transform duration-300 hover:scale-105">
         <svg
           viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg"
           fill="#000000"
-          className="w-[50px] h-auto max-h-[50px]"
+          className="w-[50px] h-auto max-h-[50px] lg:grayscale lg:group-hover/prettier:grayscale-0"
         >
           <path
             d="M21.714,8.571h1.143a.571.571,0,0,1,.571.571h0a.571.571,0,0,1-.571.571H21.714a.571.571,0,0,1-.571-.571h0A.571.571,0,0,1,21.714,8.571Z"
