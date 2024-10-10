@@ -3,7 +3,7 @@ export default function TnT() {
     <section className="flex flex-wrap gap-3.5 lg:gap-7 justify-center">
       <div className="hidden lg:size-[85px] size-[75px] bg-white dark:bg-black rounded-lg blur-[2.5px] p-4 lg:flex items-center justify-center shadow-2xl transition-transform duration-300 hover:scale-105"></div>
       <div className="hidden lg:size-[85px] size-[75px] bg-white dark:bg-black rounded-lg blur-[2.25px] p-4 lg:flex items-center justify-center shadow-2xl transition-transform duration-300 hover:scale-105"></div>
-      <div className="group/nextjs lg:size-[85px] size-[75px] bg-white dark:bg-black lg:hover:drop-shadow-2xl lg:hover:shadow-[#fff] to-gray rounded-lg p-4 flex items-center justify-center shadow-2xl transition-transform duration-300 hover:scale-105">
+      <div className="group/nextjs lg:size-[85px] size-[75px] bg-white dark:bg-black lg:hover:drop-shadow-2xl lg:dark:hover:shadow-[#fff] lg:hover:shadow-black-main to-gray rounded-lg p-4 flex items-center justify-center shadow-2xl transition-transform duration-300 hover:scale-105">
         <svg
           viewBox="0 0 24 24"
           fill="currentColor"
