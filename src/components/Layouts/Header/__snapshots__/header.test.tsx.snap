@@ -75,7 +75,7 @@ exports[`Render Header > Should match snapshot 1`] = `
             >
               <a
                 class="lg:hover:text-primary transition-all duration-150 ease-linear lg:text-lg"
-                href="/document"
+                href="/docs"
               >
                 Documents
               </a>
@@ -292,7 +292,7 @@ exports[`Render Header > Should match snapshot 1`] = `
           >
             <a
               class="lg:hover:text-primary transition-all duration-150 ease-linear lg:text-lg"
-              href="/document"
+              href="/docs"
             >
               Documents
             </a>
