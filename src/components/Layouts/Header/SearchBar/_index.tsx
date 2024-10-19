@@ -27,7 +27,7 @@ export default function SearchBar() {
 
   return (
     <Dialog>
-      <DialogTrigger data-testid="search-trigger">
+      <DialogTrigger data-testid="search-trigger" className="hidden">
         <div className="flex items-center py-2 px-4 rounded-2xl shadow-2xl lg:dark:bg-gray-dark lg:bg-gray-light lg:dark:text-gray-light text-gray lg:w-48">
           <Search size={20} className="lg:mr-2" />
           <span className="hidden lg:block">Search</span>
