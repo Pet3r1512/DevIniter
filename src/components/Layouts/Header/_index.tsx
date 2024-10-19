@@ -18,7 +18,6 @@ export default function Header() {
           <SearchBar />
         </div>
         <div className="lg:flex items-center gap-x-5 hidden">
-          <SearchBar />
           <ThemeToggle />
           <VerticalLine />
           <Github size={20} />

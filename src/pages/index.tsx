@@ -10,7 +10,7 @@ export default function Home() {
       sectionClassName="max-w-0"
     >
       <Hero />
-      <section className="w-screen lg:max-w-7xl min-h-screen mx-auto flex flex-col items-center mt-[50vh] sm:mt-[15vh] lg:mt-[35vh] lg:mb-24 mb-16">
+      <section className="w-screen lg:max-w-7xl min-h-screen mx-auto flex flex-col items-center mt-24 lg:mt-48 lg:mb-24 mb-16">
         <Highlight />
       </section>
     </Template>
