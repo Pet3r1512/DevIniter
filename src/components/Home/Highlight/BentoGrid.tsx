@@ -99,9 +99,9 @@ export default function BentoGrid() {
               width="100"
               height="80"
               filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
+              colorInterpolation-filters="sRGB"
             >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feColorMatrix
                 in="SourceAlpha"
                 type="matrix"
@@ -133,9 +133,9 @@ export default function BentoGrid() {
               width="100"
               height="100"
               filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
+              colorInterpolation-filters="sRGB"
             >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feColorMatrix
                 in="SourceAlpha"
                 type="matrix"
@@ -168,8 +168,8 @@ export default function BentoGrid() {
               y2="364.998"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#06d6a0" stop-opacity="0.3" />
-              <stop offset="1" stop-color="#95d5b2" stop-opacity="0" />
+              <stop stopColor="#06d6a0" stopOpacity="0.3" />
+              <stop offset="1" stopColor="#95d5b2" stopOpacity="0" />
             </linearGradient>
             <linearGradient
               id="paint1_linear_52_8"
@@ -179,8 +179,8 @@ export default function BentoGrid() {
               y2="217"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#B09FFF" />
-              <stop offset="1" stop-color="#8D79F6" />
+              <stop stopColor="#B09FFF" />
+              <stop offset="1" stopColor="#8D79F6" />
             </linearGradient>
             <linearGradient
               id="paint2_linear_52_8"
@@ -190,8 +190,8 @@ export default function BentoGrid() {
               y2="365"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#B09FFF" stop-opacity="0.15" />
-              <stop offset="1" stop-color="#8D79F6" />
+              <stop stopColor="#B09FFF" stopOpacity="0.15" />
+              <stop offset="1" stopColor="#8D79F6" />
             </linearGradient>
             <linearGradient
               id="paint3_linear_52_8"
@@ -201,8 +201,8 @@ export default function BentoGrid() {
               y2="124"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#FD95D3" />
-              <stop offset="1" stop-color="#FF5CBE" />
+              <stop stopColor="#FD95D3" />
+              <stop offset="1" stopColor="#FF5CBE" />
             </linearGradient>
           </defs>
         </svg>
@@ -418,9 +418,9 @@ export default function BentoGrid() {
               width="708"
               height="102"
               filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
+              colorInterpolation-filters="sRGB"
             >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feBlend
                 mode="normal"
                 in="SourceGraphic"
