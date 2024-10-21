@@ -71,7 +71,7 @@ export default function Introduction() {
                       stroke="none"
                       stroke-width="1"
                       fill="none"
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                     >
                       {" "}
                       <g
