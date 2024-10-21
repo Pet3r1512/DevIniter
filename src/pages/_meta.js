@@ -1,3 +1,4 @@
 export default {
-  docs: "Guide",
+  docs: "Documentation",
+  "free-for-devs": "Free For Devs",
 };
