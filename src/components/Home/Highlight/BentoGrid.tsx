@@ -168,8 +168,8 @@ export default function BentoGrid() {
               y2="364.998"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#06d6a0" stop-opacity="0.3" />
-              <stop offset="1" stop-color="#95d5b2" stop-opacity="0" />
+              <stop stop-color="#06d6a0" stopOpacity="0.3" />
+              <stop offset="1" stop-color="#95d5b2" stopOpacity="0" />
             </linearGradient>
             <linearGradient
               id="paint1_linear_52_8"
@@ -190,7 +190,7 @@ export default function BentoGrid() {
               y2="365"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#B09FFF" stop-opacity="0.15" />
+              <stop stop-color="#B09FFF" stopOpacity="0.15" />
               <stop offset="1" stop-color="#8D79F6" />
             </linearGradient>
             <linearGradient
