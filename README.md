@@ -31,11 +31,9 @@
   <p align="center">
     Initialize Developer's Projects with Pre-built Templates
     <br />
-    <a href="https://github.com/Pet3r1512/DevIniter"><strong>Explore the docs »</strong></a>
+    <a href="https://deviniter.vercel.app/docs/introduction"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/Pet3r1512/DevIniter">View Demo</a>
-    ·
     <a href="https://github.com/Pet3r1512/DevIniter/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
     <a href="https://github.com/Pet3r1512/DevIniter/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
@@ -60,11 +58,9 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -115,11 +111,11 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Top contributors:
+<!-- ### Top contributors:
 
 <a href="https://github.com/Pet3r1512/DevIniter/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=github_username/repo_name" alt="contrib.rocks image" />
-</a>
+</a> -->
 
 <!-- LICENSE -->
 
@@ -154,7 +150,7 @@ Project Link: [https://github.com/Pet3r1512/DevIniter](https://github.com/Pet3r1
 [license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
-[product-screenshot]: public/images/screenshot/dev_initer_screenshot.png
+[product-screenshot]: public/images/screenshot/deviniter_screenshot.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
