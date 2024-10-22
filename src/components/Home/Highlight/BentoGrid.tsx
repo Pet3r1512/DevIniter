@@ -25,7 +25,7 @@ export default function BentoGrid() {
           viewBox="0 0 600 445"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="lg:w-[660px] lg:h-[445px] w-auto h-[250px]"
+          className="lg:w-[660px] lg:h-[445px] w-auto h-[250px] lg:grayscale lg:hover:grayscale-0 transition-all duration-150 ease-linear"
         >
           <g filter="url(#filter0_d_52_8)">
             <rect
@@ -99,7 +99,7 @@ export default function BentoGrid() {
               width="100"
               height="80"
               filterUnits="userSpaceOnUse"
-              colorInterpolation-filters="sRGB"
+              colorinterpolation-filters="sRGB"
             >
               <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feColorMatrix
@@ -133,7 +133,7 @@ export default function BentoGrid() {
               width="100"
               height="100"
               filterUnits="userSpaceOnUse"
-              colorInterpolation-filters="sRGB"
+              colorinterpolation-filters="sRGB"
             >
               <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feColorMatrix
@@ -218,7 +218,7 @@ export default function BentoGrid() {
           viewBox="0 0 708 515"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="lg:h-[250px] w-[185px] h-auto lg:w-auto"
+          className="lg:h-[250px] w-[185px] h-auto lg:w-auto lg:grayscale lg:hover:grayscale-0 transition-all duration-150 ease-linear"
         >
           <path
             opacity="0.21"
@@ -418,7 +418,7 @@ export default function BentoGrid() {
               width="708"
               height="102"
               filterUnits="userSpaceOnUse"
-              colorInterpolation-filters="sRGB"
+              colorinterpolation-filters="sRGB"
             >
               <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feBlend
