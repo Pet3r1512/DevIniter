@@ -6,7 +6,9 @@ export default function Title() {
         <br /> Powered by DevIniter
       </p>
       <p className="dark:text-gray-light md:text-lg w-[85vw] text-center lg:text-xl">
-        {"Revolutionizing how developers build the web with TnT(Tools & Techs)"}
+        {
+          "Revolutionizing how fast and simple for kicking developers projects off."
+        }
       </p>
     </div>
   );
