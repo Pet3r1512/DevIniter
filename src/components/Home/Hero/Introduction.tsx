@@ -7,8 +7,8 @@ import { motion } from "framer-motion";
 
 export default function Introduction() {
   return (
-    <section className="w-screen flex justify-center">
-      <div className="lg:pt-20 lg:pb-24 flex flex-col items-center gap-y-8">
+    <section className="w-screen flex justify-center items-center lg:min-h-[85dvh]">
+      <div className="lg:pb-24 flex flex-col items-center gap-y-8">
         <p className=""></p>
         <HeroHighlight>
           <motion.h1
@@ -56,11 +56,11 @@ export default function Introduction() {
                   fill="currentColor"
                   className="size-5 dark:text-white text-black"
                 >
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                   <g
                     id="SVGRepo_tracerCarrier"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   ></g>
                   <g id="SVGRepo_iconCarrier">
                     {" "}
@@ -69,7 +69,7 @@ export default function Introduction() {
                     <g
                       id="Page-1"
                       stroke="none"
-                      stroke-width="1"
+                      strokeWidth="1"
                       fill="none"
                       fillRule="evenodd"
                     >

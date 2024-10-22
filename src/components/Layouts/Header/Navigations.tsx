@@ -19,7 +19,7 @@ export default function Navigation() {
           <Link
             key={index}
             href={nav.href}
-            className="lg:hover:text-primary transition-all duration-150 ease-linear lg:text-lg"
+            className="lg:hover:text-primary text-gray dark:text-white transition-all duration-150 ease-linear lg:text-lg"
           >
             {nav.name}
           </Link>

@@ -8,7 +8,7 @@ export default function TnT() {
           viewBox="0 0 24 24"
           fill="currentColor"
           xmlns="http://www.w3.org/2000/svg"
-          className="size-[50px] lg:grayscale lg:group-hover/nextjs:grayscale-0"
+          className="size-[50px] text-[#949494]  dark:lg:group-hover/nextjs:text-white lg:group-hover/nextjs:text-black"
         >
           <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
           <g
