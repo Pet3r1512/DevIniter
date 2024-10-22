@@ -74,13 +74,13 @@ exports[`Render Header > Should match snapshot 1`] = `
               data-testid="navbar"
             >
               <a
-                class="lg:hover:text-primary transition-all duration-150 ease-linear lg:text-lg"
+                class="lg:hover:text-primary text-gray dark:text-white transition-all duration-150 ease-linear lg:text-lg"
                 href="/docs/introduction"
               >
                 Documents
               </a>
               <a
-                class="lg:hover:text-primary transition-all duration-150 ease-linear lg:text-lg"
+                class="lg:hover:text-primary text-gray dark:text-white transition-all duration-150 ease-linear lg:text-lg"
                 href="/contribution"
               >
                 Contribution
@@ -253,13 +253,13 @@ exports[`Render Header > Should match snapshot 1`] = `
             data-testid="navbar"
           >
             <a
-              class="lg:hover:text-primary transition-all duration-150 ease-linear lg:text-lg"
+              class="lg:hover:text-primary text-gray dark:text-white transition-all duration-150 ease-linear lg:text-lg"
               href="/docs/introduction"
             >
               Documents
             </a>
             <a
-              class="lg:hover:text-primary transition-all duration-150 ease-linear lg:text-lg"
+              class="lg:hover:text-primary text-gray dark:text-white transition-all duration-150 ease-linear lg:text-lg"
               href="/contribution"
             >
               Contribution
