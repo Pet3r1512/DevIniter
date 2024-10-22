@@ -1,5 +1,6 @@
 import { Hero } from "@/components/Home/_index";
 import Highlight from "@/components/Home/Highlight/_index";
+import SupportedTechs from "@/components/Home/SupportTechs/_index";
 import Template from "@/components/Layouts/Template";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero />
       <section className="w-screen lg:max-w-7xl min-h-screen mx-auto flex flex-col items-center mt-24 lg:mt-48 lg:mb-24 mb-16">
         <Highlight />
+        <SupportedTechs />
       </section>
     </Template>
   );
