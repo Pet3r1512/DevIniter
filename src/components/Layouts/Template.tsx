@@ -4,6 +4,7 @@ import { Kanit } from "next/font/google";
 import Header from "./Header/_index";
 import { cn } from "@/utils/utils";
 import Footer from "./Footer/_index";
+import { ReactLenis } from "lenis/react";
 
 export const kanit = Kanit({
   weight: "400",
@@ -27,25 +28,27 @@ export default function Template({
       <Head>
         <title>{fullPageName}</title>
       </Head>
-      <main className={cn("scrollbar-hide", kanit.className)}>
-        <Header />
-        <section
-          className={cn(
-            "flex flex-col lg:min-h-screen light:bg-white bg-black-main",
-            sectionClassName
-          )}
-        >
-          <div
+      <ReactLenis root>
+        <main className={cn("scrollbar-hide", kanit.className)}>
+          <Header />
+          <section
             className={cn(
-              "mx-auto w-full max-w-7xl px-6 min-h-screen",
-              className
+              "flex flex-col lg:min-h-screen light:bg-white bg-black-main",
+              sectionClassName
             )}
           >
-            {children}
-          </div>
-        </section>
-        <Footer />
-      </main>
+            <div
+              className={cn(
+                "mx-auto w-full max-w-7xl px-6 min-h-screen",
+                className
+              )}
+            >
+              {children}
+            </div>
+          </section>
+          <Footer />
+        </main>
+      </ReactLenis>
     </>
   );
 }
