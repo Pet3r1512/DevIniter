@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 export default function Introduction() {
   return (
-    <section className="w-screen flex justify-center items-center lg:min-h-[85dvh]">
+    <section className="w-screen flex justify-center items-center min-h-[80dvh] lg:min-h-[85dvh]">
       <div className="lg:pb-24 flex flex-col items-center gap-y-8">
         <p className=""></p>
         <HeroHighlight>
