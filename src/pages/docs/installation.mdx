@@ -1,18 +1,69 @@
-import ScriptBlock from "../../components/Documents/ScriptBlock"
+import InstallBlock from "../../components/Documents/InstallBlock"
+import QuestionBlock from "../../components/Documents/QuestionsBlock"
+import TipsBlock from "../../components/Documents/TipsBlock.tsx"
+import ScriptBlock from "../../components/Documents/ScriptBlock.tsx"
+import Link from "next/link"
 
 # Installation
 
-Follow these following steps in order to install templates from DevIniter:
+To get started with DevIniter templates, please follow these steps:
 
 ## Prerequisites
 
-Make sure you have the following installed on your machine:
+Ensure you have the following tools installed on your system:
 
 - [Node.js](https://nodejs.org/) (version 20)
 - [PNPM](https://pnpm.io/) (version 9)
 
-Note: We are working on to increase the number of Nodejs and PNPM version along with other package manager such as: NPM and Yarn.
+<strong>Note:</strong> We are actively working to expand support for additional Node.js and PNPM versions, as well as other package managers such as NPM and Yarn.
 
-## Initialize your project with our templates
+## Initializing Your Project with DevIniter Templates
 
-<ScriptBlock />
+To install one of our templates, run the following command:
+
+<InstallBlock command={[
+    {
+      value: "pnpm",
+      script: "pnpx deviniter@latest",
+    },
+    {
+      value: "npm",
+      script: "npx deviniter@latest",
+    },
+  ]} />
+
+During the installation, you will encounter the following prompts:
+
+<QuestionBlock />
+
+If you’re new to DevIniter, refer to our <Link className="text-primary underline decoration-solid font-semibold" href="/docs/template_structure">Template Structure</Link> guide for a comprehensive overview and to enhance your experience with our templates.
+
+<TipsBlock tips={[
+    "Once the prompts above are complete, all dependencies will be installed automatically."
+]} />
+
+## Starting Your Project
+
+After successfully installing your selected template, navigate to the project directory by running:
+
+<ScriptBlock script={
+    {command: "cd",
+    content: "dev-app"}
+}/>
+
+Then, start the project locally with one of the following commands:
+
+<InstallBlock command={
+    [
+        {
+            value: "pnpm",
+            script: "pnpm dev"
+        },
+        {
+            value: "npm",
+            script: "npm run dev"
+        },
+    ]
+}/>
+
+If there is no other application running on port 3000, your project will start at [localhost:3000](http://localhost:3000/).
