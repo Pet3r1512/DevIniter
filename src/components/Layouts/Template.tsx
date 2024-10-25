@@ -5,6 +5,7 @@ import Header from "./Header/_index";
 import { cn } from "@/utils/utils";
 import Footer from "./Footer/_index";
 import { ReactLenis } from "lenis/react";
+import PatchNews from "./PatchNews";
 
 export const kanit = Kanit({
   weight: "400",
@@ -30,6 +31,7 @@ export default function Template({
       </Head>
       <ReactLenis root>
         <main className={cn("scrollbar-hide", kanit.className)}>
+          <PatchNews />
           <Header />
           <section
             className={cn(

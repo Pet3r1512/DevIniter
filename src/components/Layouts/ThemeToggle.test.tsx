@@ -2,6 +2,7 @@ import { render, screen, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import { useState, createContext, ReactNode } from "react";
 import ThemeToggle from "./ThemeToggle";
+import { describe, expect, it } from "vitest";
 
 const ThemeContext = createContext({
   theme: "light",
