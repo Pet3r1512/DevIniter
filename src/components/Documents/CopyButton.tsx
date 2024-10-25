@@ -24,7 +24,7 @@ export default function CopyButton({
       )}
     >
       <p>bash</p>
-      {!done ? <Clipboard /> : <ClipboardCheck className="text-secondary" />}
+      {!done ? <Clipboard /> : <ClipboardCheck className="text-secondary/50" />}
     </button>
   );
 }
