@@ -1,7 +1,8 @@
 :root {
-  --nextra-primary-hue: 175.15deg;
+  --nextra-primary-hue: -213deg;
+  --nextra-primary-saturation: 80%;
 }
 
 .dark {
-  --nextra-primary-hue: 175.15deg;
+  --nextra-primary-hue: 167deg;
 }
