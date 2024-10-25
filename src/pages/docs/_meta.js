@@ -3,4 +3,5 @@ export default {
   introduction: "Introduction",
   get_started: "Getting Started",
   installation: "Installation",
+  template_structure: "Template Structure",
 };

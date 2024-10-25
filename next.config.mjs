@@ -19,6 +19,4 @@ const nextConfig = {
   },
 };
 
-export default withNextra({
-  ...nextConfig, // Keep other Next.js configurations
-});
+export default withNextra(nextConfig);
