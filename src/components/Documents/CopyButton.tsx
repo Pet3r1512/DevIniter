@@ -1,23 +1,30 @@
+import { cn } from "@/utils/utils";
 import { Clipboard, ClipboardCheck } from "lucide-react";
-import { useState } from "react";
+import React, { useState } from "react";
 
-export default function CopyButton({ copyContent }: { copyContent: string }) {
-  const [clipBoard, setClipBoard] = useState("");
+export default function CopyButton({
+  copyContent,
+  className,
+}: {
+  copyContent: string;
+  className?: string;
+}) {
+  const [done, setDone] = useState(false);
 
   return (
     <button
       onClick={() => {
-        setClipBoard("");
+        setDone(false);
         navigator.clipboard.writeText(copyContent);
-        setClipBoard(copyContent);
+        setDone(true);
       }}
-      className="flex items-center justify-center ml-auto"
-    >
-      {clipBoard === "" ? (
-        <Clipboard />
-      ) : (
-        <ClipboardCheck className="text-secondary" />
+      className={cn(
+        "!flex items-center justify-center gap-x-2.5 ml-auto",
+        className
       )}
+    >
+      <p>bash</p>
+      {!done ? <Clipboard /> : <ClipboardCheck className="text-secondary" />}
     </button>
   );
 }
