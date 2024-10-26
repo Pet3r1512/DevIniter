@@ -8,7 +8,7 @@ export default function PatchNews() {
     >
       <p>
         🚀 DevIniter v1.0.10 has been released with NextJS and Vite template
-        avalible.
+        available.
       </p>
       <Link
         className="underline decoration-solid text-gold"
