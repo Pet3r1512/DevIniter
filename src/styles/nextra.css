@@ -6,3 +6,7 @@
 .dark {
   --nextra-primary-hue: 167deg;
 }
+
+body {
+  font-family: "Kanit", sans-serif;
+}
