@@ -16,7 +16,7 @@ export default function ScriptBlock({
         <div className="flex items-center justify-between">
           <p>
             <span className="dark:text-gold text-primary">
-              {script.command}
+              {"$ " + script.command}
             </span>{" "}
             {script.content}
           </p>

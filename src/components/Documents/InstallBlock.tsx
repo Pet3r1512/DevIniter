@@ -10,12 +10,12 @@ type Props = {
 export default function InstallBlock({ command }: { command: Props[] }) {
   const scripts = [
     {
-      value: "pnpm",
-      script: "pnpx deviniter@latest",
-    },
-    {
       value: "npm",
       script: "npx deviniter@latest",
+    },
+    {
+      value: "pnpm",
+      script: "pnpx deviniter@latest",
     },
   ];
 
@@ -23,12 +23,12 @@ export default function InstallBlock({ command }: { command: Props[] }) {
     <div className="mt-6">
       <MacOSNavBar />
       <Tabs
-        defaultValue="pnpm"
+        defaultValue="npm"
         className="w-full dark:bg-[#131412] bg-gray-light !px-5 !py-4 group rounded-b-2xl"
       >
         <TabsList className="w-fit">
-          <TabsTrigger value="pnpm">pnpm</TabsTrigger>
           <TabsTrigger value="npm">npm</TabsTrigger>
+          <TabsTrigger value="pnpm">pnpm</TabsTrigger>
         </TabsList>
         {!command
           ? scripts.map((script, index) => {
