@@ -81,7 +81,7 @@ exports[`Render Header > Should match snapshot 1`] = `
               </a>
               <a
                 class="lg:hover:text-primary text-gray dark:text-white transition-all duration-150 ease-linear lg:text-lg"
-                href="/contribution"
+                href="https://github.com/Pet3r1512/DevIniter/issues/new?labels=enhancement&template=feature-request---.md"
               >
                 Contribution
               </a>
@@ -260,7 +260,7 @@ exports[`Render Header > Should match snapshot 1`] = `
             </a>
             <a
               class="lg:hover:text-primary text-gray dark:text-white transition-all duration-150 ease-linear lg:text-lg"
-              href="/contribution"
+              href="https://github.com/Pet3r1512/DevIniter/issues/new?labels=enhancement&template=feature-request---.md"
             >
               Contribution
             </a>
