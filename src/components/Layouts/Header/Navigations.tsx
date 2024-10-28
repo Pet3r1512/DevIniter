@@ -7,7 +7,7 @@ export const navs = [
   },
   {
     name: "Contribution",
-    href: "/contribution",
+    href: "https://github.com/Pet3r1512/DevIniter/issues/new?labels=enhancement&template=feature-request---.md",
   },
 ];
 
