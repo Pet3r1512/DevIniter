@@ -2,7 +2,7 @@ import InstallBlock from "../../components/Documents/InstallBlock"
 import QuestionBlock from "../../components/Documents/QuestionsBlock"
 import TipsBlock from "../../components/Documents/TipsBlock.tsx"
 import ScriptBlock from "../../components/Documents/ScriptBlock.tsx"
-import Link from "next/link"
+import HighlightedText from "../../components/Documents/HighlightedText.tsx"
 
 # Installation
 
@@ -12,9 +12,9 @@ To get started with DevIniter templates, please follow these steps:
 
 Ensure you have the following tools installed on your system:
 
-- <Link href="https://nodejs.org/" className="text-primary font-semibold underline decoration-solid">Nodejs</Link> (version 20)
-- <Link href="https://pnpm.io/" className="text-primary font-semibold underline decoration-solid">pnpm</Link> (version 9)
-- <Link href="https://www.npmjs.com/" className="text-primary font-semibold underline decoration-solid">npm</Link> (version 10)
+- <HighlightedText content={{href: "https://nodejs.org/", text: "Nodejs", target: "_blank" }} /> (version 20)
+- <HighlightedText content={{href: "https://pnpm.io/", text: "pnpm", target: "_blank" }} /> (version 9)
+- <HighlightedText content={{href: "https://www.npmjs.com/", text: "pnpm", target: "_blank" }} /> (version 10)
 
 <strong>Note:</strong> We are actively working to expand support for additional Node.js, pnpm and npm versions, as well as other package managers such as Yarn.
 
@@ -31,7 +31,7 @@ During the installation, you will encounter the following prompts:
 
 <QuestionBlock />
 
-If you’re new to DevIniter, refer to our <Link className="text-primary underline decoration-solid font-semibold" href="/docs/template_structure">Template Structure</Link> guide for a comprehensive overview and to enhance your experience with our templates.
+If you’re new to DevIniter, refer to our <HighlightedText content={{href: "/docs/template_structure", text: "Template Structure"}} /> guide for a comprehensive overview and to enhance your experience with our templates.
 
 ## Installing Dependencies
 
@@ -72,8 +72,8 @@ Then, start the project locally with one of the following commands:
     ]
 }/>
 
-If there is no other application running on port 3000, your project will start at <Link href="http://localhost:3000" className="text-primary font-semibold underline decoration-solid">localhost:3000</Link>.
+If there is no other application running on port 3000, your project will start at <HighlightedText content={{href: "http://localhost:3000", text: "localhost:3000", target: "_blank"}} />.
 
 <TipsBlock tips={[
-    <p>- With <span className="text-[#e4c1f9] font-semibold">Vite</span> template, your project will start at <span className="text-primary font-semibold underline decoration-solid">localhost:5173</span> in default</p>
+    <p>- With <span className="text-[#e4c1f9] font-semibold">Vite</span> template, your project will start at <HighlightedText content={{href: "http://localhost:5173", text: "localhost:5173", target: "_blank"}} /> in default</p>
 ]} />
