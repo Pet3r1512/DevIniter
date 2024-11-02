@@ -7,7 +7,7 @@ export default function PatchNews() {
       className="bg-gradient-to-r text-white from-primary via-primary-light to-secondary h-fit py-1.5 lg:h-12 w-full flex flex-col lg:flex-row text-center gap-x-1 items-center justify-center font-semibold leading-normal"
     >
       <p>
-        🚀 DevIniter v1.0.23 has been released with NextJS and Vite template
+        🚀 DevIniter v1.1.10 has been released with NextJS and Vite template
         available.
       </p>
       <Link
