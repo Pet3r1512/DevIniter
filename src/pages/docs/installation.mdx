@@ -12,11 +12,11 @@ To get started with DevIniter templates, please follow these steps:
 
 Ensure you have the following tools installed on your system:
 
-- <HighlightedText content={{href: "https://nodejs.org/", text: "Nodejs", target: "_blank" }} /> (version 20)
-- <HighlightedText content={{href: "https://pnpm.io/", text: "pnpm", target: "_blank" }} /> (version 9)
-- <HighlightedText content={{href: "https://www.npmjs.com/", text: "pnpm", target: "_blank" }} /> (version 10)
+- <HighlightedText content={{href: "https://nodejs.org/", text: "Nodejs", target: "_blank" }} /> (v20.0.0 or higher)
+- <HighlightedText content={{href: "https://pnpm.io/", text: "pnpm", target: "_blank" }} /> (v9.0.0 or higher)
+- <HighlightedText content={{href: "https://www.npmjs.com/", text: "npm", target: "_blank" }} /> (v10.0.0 or higher)
 
-<strong>Note:</strong> We are actively working to expand support for additional Node.js, pnpm and npm versions, as well as other package managers such as Yarn.
+<strong>Note:</strong> We are actively working to expand support for additional Node.js versions and package managers such as Yarn.
 
 ## Scaffolding Template
 
@@ -24,16 +24,43 @@ We recommend starting a new template using `deviniter`, which downloads template
 
 <ScriptBlock script={
     {command: "npx",
-    content: "@deviniter/deviniter@latest"}
+    content: "@deviniter/cli@latest"}
 }/>
 
-During the installation, you will encounter the following prompts:
+After running this command, our CLI will guide you through the setup process:
 
-<QuestionBlock />
+<QuestionBlock questions={[
+    {
+        question: "What is your project name?",
+        description: "Enter a name for your new project (lowercase, no spaces)"
+    },
+    {
+        question: "Select a template: (use arrow keys to navigate)",
+        options: [
+            "Next.js",
+            "Vite",
+        ]
+    },
+]} />
 
 If you’re new to DevIniter, refer to our <HighlightedText content={{href: "/docs/template_structure", text: "Template Structure"}} /> guide for a comprehensive overview and to enhance your experience with our templates.
 
+### Next Steps
+
+After successful installation:
+1. Review our guide <HighlightedText content={{href: "/docs/getting-started", text: "Getting Started"}} />
+2. Explore the <HighlightedText content={{href: "/docs/template_structure", text: "Template Structure"}} />
+3. Check out our <HighlightedText content={{href: "", text: "Features Overview"}} /> (Coming Soon)
+
+
 ## Installing Dependencies
+
+Now, you need to navigate to your project:
+
+<ScriptBlock script={
+    {command: "cd",
+    content: "project-name"}
+}/>
 
 After successfully scaffolded your favorite template, you need to install all dependencies by running:
 
@@ -48,14 +75,60 @@ After successfully scaffolded your favorite template, you need to install all de
     },
   ]} />
 
+## Troubleshooting
+
+### Common Issues
+
+1. **Port Already in Use**
+   ```bash
+   Error: Something is already running on port 3000
+   ```
+   **Solution**: Either close the application using port 3000 or modify the port in your configuration file.
+
+2. **Node Version Mismatch**
+   ```bash
+   Error: The engine "node" is incompatible with this module
+   ```
+   **Solution**: Use nvm (Node Version Manager) to install and switch to the required Node.js version:
+   <ScriptBlock script={
+       {command: "nvm",
+       content: "use 20"}
+   }/>
+
+3. **Package Installation Fails**
+   - Clear your package manager cache:
+     <InstallBlock command={[
+         {
+           value: "pnpm",
+           script: "pnpm store prune",
+         },
+         {
+           value: "npm",
+           script: "npm cache clean --force",
+         },
+     ]} />
+   - Ensure you have the necessary permissions
+   - Check your network connection
+
+### Still Having Issues?
+
+- Check our <HighlightedText content={{href: "/docs/faq", text: "FAQ"}} /> page (Coming Soon)
+- Join our <HighlightedText content={{href: "https://discord.gg/deviniter", text: "Discord community"}} /> (Coming Soon)
+- Open an issue on our <HighlightedText content={{href: "https://github.com/Pet3r1512/DevIniter/issues/new?labels=bug&template=bug-report---.md", text: "GitHub repository"}} />
+
+### Next Steps
+
+After successful installation:
+1. Review our <HighlightedText content={{href: "/docs/getting-started", text: "Getting Started"}} /> guide
+2. Explore the <HighlightedText content={{href: "/docs/template_structure", text: "Template Structure"}} />
+3. Check out our <HighlightedText content={{href: "", text: "Features Overview"}} /> (Coming Soon)
+
+<TipsBlock tips={[
+    <p>- Expected setup time is around 2-5 minutes for first-time users. </p>,
+    <p>- Make sure to star our repository on GitHub to stay updated with new features and templates. </p>
+]} />
+
 ## Starting Your Project
-
-Now, you need to navigate to your project:
-
-<ScriptBlock script={
-    {command: "cd",
-    content: "dev-app"}
-}/>
 
 Then, start the project locally with one of the following commands:
 
