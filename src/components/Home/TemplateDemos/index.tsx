@@ -10,7 +10,7 @@ export default function TemplateDemos() {
       ],
       templateName: "Next.js - Page Router",
       techStacks: (
-        <div className="flex items-center gap-x-2.5 mt-5">
+        <div className="flex items-center justify-center lg:justify-start gap-x-2.5 mt-5">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="size-5 lg:size-8 dark:inline hidden"
@@ -115,18 +115,10 @@ export default function TemplateDemos() {
         title={"Templates in Action"}
         subtitle={"Preview our templates before you choose."}
       />
-      <div className="lg:mt-24 flex flex-wrap justify-center items-center gap-5">
+      <div className="mt-12 lg:mt-24 flex flex-col lg:flex-row justify-center items-center gap-5">
         {demos.map((demo, index) => {
           return <DemoCard key={index} props={demo} />;
         })}
-        <div className="group w-[38rem] h-[22rem] relative shadow-2xl rounded-2xl flex items-center justify-center dark:bg-gray bg-white-light">
-          <p className="opacity-50">Coming soon</p>
-          <div className="lg:h-0 lg:group-hover:h-2/5 transition-all duration-150 ease-linear h-1/3 w-full rounded-b-2xl absolute bottom-0 dark:bg-black bg-white p-3">
-            <div className="lg:group-hover:block lg:hidden transition-all duration-200 ease-linear">
-              <p className="font-bold lg:text-xl">Vite - React.js</p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
