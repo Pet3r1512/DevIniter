@@ -75,6 +75,34 @@ After successfully scaffolded your favorite template, you need to install all de
     },
   ]} />
 
+<TipsBlock tips={[
+    <p>- Expected setup time is around 2-5 minutes for first-time users. </p>,
+    <p>- Make sure to star our repository on GitHub to stay updated with new features and templates. </p>
+]} />
+
+## Starting Your Project
+
+Then, start the project locally with one of the following commands:
+
+<InstallBlock command={
+    [
+        {
+            value: "pnpm",
+            script: "pnpm dev"
+        },
+        {
+            value: "npm",
+            script: "npm run dev"
+        },
+    ]
+}/>
+
+If there is no other application running on port 3000, your project will start at <HighlightedText content={{href: "http://localhost:3000", text: "localhost:3000", target: "_blank"}} />.
+
+<TipsBlock tips={[
+    <p>- With <span className="text-[#e4c1f9] font-semibold">Vite</span> template, your project will start at <HighlightedText content={{href: "http://localhost:5173", text: "localhost:5173", target: "_blank"}} /> in default</p>
+]} />
+
 ## Troubleshooting
 
 ### Common Issues
@@ -122,31 +150,3 @@ After successful installation:
 1. Review our <HighlightedText content={{href: "/docs/getting-started", text: "Getting Started"}} /> guide
 2. Explore the <HighlightedText content={{href: "/docs/template_structure", text: "Template Structure"}} />
 3. Check out our <HighlightedText content={{href: "", text: "Features Overview"}} /> (Coming Soon)
-
-<TipsBlock tips={[
-    <p>- Expected setup time is around 2-5 minutes for first-time users. </p>,
-    <p>- Make sure to star our repository on GitHub to stay updated with new features and templates. </p>
-]} />
-
-## Starting Your Project
-
-Then, start the project locally with one of the following commands:
-
-<InstallBlock command={
-    [
-        {
-            value: "pnpm",
-            script: "pnpm dev"
-        },
-        {
-            value: "npm",
-            script: "npm run dev"
-        },
-    ]
-}/>
-
-If there is no other application running on port 3000, your project will start at <HighlightedText content={{href: "http://localhost:3000", text: "localhost:3000", target: "_blank"}} />.
-
-<TipsBlock tips={[
-    <p>- With <span className="text-[#e4c1f9] font-semibold">Vite</span> template, your project will start at <HighlightedText content={{href: "http://localhost:5173", text: "localhost:5173", target: "_blank"}} /> in default</p>
-]} />
