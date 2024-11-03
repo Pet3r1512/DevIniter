@@ -8,6 +8,11 @@ export default function Document() {
         name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
       ></meta>
+      <meta
+        name="description"
+        content="The Ultimate Starter Templates for Developers"
+      />
+      <link rel="icon" href="/images/favicon.ico" sizes="any" />
       <link rel="favicon" type="image/x-icon" href="/images/favicon.ico" />
       <link
         rel="apple-touch-icon"
