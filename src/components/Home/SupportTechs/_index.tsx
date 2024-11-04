@@ -1,8 +1,16 @@
+import { AnimatedTooltip } from "@/components/ui/aceternity/animated-tooltips";
 import SectionTitle from "../SectionTitle";
-import TechSquare from "./TechSquare";
+
+export type TechProps = {
+  name: string;
+  href: string;
+  logoURL: string;
+  shadowColor: string;
+  isBuilt?: boolean | true;
+};
 
 export default function SupportedTechs() {
-  const techStacks = [
+  const techStacks: TechProps[] = [
     {
       name: "Typescript",
       href: "https://www.typescriptlang.org/",
@@ -26,6 +34,7 @@ export default function SupportedTechs() {
       href: "https://tanstack.com/",
       logoURL: "tanstack.png",
       shadowColor: "lg:hover:shadow-[#EAB308]",
+      isBuilt: false,
     },
     {
       name: "Vite",
@@ -50,24 +59,28 @@ export default function SupportedTechs() {
       href: "https://prettier.io/",
       logoURL: "prettier.png",
       shadowColor: "lg:hover:shadow-[#c1121f]",
+      isBuilt: false,
     },
     {
       name: "tRPC",
       href: "https://trpc.io/",
       logoURL: "trpc.png",
       shadowColor: "lg:hover:shadow-[#398CCB]",
+      isBuilt: false,
     },
     {
       name: "Prisma",
       href: "https://www.prisma.io/",
       logoURL: "prisma.png",
       shadowColor: "lg:hover:shadow-[#5A67D8]",
+      isBuilt: false,
     },
     {
       name: "Zustand",
       href: "https://github.com/pmndrs/zustand",
       logoURL: "zustand.png",
       shadowColor: "lg:hover:shadow-[#7f4f24]",
+      isBuilt: false,
     },
     {
       name: "PostCSS",
@@ -89,19 +102,8 @@ export default function SupportedTechs() {
         title="Wonderfull Supported Technologies and Tools"
         subtitle=""
       />
-      <div className="flex flex-wrap w-9/12 lg:w-2/3 justify-center gap-5 mx-auto">
-        {techStacks.map((tech, index) => {
-          const { name, href, logoURL, shadowColor } = tech;
-          return (
-            <TechSquare
-              key={index}
-              name={name}
-              href={href}
-              logoURL={"/images/techstacks/" + logoURL}
-              shadowColor={shadowColor}
-            />
-          );
-        })}
+      <div className="w-9/12 lg:w-2/3 mx-auto">
+        <AnimatedTooltip items={techStacks}></AnimatedTooltip>
       </div>
     </section>
   );
