@@ -12,7 +12,7 @@ export default function Document() {
         name="description"
         content="The Ultimate Starter Templates for Developers"
       />
-      <link rel="icon" href="/images/favicon.ico" sizes="any" />
+      <link rel="icon" href="/favicon.ico" sizes="any" />
       <link rel="favicon" type="image/x-icon" href="/favicon.ico" />
       <link
         rel="apple-touch-icon"
