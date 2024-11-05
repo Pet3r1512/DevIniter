@@ -88,9 +88,13 @@ Deviniter provides a range of lightning-fast starter templates to help jumpstart
 
 ## Usage
 
-Choose your preferred framework or technology, explore the curated templates, and effortlessly clone the one you need to your repository.
+Installing your favorite template by running:
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+```bash
+  npx @deviniter/cli@latest
+```
+
+_For more examples, please refer to the [Documentation](https://www.deviniter.site/docs/introduction)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
