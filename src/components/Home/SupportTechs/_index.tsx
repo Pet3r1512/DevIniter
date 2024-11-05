@@ -18,23 +18,16 @@ export default function SupportedTechs() {
       shadowColor: "lg:hover:shadow-[#3178C6]",
     },
     {
-      name: "Nextjs",
+      name: "Next.js",
       href: "https://nextjs.org/",
       logoURL: "nextjs.png",
       shadowColor: "lg:hover:shadow-black-main dark:lg:hover:shadow-white",
     },
     {
-      name: "ReactJS",
+      name: "React.js",
       href: "https://react.dev/",
       logoURL: "reactjs.png",
       shadowColor: "lg:hover:shadow-[#00D8FF]",
-    },
-    {
-      name: "Tanstack",
-      href: "https://tanstack.com/",
-      logoURL: "tanstack.png",
-      shadowColor: "lg:hover:shadow-[#EAB308]",
-      isBuilt: false,
     },
     {
       name: "Vite",
@@ -55,6 +48,18 @@ export default function SupportedTechs() {
       shadowColor: "lg:hover:shadow-[#bfd200]",
     },
     {
+      name: "PostCSS",
+      href: "https://postcss.org/",
+      logoURL: "postcss.png",
+      shadowColor: "lg:hover:shadow-[#e63946]",
+    },
+    {
+      name: "ESLint",
+      href: "https://eslint.org/",
+      logoURL: "eslint.png",
+      shadowColor: "lg:hover:shadow-[#4B32C3]",
+    },
+    {
       name: "Prettier",
       href: "https://prettier.io/",
       logoURL: "prettier.png",
@@ -66,6 +71,13 @@ export default function SupportedTechs() {
       href: "https://trpc.io/",
       logoURL: "trpc.png",
       shadowColor: "lg:hover:shadow-[#398CCB]",
+      isBuilt: false,
+    },
+    {
+      name: "Tanstack",
+      href: "https://tanstack.com/",
+      logoURL: "tanstack.png",
+      shadowColor: "lg:hover:shadow-[#EAB308]",
       isBuilt: false,
     },
     {
@@ -81,18 +93,6 @@ export default function SupportedTechs() {
       logoURL: "zustand.png",
       shadowColor: "lg:hover:shadow-[#7f4f24]",
       isBuilt: false,
-    },
-    {
-      name: "PostCSS",
-      href: "https://postcss.org/",
-      logoURL: "postcss.png",
-      shadowColor: "lg:hover:shadow-[#e63946]",
-    },
-    {
-      name: "ESLint",
-      href: "https://eslint.org/",
-      logoURL: "eslint.png",
-      shadowColor: "lg:hover:shadow-[#4B32C3]",
     },
   ];
 
