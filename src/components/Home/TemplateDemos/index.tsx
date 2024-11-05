@@ -203,7 +203,10 @@ export default function TemplateDemos() {
     },
   ];
   return (
-    <section className="flex flex-col justify-center items-center min-h-screen max-w-7xl mx-auto">
+    <section
+      id="demo"
+      className="flex flex-col justify-center items-center min-h-screen max-w-7xl mx-auto"
+    >
       <SectionTitle
         title={"Templates in Action"}
         subtitle={"Preview our templates before you choose."}
