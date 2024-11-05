@@ -14,7 +14,7 @@ export default function Github({
       target="_blank"
       data-testid="github-logo"
       className={cn(
-        "rounded-full p-1 flex items-center justify-center bg-gray-light opacity-65 lg:hover:opacity-100 transition-all duration-150 ease-linear",
+        "rounded-full size-8 flex items-center justify-center bg-gray-light opacity-65 lg:hover:opacity-100 transition-all duration-150 ease-linear",
         className
       )}
     >
