@@ -44,6 +44,7 @@ const config: Config = {
           light: "#dee2e6",
           dark: "#212529",
         },
+        pink: "#ff99c8",
       },
       borderRadius: {
         lg: "var(--radius)",
