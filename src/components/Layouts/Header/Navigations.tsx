@@ -40,7 +40,7 @@ export default function Navigation() {
   return (
     <nav
       data-testid="navbar"
-      className="hidden lg:flex items-center gap-x-8 mt-1"
+      className="hidden lg:flex items-center gap-x-8 mt-1.5"
     >
       {navs.map((nav, index) => {
         return (
