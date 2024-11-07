@@ -116,6 +116,8 @@ Our templates support various project types including:
 - API services
 - Personal Portfolios
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- CONTRIBUTING -->
 
 ## Contributing
