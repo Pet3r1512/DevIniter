@@ -16,7 +16,7 @@
   <p align="center">
     Initialize Developer's Projects with Pre-built Templates
     <br />
-    <a href="https://deviniter.vercel.app/docs/introduction"><strong>Explore the docs »</strong></a>
+    <a href="https://deviniter.site/docs/introduction"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/Pet3r1512/DevIniter/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
@@ -51,7 +51,7 @@
 
 ## About DevIniter
 
-[![Product Name Screen Shot][product-screenshot]](https://deviniter.vercel.app/)
+[![Product Name Screen Shot][product-screenshot]](https://deviniter.site/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
