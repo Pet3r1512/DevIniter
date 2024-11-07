@@ -5,6 +5,7 @@ import { ReactNode } from "react";
 
 export type DemoCardProps = {
   image: string[]; // [0] is dark and [1] is light
+  logo: string;
   templateName: string;
   techStacks: ReactNode; // with className="flex items-center gap-x-2.5 mt-5"
   liveDemoURL: string;
@@ -12,7 +13,8 @@ export type DemoCardProps = {
 };
 
 export default function DemoCard({ props }: { props: DemoCardProps }) {
-  const { image, templateName, techStacks, liveDemoURL, className } = props;
+  const { image, logo, templateName, techStacks, liveDemoURL, className } =
+    props;
   return (
     <div className="group w-[20rem] h-auto md:w-[38rem] md:h-[22rem] relative shadow-2xl rounded-2xl">
       <div className="w-full h-full">
@@ -51,7 +53,17 @@ export default function DemoCard({ props }: { props: DemoCardProps }) {
       </div>
       <div className="hidden lg:block lg:h-0 lg:group-hover:h-1/2 transition-all duration-150 ease-linear h-1/2 w-full rounded-b-2xl lg:absolute bottom-0 dark:bg-black bg-white p-5">
         <div className="lg:group-hover:block lg:hidden transition-all duration-150 lg:group-hover:delay-1000 ease-linear">
-          <p className="font-bold lg:text-xl">{templateName}</p>
+          <div className="flex items-center gap-x-5">
+            <Image
+              src={logo}
+              alt={templateName}
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="size-8 lg:size-10"
+            />
+            <p className="font-bold lg:text-xl">{templateName}</p>
+          </div>
           {techStacks}
           <Link
             href={liveDemoURL}
