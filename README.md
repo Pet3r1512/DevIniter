@@ -7,7 +7,7 @@
     <img src="public/images/logos/FullLogo.png" alt="Logo" width="278.7" height="80">
   </a>
 
-<div align="center">[![GitHub Release](https://img.shields.io/github/release/tterb/PlayMusic.svg?style=flat)](1.2.0) </div>
+<div align="center"> ![version](https://img.shields.io/badge/version-1.2.0-blue) </div>
 
 <h3 align="center">DevIniter</h3>
 
