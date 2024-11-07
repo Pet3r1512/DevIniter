@@ -1,8 +1,13 @@
+import { useRef } from "react";
 import SectionTitle from "../SectionTitle";
 import DemoCard, { DemoCardProps } from "./DemoCard";
 import Image from "next/image";
+import { useInView } from "framer-motion";
 
 export default function TemplateDemos() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   const demos: DemoCardProps[] = [
     {
       image: [
@@ -109,6 +114,11 @@ export default function TemplateDemos() {
         </div>
       ),
       liveDemoURL: "https://deviniter-nextjs-typescript-template.vercel.app/",
+      style: {
+        transform: isInView ? "none" : "translateX(-200px)",
+        opacity: isInView ? 1 : 0,
+        transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.85s",
+      },
     },
     {
       image: ["/images/templates/vite-dark.png", "/images/templates/vite.png"],
@@ -202,10 +212,16 @@ export default function TemplateDemos() {
       liveDemoURL:
         "https://deviniter-vite-react-typescript-template.vercel.app/",
       className: "text-pink",
+      style: {
+        transform: isInView ? "none" : "translateX(200px)",
+        opacity: isInView ? 1 : 0,
+        transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.85s",
+      },
     },
   ];
   return (
     <section
+      ref={ref}
       id="demo"
       className="flex flex-col justify-center items-center min-h-screen max-w-7xl mx-auto"
     >
