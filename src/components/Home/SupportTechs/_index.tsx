@@ -103,18 +103,20 @@ export default function SupportedTechs() {
   return (
     <section
       ref={ref}
-      style={{
-        transform: isInView ? "none" : "translateY(-200px)",
-        opacity: isInView ? 1 : 0,
-        transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-      }}
       className="flex flex-col gap-y-24 lg:gap-y-56 justify-center min-h-screen max-w-7xl mx-auto"
     >
       <SectionTitle
         title="Wonderfull Supported Technologies and Tools"
         subtitle="We always try to maintain stability and make sure these tools work well together."
       />
-      <div className="w-9/12 lg:w-2/3 mx-auto">
+      <div
+        style={{
+          transform: isInView ? "none" : "translateX(-200px)",
+          opacity: isInView ? 1 : 0,
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 1s",
+        }}
+        className="w-9/12 lg:w-2/3 mx-auto"
+      >
         <AnimatedTooltip items={techStacks}></AnimatedTooltip>
       </div>
     </section>
