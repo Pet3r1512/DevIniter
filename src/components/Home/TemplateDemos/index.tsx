@@ -9,6 +9,7 @@ export default function TemplateDemos() {
         "/images/templates/nextjs-dark.png",
         "/images/templates/nextjs.png",
       ],
+      logo: "/images/templates/nextjs-deviniter.png",
       templateName: "Next.js - Page Router",
       techStacks: (
         <div className="flex items-center justify-center lg:justify-start gap-x-2.5 mt-5">
@@ -111,6 +112,7 @@ export default function TemplateDemos() {
     },
     {
       image: ["/images/templates/vite-dark.png", "/images/templates/vite.png"],
+      logo: "/images/templates/vite-deviniter.png",
       templateName: "Vite - React.js",
       techStacks: (
         <div className="flex items-center justify-center lg:justify-start gap-x-2.5 mt-5">
