@@ -35,7 +35,7 @@ export default function Introduction() {
           </motion.h1>
         </HeroHighlight>
         <p className="text-lg lg:text-xl z-10 w-11/12 lg:w-[650px] text-center dark:text-gray-light text-gray-dark">
-          Deviniter offers a collection of blazing fast starter templates to
+          DevIniter offers a collection of blazing fast starter templates to
           kickstart your development journey.
         </p>
         <div className="flex items-center gap-x-5">

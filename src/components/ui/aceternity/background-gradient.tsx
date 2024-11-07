@@ -7,11 +7,13 @@ export const BackgroundGradient = ({
   className,
   containerClassName,
   animate = true,
+  style,
 }: {
   children?: React.ReactNode;
   className?: string;
   containerClassName?: string;
   animate?: boolean;
+  style?: React.CSSProperties;
 }) => {
   const variants = {
     initial: {
@@ -22,7 +24,10 @@ export const BackgroundGradient = ({
     },
   };
   return (
-    <div className={cn("relative p-[4px] group", containerClassName)}>
+    <div
+      style={style}
+      className={cn("relative p-[4px] group", containerClassName)}
+    >
       <motion.div
         variants={animate ? variants : undefined}
         initial={animate ? "initial" : undefined}
@@ -40,7 +45,7 @@ export const BackgroundGradient = ({
           backgroundSize: animate ? "400% 400%" : undefined,
         }}
         className={cn(
-          "absolute inset-0 rounded-3xl z-[1] opacity-60 group-hover:opacity-100 blur-xl  transition duration-500 will-change-transform",
+          "absolute inset-0 rounded-3xl z-[1] opacity-60 group-hover:opacity-100 blur-md transition duration-500 will-change-transform",
           " bg-[radial-gradient(circle_farthest-side_at_0_100%,#11998E,transparent),radial-gradient(circle_farthest-side_at_100%_0,#02c39a,transparent),radial-gradient(circle_farthest-side_at_100%_100%,#247b7b,transparent),radial-gradient(circle_farthest-side_at_0_0,#38EF7D,#141316)]"
         )}
       />
