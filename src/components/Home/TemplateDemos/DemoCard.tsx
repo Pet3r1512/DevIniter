@@ -10,13 +10,24 @@ export type DemoCardProps = {
   techStacks: ReactNode; // with className="flex items-center gap-x-2.5 mt-5"
   liveDemoURL: string;
   className?: string;
+  style?: React.CSSProperties;
 };
 
 export default function DemoCard({ props }: { props: DemoCardProps }) {
-  const { image, logo, templateName, techStacks, liveDemoURL, className } =
-    props;
+  const {
+    image,
+    logo,
+    templateName,
+    techStacks,
+    liveDemoURL,
+    className,
+    style,
+  } = props;
   return (
-    <div className="group w-[20rem] h-auto md:w-[38rem] md:h-[22rem] relative shadow-2xl rounded-2xl">
+    <div
+      style={style}
+      className="group w-[20rem] h-auto md:w-[38rem] md:h-[22rem] relative shadow-2xl rounded-2xl"
+    >
       <div className="w-full h-full">
         <Image
           src={image[0]}
