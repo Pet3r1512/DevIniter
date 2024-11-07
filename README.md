@@ -1,23 +1,4 @@
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
-
 <a id="readme-top"></a>
-
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
 
 <!-- PROJECT LOGO -->
 <br />
@@ -26,12 +7,16 @@
     <img src="public/images/logos/FullLogo.png" alt="Logo" width="278.7" height="80">
   </a>
 
-<h3 align="center">DevIniter</h3>
+<div align="center"> <a href="https://github.com/Pet3r1512/DevIniter_CLI/releases">
+    <img src="https://img.shields.io/github/v/release/Pet3r1512/DevIniter_CLI?style=flat" alt="GitHub Release">
+  </a> </div>
+
+<h3 align="center"><strong>DevIniter</strong></h3>
 
   <p align="center">
     Initialize Developer's Projects with Pre-built Templates
     <br />
-    <a href="https://deviniter.vercel.app/docs/introduction"><strong>Explore the docs »</strong></a>
+    <a href="https://deviniter.site/docs/introduction"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/Pet3r1512/DevIniter/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
@@ -45,11 +30,12 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#about-the-project">About DevIniter</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
+    <li><a href="#templates">Templates</a></li>
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
@@ -58,17 +44,14 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
 
-<!-- ABOUT THE PROJECT -->
+## About DevIniter
 
-## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://deviniter.vercel.app/)
+[![Product Name Screen Shot][product-screenshot]](https://deviniter.site/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -82,11 +65,35 @@
 
 <!-- GETTING STARTED -->
 
+## Templates
+
+Until now, DevIniter provides 2 templates: Next.js - Page Router and Vite - React.js
+
+### <img src="public/images/templates/nextjs-deviniter.png" alt="ViteLogo" height="24" width="24" > Next.js - Page Router
+
+<a href="https://deviniter-nextjs-typescript-template.vercel.app/" target="_blank"><img src="public/images/templates/nextjs-dark.png" alt="Nextjs" ></a>
+
+### <img src="public/images/templates/vite-deviniter.png" alt="ViteLogo" height="24" width="24" > Vite - React.js
+
+<a href="https://deviniter-vite-react-typescript-template.vercel.app/" target="_blank"><img src="public/images/templates/vite-dark.png" alt="Vite" ></a>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Getting Started
 
-Deviniter provides a range of lightning-fast starter templates to help jumpstart your development journey.
+<strong>DevIniter</strong> provides a range of lightning-fast starter templates to help jumpstart your development journey.
 
-## Usage
+### Prerequisites
+
+Ensure you have the following tools installed on your system:
+
+- Nodejs (v20.0.0 or higher)
+- pnpm (v9.0.0 or higher)
+- npm (v10.0.0 or higher)
+
+<strong>Note</strong>: We are actively working to expand support for additional Node.js versions and package managers such as Yarn.
+
+### Installation
 
 Installing your favorite template by running:
 
@@ -95,6 +102,19 @@ Installing your favorite template by running:
 ```
 
 _For more examples, please refer to the [Documentation](https://www.deviniter.site/docs/introduction)_
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Usage
+
+<strong>DevIniter</strong>'s templates are designed to streamline your development workflow. Each template comes pre-configured with modern development tools and best practices, allowing you to focus on building your application rather than setting up boilerplate code.
+
+Our templates support various project types including:
+
+- Full-stack web applications
+- Static websites
+- API services
+- Personal Portfolios
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -115,17 +135,11 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ### Top contributors:
-
-<a href="https://github.com/Pet3r1512/DevIniter/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=github_username/repo_name" alt="contrib.rocks image" />
-</a> -->
-
 <!-- LICENSE -->
 
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See [LICENSE](https://github.com/Pet3r1512/DevIniter/blob/master/LICENSE) for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
