@@ -35,13 +35,16 @@ export default function DemoCard({ props }: { props: DemoCardProps }) {
           quality={75}
         />
       </div>
-      <div className="lg:hidden mt-5 md:mt-16 text-center lg:text-left">
+      <div className="lg:hidden mt-5 md:mt-16 text-center lg:text-left py-5">
         <p className="font-bold lg:text-xl">{templateName}</p>
         {techStacks}
         <Link
           href={liveDemoURL}
           target="_blank"
-          className="bg-gradient-to-br from-secondary via-primary dark:to-white to-secondary inline-block text-transparent bg-clip-text lg:text-xl mt-5"
+          className={cn(
+            "bg-gradient-to-br from-secondary via-primary dark:to-white to-secondary inline-block text-transparent bg-clip-text lg:text-xl mt-5",
+            className
+          )}
         >
           Live Demo
         </Link>
