@@ -67,11 +67,11 @@ Until now, DevIniter provides 2 templates: Next.js - Page Router and Vite - Reac
 
 ### Next.js - Page Router
 
-<img src="public/images/templates/nextjs-dark.png" alt="Logo" width="148.8" height="80">
+<img src="public/images/templates/nextjs-dark.png" alt="Nextjs" >
 
 ### Vite - React.js
 
-<img src="public/images/templates/vite-dark.png" alt="Logo" width="148.8" height="80">
+<img src="public/images/templates/vite-dark.png" alt="Vite" >
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
