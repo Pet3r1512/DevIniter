@@ -11,7 +11,7 @@
     <img src="https://img.shields.io/github/v/release/Pet3r1512/DevIniter_CLI?style=flat" alt="GitHub Release">
   </a> </div>
 
-<h3 align="center">DevIniter</h3>
+<h3 align="center"><strong>DevIniter</strong></h3>
 
   <p align="center">
     Initialize Developer's Projects with Pre-built Templates
@@ -81,7 +81,7 @@ Until now, DevIniter provides 2 templates: Next.js - Page Router and Vite - Reac
 
 ## Getting Started
 
-Deviniter provides a range of lightning-fast starter templates to help jumpstart your development journey.
+<strong>DevIniter</strong> provides a range of lightning-fast starter templates to help jumpstart your development journey.
 
 ### Prerequisites
 
@@ -107,7 +107,7 @@ _For more examples, please refer to the [Documentation](https://www.deviniter.si
 
 ## Usage
 
-DevIniter's templates are designed to streamline your development workflow. Each template comes pre-configured with modern development tools and best practices, allowing you to focus on building your application rather than setting up boilerplate code.
+<strong>DevIniter</strong>'s templates are designed to streamline your development workflow. Each template comes pre-configured with modern development tools and best practices, allowing you to focus on building your application rather than setting up boilerplate code.
 
 Our templates support various project types including:
 
