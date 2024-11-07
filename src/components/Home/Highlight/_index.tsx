@@ -1,10 +1,18 @@
+import SectionTitle from "../SectionTitle";
 import BentoGrid from "./BentoGrid";
-import Title from "./Title";
 
 export default function Highlight() {
   return (
     <section className="flex flex-col gap-y-24 lg:gap-y-56 justify-center min-h-screen">
-      <Title />
+      <SectionTitle
+        title={
+          <p>
+            Next.js reimagined
+            <br /> Powered by DevIniter
+          </p>
+        }
+        subtitle="Revolutionizing how fast and simple for kicking developers projects off."
+      />
       <BentoGrid />
     </section>
   );
