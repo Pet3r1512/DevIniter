@@ -1,4 +1,5 @@
-import { ReactNode } from "react";
+import { useInView } from "framer-motion";
+import { ReactNode, useRef } from "react";
 
 export default function SectionTitle({
   title,
@@ -7,8 +8,19 @@ export default function SectionTitle({
   title: string | ReactNode;
   subtitle: string;
 }) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
-    <div className="flex flex-col gap-y-5 items-center relative z-10">
+    <div
+      ref={ref}
+      style={{
+        transform: isInView ? "none" : "translateY(200px)",
+        opacity: isInView ? 1 : 0,
+        transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.25s",
+      }}
+      className="flex flex-col gap-y-5 items-center relative z-10"
+    >
       <p className="bg-gradient-to-br from-secondary via-primary dark:to-white to-secondary inline-block text-transparent bg-clip-text text-3xl md:text-4xl lg:text-5xl font-bold text-center">
         {title}
       </p>
