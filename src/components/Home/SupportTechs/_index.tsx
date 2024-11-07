@@ -1,5 +1,7 @@
 import { AnimatedTooltip } from "@/components/ui/aceternity/animated-tooltips";
 import SectionTitle from "../SectionTitle";
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 
 export type TechProps = {
   name: string;
@@ -10,6 +12,8 @@ export type TechProps = {
 };
 
 export default function SupportedTechs() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   const techStacks: TechProps[] = [
     {
       name: "Typescript",
@@ -97,10 +101,18 @@ export default function SupportedTechs() {
   ];
 
   return (
-    <section className="flex flex-col gap-y-24 lg:gap-y-56 justify-center min-h-screen max-w-7xl mx-auto">
+    <section
+      ref={ref}
+      style={{
+        transform: isInView ? "none" : "translateY(-200px)",
+        opacity: isInView ? 1 : 0,
+        transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+      }}
+      className="flex flex-col gap-y-24 lg:gap-y-56 justify-center min-h-screen max-w-7xl mx-auto"
+    >
       <SectionTitle
         title="Wonderfull Supported Technologies and Tools"
-        subtitle=""
+        subtitle="We always try to maintain stability and make sure these tools work well together."
       />
       <div className="w-9/12 lg:w-2/3 mx-auto">
         <AnimatedTooltip items={techStacks}></AnimatedTooltip>
