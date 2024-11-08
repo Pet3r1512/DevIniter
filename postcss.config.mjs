@@ -1,5 +1,4 @@
-// eslint-disable-next-line @typescript-eslint/no-require-imports
-const purgecss = require("@fullhuman/postcss-purgecss");
+import purgecss from "@fullhuman/postcss-purgecss";
 
 module.exports = {
   plugins: [
