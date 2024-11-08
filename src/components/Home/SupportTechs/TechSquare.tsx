@@ -21,7 +21,8 @@ export default function TechSquare({
           alt={name}
           width={0}
           height={0}
-          sizes="100vw"
+          quality={10}
+          sizes="(min-width: 1024px) 56px, 32px"
           className="size-8 lg:size-14"
         />
       </button>
