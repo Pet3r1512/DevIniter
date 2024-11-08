@@ -1,7 +1,7 @@
-import { AnimatedTooltip } from "@/components/ui/aceternity/animated-tooltips";
 import SectionTitle from "../SectionTitle";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
+import dynamic from "next/dynamic";
 
 export type TechProps = {
   name: string;
@@ -10,6 +10,19 @@ export type TechProps = {
   shadowColor: string;
   isBuilt?: boolean | true;
 };
+
+const DynamicAnimatedTooltips = dynamic(
+  () =>
+    import("@/components/ui/aceternity/animated-tooltips").then(
+      (mod) => mod.AnimatedTooltip
+    ),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="w-full h-32 animate-pulse bg-gray-200 dark:bg-gray-800 rounded-lg" />
+    ),
+  }
+);
 
 export default function SupportedTechs() {
   const ref = useRef(null);
@@ -117,7 +130,7 @@ export default function SupportedTechs() {
         }}
         className="w-9/12 lg:w-2/3 mx-auto"
       >
-        <AnimatedTooltip items={techStacks}></AnimatedTooltip>
+        <DynamicAnimatedTooltips items={techStacks}></DynamicAnimatedTooltips>
       </div>
     </section>
   );
