@@ -32,18 +32,16 @@ export default function DemoCard({ props }: { props: DemoCardProps }) {
         <Image
           src={image[0]}
           alt="nextjs template"
-          width={0}
-          height={0}
-          sizes="100vw"
+          width={680}
+          height={352}
           className="w-full h-auto lg:group-hover:opacity-50 rounded-t-2xl hidden dark:block"
           quality={75}
         />
         <Image
           src={image[1]}
           alt="nextjs template"
-          width={0}
-          height={0}
-          sizes="100vw"
+          width={680}
+          height={352}
           className="w-full h-auto lg:group-hover:opacity-50 rounded-t-2xl dark:hidden"
           quality={75}
         />
