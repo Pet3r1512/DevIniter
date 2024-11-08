@@ -1,34 +1,22 @@
-/** @type {import('postcss-load-config').Config} */
-const config = {
-  plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const purgecss = require("@fullhuman/postcss-purgecss");
+
+module.exports = {
+  plugins: [
+    "tailwindcss",
+    "autoprefixer",
     ...(process.env.NODE_ENV === "production"
-      ? {
-          "@fullhuman/postcss-purgecss": {
+      ? [
+          purgecss({
             content: [
-              "./pages/**/*.{js,jsx,ts,tsx, mdx}",
-              "./components/**/*.{js,jsx,ts,tsx, mdx}",
+              "./pages/**/*.{js,ts,jsx,tsx}",
+              "./components/**/*.{js,ts,jsx,tsx}",
+              "./src/**/*.{js,ts,jsx,tsx}",
             ],
-            safelist: [/^[a-z]*$/, /^[A-Z]*$/, /^[0-9]*$/],
             defaultExtractor: (content) =>
               content.match(/[\w-/:]+(?<!:)/g) || [],
-          },
-          cssnano: {
-            preset: [
-              "default",
-              {
-                discardComments: {
-                  removeAll: true,
-                },
-                cssDeclarationSorter: true,
-                reduceIdents: false,
-              },
-            ],
-          },
-        }
-      : {}),
-  },
+          }),
+        ]
+      : []),
+  ],
 };
-
-export default config;
