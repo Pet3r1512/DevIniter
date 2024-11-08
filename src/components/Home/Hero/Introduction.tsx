@@ -3,11 +3,24 @@ import {
   HeroHighlight,
   Highlight,
 } from "@/components/ui/aceternity/hero-highlight";
-import { motion } from "framer-motion";
+import { useInViewStore } from "@/stores/useInViewStore";
+import { motion, useInView } from "framer-motion";
+import { useEffect, useRef } from "react";
 
 export default function Introduction() {
+  const { setHeroInView } = useInViewStore();
+  const ref = useRef(null);
+  const isHeroInView = useInView(ref, { once: true });
+
+  useEffect(() => {
+    setHeroInView(isHeroInView);
+  }, [isHeroInView, setHeroInView]);
+
   return (
-    <section className="w-screen flex justify-center items-center min-h-[80dvh] lg:min-h-[85dvh]">
+    <section
+      ref={ref}
+      className="w-screen flex justify-center items-center min-h-[80dvh] lg:min-h-[85dvh]"
+    >
       <div className="lg:pb-24 flex flex-col items-center gap-y-8">
         <p className=""></p>
         <HeroHighlight>

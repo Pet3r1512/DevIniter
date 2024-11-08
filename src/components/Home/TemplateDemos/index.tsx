@@ -44,11 +44,11 @@ export default function TemplateDemos() {
             fill="#000000"
             className="size-5 lg:size-8 inline"
           >
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
             <g
               id="SVGRepo_tracerCarrier"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             ></g>
             <g id="SVGRepo_iconCarrier">
               <title>file_type_typescript_official</title>
@@ -93,7 +93,7 @@ export default function TemplateDemos() {
             />
             <path
               fill="#729b1b"
-              fill-opacity="0.5"
+              fillOpacity="0.5"
               d="M127.975 233.537a12.36 12.36 0 0 0 8.763-3.63l57.828-57.823a12.4 12.4 0 0 0 3.605-8.754a12.395 12.395 0 0 0-12.375-12.376a12.4 12.4 0 0 0-8.755 3.606l-49.066 49.061L21.082 96.733a12.392 12.392 0 0 0-17.524 17.524l115.656 115.65a12.35 12.35 0 0 0 8.76 3.63"
             />
           </svg>
@@ -140,11 +140,11 @@ export default function TemplateDemos() {
             fill="#000000"
             className="size-5 lg:size-8 inline"
           >
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
             <g
               id="SVGRepo_tracerCarrier"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             ></g>
             <g id="SVGRepo_iconCarrier">
               <title>file_type_typescript_official</title>
@@ -189,7 +189,7 @@ export default function TemplateDemos() {
             />
             <path
               fill="#729b1b"
-              fill-opacity="0.5"
+              fillOpacity="0.5"
               d="M127.975 233.537a12.36 12.36 0 0 0 8.763-3.63l57.828-57.823a12.4 12.4 0 0 0 3.605-8.754a12.395 12.395 0 0 0-12.375-12.376a12.4 12.4 0 0 0-8.755 3.606l-49.066 49.061L21.082 96.733a12.392 12.392 0 0 0-17.524 17.524l115.656 115.65a12.35 12.35 0 0 0 8.76 3.63"
             />
           </svg>
