@@ -2,7 +2,7 @@ import { useSmoothScroll } from "@/hooks/useSmoothScroll";
 import Link from "next/link";
 import NewBadge from "../Badges/NewBadge";
 import ComingSoon from "../Badges/ComingSoon";
-import { ReactNode, useEffect } from "react";
+import { ReactNode } from "react";
 import { useInViewStore } from "@/stores/useInViewStore";
 import { cn } from "@/utils/utils";
 
