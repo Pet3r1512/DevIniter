@@ -2,7 +2,9 @@ import { useSmoothScroll } from "@/hooks/useSmoothScroll";
 import Link from "next/link";
 import NewBadge from "../Badges/NewBadge";
 import ComingSoon from "../Badges/ComingSoon";
-import { ReactNode } from "react";
+import { ReactNode, useEffect } from "react";
+import { useInViewStore } from "@/stores/useInViewStore";
+import { cn } from "@/utils/utils";
 
 export const navs = [
   {
@@ -36,6 +38,7 @@ export const BadgePattern: Record<string, ReactNode> = {
 
 export default function Navigation() {
   const { handleHashScroll } = useSmoothScroll();
+  const { isAnimationInView } = useInViewStore();
 
   return (
     <nav
@@ -48,7 +51,10 @@ export default function Navigation() {
             onClick={(e) => handleHashScroll(e, nav.isHash ?? false)}
             key={index}
             href={nav.href}
-            className="lg:hover:text-primary text-gray dark:text-white transition-all duration-150 ease-linear lg:text-lg relative"
+            className={cn(
+              "lg:hover:text-primary dark:text-white transition-all duration-150 ease-linear lg:text-lg relative",
+              isAnimationInView ? "text-white" : "text-gray"
+            )}
           >
             {nav.name}
             {nav.status && BadgePattern[nav.status]}
