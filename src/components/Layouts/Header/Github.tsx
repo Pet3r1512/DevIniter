@@ -10,6 +10,7 @@ export default function Github({
 }) {
   return (
     <Link
+      aria-label="Repo Github"
       href={"https://github.com/Pet3r1512/DevIniter"}
       target="_blank"
       data-testid="github-logo"
