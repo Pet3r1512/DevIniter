@@ -10,7 +10,6 @@ export default function Logo({ className }: { className?: string }) {
       height={0}
       sizes="100vw"
       quality={85}
-      priority
       data-testid="Logo"
       className={cn("lg:h-12 w-auto h-10 max-w-1/3 lg:max-w-none", className)}
     />
