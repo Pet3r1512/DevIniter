@@ -61,8 +61,8 @@ exports[`Render Header > Should match snapshot 1`] = `
               data-nimg="1"
               data-testid="Logo"
               decoding="async"
-              fetchpriority="high"
               height="0"
+              loading="lazy"
               sizes="100vw"
               src="/_next/image?url=%2Fimages%2Flogos%2FFullLogo.png&w=3840&q=85"
               srcset="/_next/image?url=%2Fimages%2Flogos%2FFullLogo.png&w=640&q=85 640w, /_next/image?url=%2Fimages%2Flogos%2FFullLogo.png&w=750&q=85 750w, /_next/image?url=%2Fimages%2Flogos%2FFullLogo.png&w=828&q=85 828w, /_next/image?url=%2Fimages%2Flogos%2FFullLogo.png&w=1080&q=85 1080w, /_next/image?url=%2Fimages%2Flogos%2FFullLogo.png&w=1200&q=85 1200w, /_next/image?url=%2Fimages%2Flogos%2FFullLogo.png&w=1920&q=85 1920w, /_next/image?url=%2Fimages%2Flogos%2FFullLogo.png&w=2048&q=85 2048w, /_next/image?url=%2Fimages%2Flogos%2FFullLogo.png&w=3840&q=85 3840w"
@@ -74,19 +74,19 @@ exports[`Render Header > Should match snapshot 1`] = `
               data-testid="navbar"
             >
               <a
-                class="lg:hover:text-primary text-gray dark:text-white transition-all duration-150 ease-linear lg:text-lg relative"
+                class="lg:hover:text-primary dark:text-white transition-all duration-150 ease-linear lg:text-lg relative text-gray"
                 href="/docs/introduction"
               >
                 Documents
               </a>
               <a
-                class="lg:hover:text-primary text-gray dark:text-white transition-all duration-150 ease-linear lg:text-lg relative"
+                class="lg:hover:text-primary dark:text-white transition-all duration-150 ease-linear lg:text-lg relative text-gray"
                 href="https://github.com/Pet3r1512/DevIniter/issues/new?labels=enhancement&template=feature-request---.md"
               >
                 Contribution
               </a>
               <a
-                class="lg:hover:text-primary text-gray dark:text-white transition-all duration-150 ease-linear lg:text-lg relative"
+                class="lg:hover:text-primary dark:text-white transition-all duration-150 ease-linear lg:text-lg relative text-gray"
                 href="#demo"
               >
                 Live Demo
@@ -97,7 +97,7 @@ exports[`Render Header > Should match snapshot 1`] = `
                 </span>
               </a>
               <a
-                class="lg:hover:text-primary text-gray dark:text-white transition-all duration-150 ease-linear lg:text-lg relative"
+                class="lg:hover:text-primary dark:text-white transition-all duration-150 ease-linear lg:text-lg relative text-gray"
                 href="#"
               >
                 Release Notes
@@ -263,8 +263,8 @@ exports[`Render Header > Should match snapshot 1`] = `
             data-nimg="1"
             data-testid="Logo"
             decoding="async"
-            fetchpriority="high"
             height="0"
+            loading="lazy"
             sizes="100vw"
             src="/_next/image?url=%2Fimages%2Flogos%2FFullLogo.png&w=3840&q=85"
             srcset="/_next/image?url=%2Fimages%2Flogos%2FFullLogo.png&w=640&q=85 640w, /_next/image?url=%2Fimages%2Flogos%2FFullLogo.png&w=750&q=85 750w, /_next/image?url=%2Fimages%2Flogos%2FFullLogo.png&w=828&q=85 828w, /_next/image?url=%2Fimages%2Flogos%2FFullLogo.png&w=1080&q=85 1080w, /_next/image?url=%2Fimages%2Flogos%2FFullLogo.png&w=1200&q=85 1200w, /_next/image?url=%2Fimages%2Flogos%2FFullLogo.png&w=1920&q=85 1920w, /_next/image?url=%2Fimages%2Flogos%2FFullLogo.png&w=2048&q=85 2048w, /_next/image?url=%2Fimages%2Flogos%2FFullLogo.png&w=3840&q=85 3840w"
@@ -276,19 +276,19 @@ exports[`Render Header > Should match snapshot 1`] = `
             data-testid="navbar"
           >
             <a
-              class="lg:hover:text-primary text-gray dark:text-white transition-all duration-150 ease-linear lg:text-lg relative"
+              class="lg:hover:text-primary dark:text-white transition-all duration-150 ease-linear lg:text-lg relative text-gray"
               href="/docs/introduction"
             >
               Documents
             </a>
             <a
-              class="lg:hover:text-primary text-gray dark:text-white transition-all duration-150 ease-linear lg:text-lg relative"
+              class="lg:hover:text-primary dark:text-white transition-all duration-150 ease-linear lg:text-lg relative text-gray"
               href="https://github.com/Pet3r1512/DevIniter/issues/new?labels=enhancement&template=feature-request---.md"
             >
               Contribution
             </a>
             <a
-              class="lg:hover:text-primary text-gray dark:text-white transition-all duration-150 ease-linear lg:text-lg relative"
+              class="lg:hover:text-primary dark:text-white transition-all duration-150 ease-linear lg:text-lg relative text-gray"
               href="#demo"
             >
               Live Demo
@@ -299,7 +299,7 @@ exports[`Render Header > Should match snapshot 1`] = `
               </span>
             </a>
             <a
-              class="lg:hover:text-primary text-gray dark:text-white transition-all duration-150 ease-linear lg:text-lg relative"
+              class="lg:hover:text-primary dark:text-white transition-all duration-150 ease-linear lg:text-lg relative text-gray"
               href="#"
             >
               Release Notes
