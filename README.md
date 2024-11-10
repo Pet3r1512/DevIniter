@@ -138,10 +138,12 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-# Top Contributors
+#@ Top Contributors
 
 This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)].
-<a href="https://github.com/Pet3r1512/DevIniter/graphs/contributors"><img src="https://opencollective.com/readme-md-generator/contributors.svg?width=890&button=false" /></a>
+<a href="https://github.com/Pet3r1512/DevIniter/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=Pet3r1512/DevIniter" />
+</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
