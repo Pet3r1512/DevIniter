@@ -16,24 +16,30 @@ Let me know if you'd like any adjustments to this documentation!
 
 ## Directory Structure
 
-├── src/ # Source code files
-│ ├── components/ # React components
-│ │ ├── Documents/ # Components for Nextra documents
-│ │ ├── Home/ # Components for Homepage (pages/index.tsx)
-│ │ ├── Layouts/ # Components can be used everywhere
-│ │ └── ui/ # Third-party components
-│ │ ├── aceternity/ # Components from Aceternity
-│ │ └── .tsx # Components from Shadcn
-│ ├── hooks/ # Custom hooks
-│ ├── stores/ # Zustand stores
-│ ├── pages/ # Page components
-│ ├── utils/ # Utility functions
-│ └── styles/ # CSS files
-│
-└── public/ # Static files
-├── animations/ # Lotties components
-├── favicon/ # Favicons
-└── images/ # Image assets
+    .
+    ├── build/                  # Compiled files
+    ├── docs/                   # Documentation files
+    ├── src/                    # Source files
+    │   ├── components/         # React components
+    │   │   ├── Documents/      # Components for Nextra documents
+    │   │   ├── Home/          # Components for Homepage
+    │   │   ├── Layouts/       # Reusable layout components
+    │   │   └── ui/            # Third-party components
+    │   │       ├── aceternity/ # Components from Aceternity
+    │   │       └── *.tsx      # Components from Shadcn
+    │   ├── hooks/             # Custom hooks
+    │   ├── stores/            # Zustand stores
+    │   ├── pages/             # Page components
+    │   ├── utils/             # Utility functions
+    │   └── styles/            # CSS files
+    ├── public/                 # Static files
+    │   ├── animations/        # Lotties components
+    │   ├── favicon/          # Favicons
+    │   └── images/           # Image assets
+    ├── test/                  # Automated tests
+    ├── tools/                 # Tools and utilities
+    ├── LICENSE
+    └── README.md
 
 ## Key Directories
 
