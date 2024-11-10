@@ -4,6 +4,7 @@ import TipsBlock from "../../components/Documents/TipsBlock.tsx"
 import ScriptBlock from "../../components/Documents/ScriptBlock.tsx"
 import HighlightedText from "../../components/Documents/HighlightedText.tsx"
 import ComingSoon from "../../components/Layouts/Badges/ComingSoon.tsx"
+import FrameworkGuide from "../../components/Documents/FrameworkGuide.tsx"
 
 # Installation
 
@@ -151,3 +152,10 @@ After successful installation:
 1. Review our <HighlightedText content={{href: "/docs/getting-started", text: "Getting Started"}} /> guide
 2. Explore the <HighlightedText content={{href: "/docs/template_structure", text: "Template Structure"}} />
 3. Check out our <HighlightedText content={{href: "", text: "Features Overview"}} /> <ComingSoon />
+
+### Templates Structure
+
+<div className="flex flex-col lg:flex-row items-center !gap-4 mt-[21px]">
+    <FrameworkGuide props={{logo: "/images/techstacks/nextjs.png", framework: "Next.js", url: "nextjs", desc:"Full-stack React.js framework"}} />
+    <FrameworkGuide props={{logo: "/images/techstacks/vite.png", framework: "Vite", url: "vite", desc:"Fast and Modern React.js Build Tool"}} />
+</div>
