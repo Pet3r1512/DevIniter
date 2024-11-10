@@ -3,6 +3,11 @@ import Logo from "@/components/Layouts/Header/Logo";
 import { DocsThemeConfig } from "nextra-theme-docs";
 
 const themeConfig: DocsThemeConfig = {
+  head: (
+    <>
+      <title>DevIniter | Docs</title>
+    </>
+  ),
   logo: <Logo />,
   project: {
     link: "https://github.com/Pet3r1512/DevIniter",
