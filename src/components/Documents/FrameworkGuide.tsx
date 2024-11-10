@@ -19,7 +19,7 @@ export default function FrameworkGuide({
   return (
     <Link
       href={`/docs/template_structure/${url}`}
-      className="group flex w-full gap-x-2.5 p-5 rounded-xl dark:bg-black bg-white lg:hover:scale-105 transition-all duration-200 ease-linear"
+      className="group flex w-full gap-x-2.5 p-5 rounded-xl dark:bg-black bg-white lg:hover:scale-105 transition-all duration-200 ease-linear shadow-2xl"
     >
       <Image
         src={logo}
