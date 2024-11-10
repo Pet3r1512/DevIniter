@@ -19,7 +19,7 @@ export default function FrameworkGuide({
   return (
     <Link
       href={`/docs/template_structure/${url}`}
-      className="group flex w-full gap-x-2.5 lg:p-5 rounded-xl dark:bg-black bg-white lg:hover:scale-105 transition-all duration-200 ease-linear"
+      className="group flex w-full gap-x-2.5 p-5 rounded-xl dark:bg-black bg-white lg:hover:scale-105 transition-all duration-200 ease-linear"
     >
       <Image
         src={logo}
@@ -29,9 +29,9 @@ export default function FrameworkGuide({
         className="size-8"
       />
       <div className="flex flex-col gap-y-2.5 flex-1">
-        <p className="text-lg font-bold flex item-center gap-x-1">
+        <p className="text-lg font-bold flex items-center gap-x-1">
           {framework}
-          <ChevronRight className="lg:group-hover:block hidden transition-all duration-200 ease-linear" />
+          <ChevronRight className="lg:group-hover:block size-6 lg:size-8 lg:hidden transition-all duration-200 ease-linear" />
         </p>
         <p>{desc}</p>
       </div>

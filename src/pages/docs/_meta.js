@@ -9,7 +9,7 @@ export default {
     title: (
       <div className="flex items-center w-full justify-between relative">
         <p>Template Structure</p>
-        <NewBadge className="absolute -top-4 -right-14" />
+        <NewBadge className="md:absolute md:-top-4 md:-right-14" />
       </div>
     ),
   },
