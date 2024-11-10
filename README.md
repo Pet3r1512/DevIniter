@@ -162,7 +162,7 @@ Distributed under the MIT License. See [LICENSE](https://github.com/Pet3r1512/De
 
 Peter Pham - peter1512.dev@gmail.com - [X Profile](https://x.com/Thnh_Phng_) - [LinkedIn](https://www.linkedin.com/in/peter-pham-6b02a2229)
 
-Project Link: [https://github.com/Pet3r1512/DevIniter](https://github.com/Pet3r1512/DevIniter)
+Project Link: [https://github.com/Pet3r1512/DevIniter_CLI](https://github.com/Pet3r1512/DevIniter_CLI)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
