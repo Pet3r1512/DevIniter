@@ -141,8 +141,9 @@ Don't forget to give the project a star! Thanks again!
 #@ Top Contributors
 
 This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)].
+
 <a href="https://github.com/Pet3r1512/DevIniter/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=Pet3r1512/DevIniter" />
+  <img src="https://contrib.rocks/image?repo=Pet3r1512/DevIniter" />
 </a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
