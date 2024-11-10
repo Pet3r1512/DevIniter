@@ -112,7 +112,7 @@ export default function Introduction() {
                 Github
               </div>
             }
-            className="w-max relative z-10 dark:bg-black-main bg-white border-white-light shadow-2xl border-2 dark:border-white"
+            className="w-max relative z-10 shadow-2xl border-2 dark:border-white isolate ring-1 dark:bg-black/50 bg-white/75 ring-black/5"
           />
         </div>
       </div>
