@@ -1,6 +1,7 @@
 import { Hero } from "@/components/Home/_index";
 import Template from "@/components/Layouts/Template";
 import dynamic from "next/dynamic";
+import { useInViewStore } from "@/stores/useInViewStore";
 
 const DynamicSupportedTechs = dynamic(
   () => import("../components/Home/SupportTechs/_index"),
@@ -26,7 +27,21 @@ const DynamicHighlightSection = dynamic(
   }
 );
 
+const DynamicAnimation = dynamic(
+  () => import("../components/Home/Hero/Process"),
+  {
+    loading: () => <></>,
+    ssr: false,
+  }
+);
+
+const DyanmicFeatures = dynamic(() => import("../components/Home/Features/"), {
+  loading: () => <></>,
+  ssr: false,
+});
+
 export default function Home() {
+  const { isHeroInView } = useInViewStore();
   return (
     <Template
       pageName="Developer Initializer"
@@ -34,7 +49,9 @@ export default function Home() {
       sectionClassName="max-w-0"
     >
       <Hero />
-      <section className="w-screen lg:max-w-7xl min-h-screen mx-auto flex flex-col items-center mt-24 lg:mt-48 lg:mb-24 mb-16">
+      <DyanmicFeatures />
+      <section className="relative w-screen lg:max-w-7xl min-h-screen mx-auto flex flex-col items-center mt-24 lg:mt-48 lg:mb-24 mb-16 md:mb-48">
+        {isHeroInView && <DynamicAnimation />}
         <DynamicHighlightSection />
         <DynamicSupportedTechs />
         <DynamicTemplateDemos />
