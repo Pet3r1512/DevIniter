@@ -21,7 +21,7 @@ export default function SectionTitle({
       }}
       className="flex flex-col gap-y-5 items-center relative z-10"
     >
-      <div className="bg-gradient-to-br from-secondary via-primary dark:to-white to-secondary inline-block text-transparent bg-clip-text text-3xl md:text-4xl lg:text-5xl font-bold text-center w-full md:max-w-[50vw] lg:max-w-[30vw]">
+      <div className="bg-gradient-to-br from-secondary via-primary dark:to-white to-secondary inline-block text-transparent bg-clip-text text-3xl md:text-4xl lg:text-5xl font-bold text-center w-full md:max-w-[50vw] lg:max-w-[35vw]">
         {title}
       </div>
       <p className="dark:text-gray-light md:text-lg w-[85vw] text-center lg:text-xl">
