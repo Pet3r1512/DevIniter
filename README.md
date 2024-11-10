@@ -138,6 +138,10 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+## Project structure
+
+You can check our [project structure](PROJECT_STRUCTURE.md) whenever you want to add new features, improvements or fix bugs.
+
 ## Top Contributors
 
 This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)].
