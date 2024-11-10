@@ -2,9 +2,7 @@
 
 ## Overview
 
-This document provides an overview of the project's directory structure and organization.
-
-### This structure reflects your current project organization with:
+This structure reflects our current project organization with:
 
 - Clear separation of components by function
 - Third-party UI components segregation
