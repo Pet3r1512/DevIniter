@@ -18,7 +18,7 @@ export default function Sidebar() {
       </DrawerTrigger>
       <DrawerContent className="lg:hidden h-[100dvh] w-2/3 flex flex-col p-5 gap-y-10">
         <Logo className="h-auto w-2/3" />
-        <aside className="flex flex-col gap-y-2.5 px-5">
+        <aside className="flex flex-col gap-y-2.5 px-5 flex-1">
           {navs.map((nav, index) => {
             return (
               <Link
@@ -33,8 +33,10 @@ export default function Sidebar() {
             );
           })}
         </aside>
-        <ThemeToggle className="w-fit h-auto mt-24" />
-        <Github size={24} className="w-fit" />
+        <div className="flex items-center gap-x-5">
+          <ThemeToggle />
+          <Github size={24} />
+        </div>
       </DrawerContent>
     </Drawer>
   );
