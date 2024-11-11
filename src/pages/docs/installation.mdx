@@ -110,35 +110,37 @@ If there is no other application running on port 3000, your project will start a
 ### Common Issues
 
 1. **Port Already in Use**
-   ```bash
-   Error: Something is already running on port 3000
-   ```
-   **Solution**: Either close the application using port 3000 or modify the port in your configuration file.
+```bash
+Error: Something is already running on port 3000
+```
+**Solution**: Either close the application using port 3000 or modify the port in your configuration file.
 
 2. **Node Version Mismatch**
-   ```bash
-   Error: The engine "node" is incompatible with this module
-   ```
-   **Solution**: Use nvm (Node Version Manager) to install and switch to the required Node.js version:
-   <ScriptBlock script={
-       {command: "nvm",
-       content: "use 20"}
-   }/>
+```bash
+Error: The engine "node" is incompatible with this module
+```
+**Solution**: Use nvm (Node Version Manager) to install and switch to the required Node.js version:
+<ScriptBlock script={
+    {command: "nvm",
+    content: "use 20"}
+}/>
 
 3. **Package Installation Fails**
-   - Clear your package manager cache:
-     <InstallBlock command={[
-         {
-           value: "pnpm",
-           script: "pnpm store prune",
-         },
-         {
-           value: "npm",
-           script: "npm cache clean --force",
-         },
-     ]} />
-   - Ensure you have the necessary permissions
-   - Check your network connection
+- Clear your package manager cache:
+
+<InstallBlock command={[
+    {
+      value: "pnpm",
+      script: "pnpm store prune",
+    },
+    {
+      value: "npm",
+      script: "npm cache clean --force",
+    },
+]} />
+
+- Ensure you have the necessary permissions
+- Check your network connection
 
 ### Still Having Issues?
 
@@ -155,7 +157,7 @@ After successful installation:
 
 ### Templates Structure
 
-<div className="flex flex-col lg:flex-row items-center !gap-4 mt-[21px]">
+<div className="flex flex-col lg:flex-row items-center !gap-4 mt-[21px] lg:h-28">
     <FrameworkGuide props={{logo: "/images/techstacks/nextjs.png", framework: "Next.js", url: "nextjs", desc:"Full-stack React.js framework"}} />
     <FrameworkGuide props={{logo: "/images/techstacks/vite.png", framework: "Vite", url: "vite", desc:"Fast and Modern React.js Build Tool"}} />
 </div>
