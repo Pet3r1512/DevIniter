@@ -34,14 +34,14 @@ describe("ThemeToggle", () => {
     );
 
     const button = screen.getByTestId("theme-togger");
-    expect(button).toHaveTextContent("🌙 Dark");
+    expect(button).toHaveTextContent("🌙");
 
     fireEvent.click(button);
-    expect(button).toHaveTextContent("Light ☀️");
-    expect(button).not.toHaveTextContent("🌙 Dark");
+    expect(button).toHaveTextContent("☀️");
+    expect(button).not.toHaveTextContent("🌙");
 
     fireEvent.click(button);
-    expect(button).toHaveTextContent("🌙 Dark");
-    expect(button).not.toHaveTextContent("Light ☀️");
+    expect(button).toHaveTextContent("🌙");
+    expect(button).not.toHaveTextContent("☀️");
   });
 });
