@@ -20,7 +20,7 @@ export default function InstallBlock({ command }: { command: Props[] }) {
   ];
 
   return (
-    <div className="mt-6">
+    <div className="mt-6 w-full">
       <MacOSNavBar />
       <Tabs
         defaultValue="npm"
