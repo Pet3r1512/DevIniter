@@ -60,6 +60,17 @@ React components organized by function:
   - `aceternity/`: Components from Aceternity UI library
   - `*.tsx`: Components from Shadcn UI library
 
+### pages/
+
+Next.js pages directory for routing:
+
+- `docs/`: Documentation pages using Nextra
+- `free-for-devs/`: Free tools page using Nextra
+- `_app.tsx`: Custom App component for global configurations
+- `_document.tsx`: Custom Document component for HTML structure
+- `index.tsx`: Homepage of the application
+- `_meta.js`: Routing definition for Nextra pages
+
 ## File Naming Conventions
 
 - Component files: PascalCase (e.g., `Button.tsx`, `Header.tsx`)
