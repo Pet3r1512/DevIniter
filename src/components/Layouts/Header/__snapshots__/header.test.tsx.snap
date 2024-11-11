@@ -157,10 +157,10 @@ exports[`Render Header > Should match snapshot 1`] = `
             class="lg:flex items-center gap-x-5 hidden"
           >
             <button
-              class="h-8 lg:h-10 px-5 py-2 w-auto rounded-full lg:text-lg bg-gray-500 dark:bg-gray-200 transition-all dark:text-black text-white duration-150 ease-linear flex items-center justify-center"
+              class="!size-8 rounded-full flex items-center justify-center bg-gray-500 dark:bg-gray-200 transition-all duration-150 ease-linear"
               data-testid="theme-togger"
             >
-              🌙 Dark
+              🌙
             </button>
             <div
               class="border-l-2 border-black-main dark:border-white h-[25px]"
@@ -359,10 +359,10 @@ exports[`Render Header > Should match snapshot 1`] = `
           class="lg:flex items-center gap-x-5 hidden"
         >
           <button
-            class="h-8 lg:h-10 px-5 py-2 w-auto rounded-full lg:text-lg bg-gray-500 dark:bg-gray-200 transition-all dark:text-black text-white duration-150 ease-linear flex items-center justify-center"
+            class="!size-8 rounded-full flex items-center justify-center bg-gray-500 dark:bg-gray-200 transition-all duration-150 ease-linear"
             data-testid="theme-togger"
           >
-            🌙 Dark
+            🌙
           </button>
           <div
             class="border-l-2 border-black-main dark:border-white h-[25px]"
