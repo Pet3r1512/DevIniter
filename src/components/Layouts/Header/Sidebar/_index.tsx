@@ -67,6 +67,16 @@ const navlinks = [
       },
     ],
   },
+  {
+    name: "Explore More",
+    index: "item-3",
+    sublinks: [
+      {
+        name: "Templates Features",
+        href: "/features",
+      },
+    ],
+  },
 ];
 
 export default function Sidebar() {
@@ -82,10 +92,10 @@ export default function Sidebar() {
       <DrawerContent className="lg:hidden h-[100dvh] w-2/3 flex flex-col p-5 gap-y-10">
         <Logo className="h-auto w-2/3 md:w-1/2" />
         <aside className="flex flex-col gap-y-2.5 px-2 md:px-5 flex-1">
-          {navlinks.map((nav, index) => {
-            return (
-              <Accordion key={index} type="single" collapsible>
-                <AccordionItem value={nav.index}>
+          <Accordion type="single" collapsible className="w-full">
+            {navlinks.map((nav, index) => {
+              return (
+                <AccordionItem key={index} value={nav.index}>
                   <AccordionTrigger className="font-bold text-lg">
                     {nav.name}
                   </AccordionTrigger>
@@ -99,9 +109,9 @@ export default function Sidebar() {
                     );
                   })}
                 </AccordionItem>
-              </Accordion>
-            );
-          })}
+              );
+            })}
+          </Accordion>
           <Link
             className="py-4"
             onClick={() => handleNavClick()}
