@@ -1,10 +1,73 @@
 import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer";
 import { Menu } from "lucide-react";
-import { BadgePattern, navs } from "../Navigations";
 import Link from "next/link";
 import Logo from "../Logo";
 import ThemeToggle from "../../ThemeToggle";
 import Github from "../Github";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import Image from "next/image";
+
+const navlinks = [
+  {
+    name: "Getting Started",
+    index: "item-1",
+    sublinks: [
+      {
+        name: "Introduction",
+        href: "/docs/introduction",
+      },
+      {
+        name: "Overview",
+        href: "/docs/get_started",
+      },
+      {
+        name: "Installation",
+        href: "/docs/installation",
+      },
+    ],
+  },
+  {
+    name: "Template Structure",
+    index: "item-2",
+    sublinks: [
+      {
+        name: (
+          <div className="flex items-center gap-x-2.5">
+            <Image
+              src="/images/templates/nextjs-deviniter.png"
+              width={32}
+              height={32}
+              alt="nextjs-deviniter"
+              className="size-5"
+            />
+            <p>Next.js</p>
+          </div>
+        ),
+        href: "/docs/template_structure/nextjs",
+      },
+      {
+        name: (
+          <div className="flex items-center gap-x-2.5">
+            <Image
+              src="/images/templates/vite-deviniter.png"
+              width={32}
+              height={32}
+              alt="vite-deviniter"
+              className="size-5"
+            />
+            <p>Vite</p>
+          </div>
+        ),
+        href: "/docs/template_structure/vite",
+      },
+    ],
+  },
+];
 
 export default function Sidebar() {
   const handleNavClick = () => {
@@ -17,21 +80,38 @@ export default function Sidebar() {
         <Menu size={24} />
       </DrawerTrigger>
       <DrawerContent className="lg:hidden h-[100dvh] w-2/3 flex flex-col p-5 gap-y-10">
-        <Logo className="h-auto w-2/3" />
-        <aside className="flex flex-col gap-y-2.5 px-5 flex-1">
-          {navs.map((nav, index) => {
+        <Logo className="h-auto w-2/3 md:w-1/2" />
+        <aside className="flex flex-col gap-y-2.5 px-2 md:px-5 flex-1">
+          {navlinks.map((nav, index) => {
             return (
-              <Link
-                key={index}
-                onClick={() => handleNavClick()}
-                href={nav.href}
-                className="font-semibold"
-              >
-                {nav.name}
-                {nav.status && BadgePattern[nav.status]}
-              </Link>
+              <Accordion key={index} type="single" collapsible>
+                <AccordionItem value={nav.index}>
+                  <AccordionTrigger className="font-bold text-lg">
+                    {nav.name}
+                  </AccordionTrigger>
+                  {nav.sublinks.map((sub, index) => {
+                    return (
+                      <AccordionContent className="ml-5 text-base" key={index}>
+                        <Link onClick={() => handleNavClick()} href={sub.href}>
+                          {sub.name}
+                        </Link>
+                      </AccordionContent>
+                    );
+                  })}
+                </AccordionItem>
+              </Accordion>
             );
           })}
+          <Link
+            className="py-4"
+            onClick={() => handleNavClick()}
+            target="_blank"
+            href={
+              "https://github.com/Pet3r1512/DevIniter/issues/new?labels=enhancement&template=feature-request---.md"
+            }
+          >
+            <p className="font-bold text-lg">Contributing</p>
+          </Link>
         </aside>
         <div className="flex items-center gap-x-5">
           <ThemeToggle />
