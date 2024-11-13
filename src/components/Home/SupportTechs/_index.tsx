@@ -115,6 +115,7 @@ export default function SupportedTechs() {
 
   return (
     <section
+      id="techstacks"
       ref={ref}
       className="flex flex-col gap-y-24 lg:gap-y-56 justify-center min-h-screen max-w-7xl mx-auto"
     >
