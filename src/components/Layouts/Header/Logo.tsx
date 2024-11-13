@@ -1,10 +1,16 @@
 import { cn } from "@/utils/utils";
 import Image from "next/image";
 
-export default function Logo({ className }: { className?: string }) {
+export default function Logo({
+  src,
+  className,
+}: {
+  src?: string;
+  className?: string;
+}) {
   return (
     <Image
-      src={"/images/logos/FullLogo.png"}
+      src={src || "/images/logos/FullLogo.png"}
       alt="Logo"
       width={0}
       height={0}
