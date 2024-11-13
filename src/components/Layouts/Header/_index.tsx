@@ -28,7 +28,7 @@ export default function Header() {
             Contributing
             <ArrowUpRight size={14} />
           </Link>
-          <Link href="/release" target="_blank" className="text-lg flex">
+          <Link href="/release" className="text-lg flex">
             Release Notes
             <ArrowUpRight size={14} />
           </Link>
