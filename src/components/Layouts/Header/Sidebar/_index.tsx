@@ -1,5 +1,5 @@
 import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer";
-import { Menu } from "lucide-react";
+import { ArrowUpRight, Menu } from "lucide-react";
 import Link from "next/link";
 import Logo from "../Logo";
 import ThemeToggle from "../../ThemeToggle";
@@ -111,6 +111,16 @@ export default function Sidebar() {
             }
           >
             <p className="font-bold text-lg">Contributing</p>
+          </Link>
+          <Link
+            className="py-4"
+            onClick={() => handleNavClick()}
+            target="_blank"
+            href={"/release"}
+          >
+            <p className="font-bold text-lg flex">
+              Release Notes <ArrowUpRight className="mt-0.5" size={12} />
+            </p>
           </Link>
         </aside>
         <div className="flex items-center gap-x-5">

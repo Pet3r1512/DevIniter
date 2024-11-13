@@ -4,6 +4,8 @@ import SearchBar from "./SearchBar/_index";
 import ThemeToggle from "../ThemeToggle";
 import Sidebar from "./Sidebar/_index";
 import { Navbar } from "./Navbar";
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
 
 export default function Header() {
   return (
@@ -18,8 +20,20 @@ export default function Header() {
           <SearchBar />
         </div>
         <div className="lg:flex items-center gap-x-5 hidden">
-          <ThemeToggle />
+          <Link
+            href="https://github.com/Pet3r1512/DevIniter/issues/new?labels=enhancement&template=feature-request---.md"
+            target="_blank"
+            className="text-lg flex"
+          >
+            Contributing
+            <ArrowUpRight size={14} />
+          </Link>
+          <Link href="/release" target="_blank" className="text-lg flex">
+            Release Notes
+            <ArrowUpRight size={14} />
+          </Link>
           <VerticalLine />
+          <ThemeToggle />
           <Github size={20} />
         </div>
       </div>

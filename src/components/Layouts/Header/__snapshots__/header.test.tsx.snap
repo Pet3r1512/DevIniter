@@ -222,16 +222,68 @@ exports[`Render Header > Should match snapshot 1`] = `
           <div
             class="lg:flex items-center gap-x-5 hidden"
           >
+            <a
+              class="text-lg flex"
+              href="https://github.com/Pet3r1512/DevIniter/issues/new?labels=enhancement&template=feature-request---.md"
+              target="_blank"
+            >
+              Contributing
+              <svg
+                class="lucide lucide-arrow-up-right"
+                fill="none"
+                height="14"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="14"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7 7h10v10"
+                />
+                <path
+                  d="M7 17 17 7"
+                />
+              </svg>
+            </a>
+            <a
+              class="text-lg flex"
+              href="/release"
+              target="_blank"
+            >
+              Release Notes
+              <svg
+                class="lucide lucide-arrow-up-right"
+                fill="none"
+                height="14"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="14"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7 7h10v10"
+                />
+                <path
+                  d="M7 17 17 7"
+                />
+              </svg>
+            </a>
+            <div
+              class="border-l-2 border-black-main dark:border-white h-[25px]"
+              data-testid="vt"
+            />
             <button
               class="!size-8 rounded-full flex items-center justify-center bg-gray-500 dark:bg-gray-200 transition-all duration-150 ease-linear"
               data-testid="theme-togger"
             >
               🌙
             </button>
-            <div
-              class="border-l-2 border-black-main dark:border-white h-[25px]"
-              data-testid="vt"
-            />
             <a
               aria-label="Repo Github"
               class="rounded-full size-8 flex items-center justify-center bg-gray-light opacity-65 lg:hover:opacity-100 transition-all duration-150 ease-linear"
@@ -490,16 +542,68 @@ exports[`Render Header > Should match snapshot 1`] = `
         <div
           class="lg:flex items-center gap-x-5 hidden"
         >
+          <a
+            class="text-lg flex"
+            href="https://github.com/Pet3r1512/DevIniter/issues/new?labels=enhancement&template=feature-request---.md"
+            target="_blank"
+          >
+            Contributing
+            <svg
+              class="lucide lucide-arrow-up-right"
+              fill="none"
+              height="14"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="14"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7 7h10v10"
+              />
+              <path
+                d="M7 17 17 7"
+              />
+            </svg>
+          </a>
+          <a
+            class="text-lg flex"
+            href="/release"
+            target="_blank"
+          >
+            Release Notes
+            <svg
+              class="lucide lucide-arrow-up-right"
+              fill="none"
+              height="14"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="14"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7 7h10v10"
+              />
+              <path
+                d="M7 17 17 7"
+              />
+            </svg>
+          </a>
+          <div
+            class="border-l-2 border-black-main dark:border-white h-[25px]"
+            data-testid="vt"
+          />
           <button
             class="!size-8 rounded-full flex items-center justify-center bg-gray-500 dark:bg-gray-200 transition-all duration-150 ease-linear"
             data-testid="theme-togger"
           >
             🌙
           </button>
-          <div
-            class="border-l-2 border-black-main dark:border-white h-[25px]"
-            data-testid="vt"
-          />
           <a
             aria-label="Repo Github"
             class="rounded-full size-8 flex items-center justify-center bg-gray-light opacity-65 lg:hover:opacity-100 transition-all duration-150 ease-linear"
