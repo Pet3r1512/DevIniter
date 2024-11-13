@@ -102,6 +102,16 @@ export default function Sidebar() {
               </Accordion>
             );
           })}
+          <Link
+            className="py-4"
+            onClick={() => handleNavClick()}
+            target="_blank"
+            href={
+              "https://github.com/Pet3r1512/DevIniter/issues/new?labels=enhancement&template=feature-request---.md"
+            }
+          >
+            <p className="font-bold text-lg">Contributing</p>
+          </Link>
         </aside>
         <div className="flex items-center gap-x-5">
           <ThemeToggle />
