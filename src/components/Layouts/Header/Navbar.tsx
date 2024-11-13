@@ -16,6 +16,7 @@ import NewBadge from "../Badges/NewBadge";
 import Logo from "./Logo";
 import { useSmoothScroll } from "@/hooks/useSmoothScroll";
 import { useInViewStore } from "@/stores/useInViewStore";
+import Image from "next/image";
 
 const badgeClassName =
   "relative ml-1.5 lg:ml-0 lg:top-[-12px] text-sm px-1.5 py-1";
@@ -48,14 +49,21 @@ export const navs = [
   },
 ];
 
-const templates: { title: string; href: string; description: string }[] = [
+const templates: {
+  title: string;
+  image: string;
+  href: string;
+  description: string;
+}[] = [
   {
     title: "Next.js",
+    image: "/images/templates/nextjs-deviniter.png",
     href: "/docs/template_structure/nextjs",
     description: "A Fullstack React.js Framework",
   },
   {
     title: "Vite",
+    image: "/images/templates/vite-deviniter.png",
     href: "/docs/template_structure/vite",
     description: "Fast and Modern React.js Build Tool",
   },
@@ -150,6 +158,7 @@ export function Navbar() {
                 <ListItem
                   key={template.title}
                   title={template.title}
+                  image={template.image}
                   href={template.href}
                 >
                   {template.description}
@@ -189,8 +198,8 @@ export function Navbar() {
 
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
-  React.ComponentPropsWithoutRef<"a">
->(({ className, title, children, ...props }, ref) => {
+  React.ComponentPropsWithoutRef<"a"> & { title: string; image?: string }
+>(({ className, title, image, children, ...props }, ref) => {
   return (
     <li>
       <NavigationMenuLink asChild>
@@ -203,10 +212,21 @@ const ListItem = React.forwardRef<
           )}
           {...props}
         >
-          <div className="text-base font-bold leading-none">{title}</div>
-          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+          <div className="text-base font-bold leading-none flex items-center gap-x-2.5">
+            {image && (
+              <Image
+                src={image}
+                alt=""
+                width={32}
+                height={32}
+                className="size-6"
+              />
+            )}
+            {title}
+          </div>
+          <div className="line-clamp-2 text-sm leading-snug text-muted-foreground">
             {children}
-          </p>
+          </div>
         </a>
       </NavigationMenuLink>
     </li>
