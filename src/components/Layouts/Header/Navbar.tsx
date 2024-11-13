@@ -111,7 +111,7 @@ export function Navbar() {
             Getting Started
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr] dark:bg-black bg-white border-none !outline-none">
+            <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr] shadow-2xl bg-black-main border-none !outline-none">
               <li className="row-span-3">
                 <NavigationMenuLink asChild>
                   <Link
