@@ -70,50 +70,116 @@ exports[`Render Header > Should match snapshot 1`] = `
               width="0"
             />
             <nav
-              class="hidden lg:flex items-center gap-x-8 mt-1.5"
+              aria-label="Main"
+              class="relative z-10 max-w-max flex-1 items-center justify-center mt-1 hidden lg:block"
+              data-orientation="horizontal"
               data-testid="navbar"
+              dir="ltr"
             >
-              <a
-                class="lg:hover:text-primary dark:text-white transition-all duration-150 ease-linear lg:text-lg relative text-gray"
-                href="/docs/introduction"
+              <div
+                style="position: relative;"
               >
-                Documents
-              </a>
-              <a
-                class="lg:hover:text-primary dark:text-white transition-all duration-150 ease-linear lg:text-lg relative text-gray"
-                href="https://github.com/Pet3r1512/DevIniter/issues/new?labels=enhancement&template=feature-request---.md"
-              >
-                Contribution
-              </a>
-              <a
-                class="lg:hover:text-primary dark:text-white transition-all duration-150 ease-linear lg:text-lg relative text-gray"
-                href="#demo"
-              >
-                Live Demo
-                <span
-                  class="w-fit !text-[8.5px] bg-[#008000] text-white rounded-lg text-center relative ml-1.5 lg:ml-0 lg:top-[-12px] text-sm px-1.5 py-1"
+                <ul
+                  class="group flex flex-1 list-none items-center justify-center space-x-1"
+                  data-orientation="horizontal"
+                  dir="ltr"
                 >
-                  New
-                </span>
-              </a>
-              <a
-                class="lg:hover:text-primary dark:text-white transition-all duration-150 ease-linear lg:text-lg relative text-gray"
-                href="#"
-              >
-                Release Notes
-                <span
-                  class="w-fit !text-[8.5px] bg-[#e0ac00] dark:bg-[#e09b31] text-white rounded-lg text-center relative ml-1.5 lg:ml-0 lg:top-[-12px] text-sm px-1.5 py-1"
-                >
-                  Coming
-                </span>
-              </a>
+                  <li>
+                    <button
+                      aria-controls="radix-:r3:-content-radix-:r4:"
+                      aria-expanded="false"
+                      class="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-neutral-100 hover:text-neutral-900 focus:bg-neutral-100 focus:text-neutral-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-neutral-100/50 data-[state=open]:bg-neutral-100/50 dark:bg-neutral-950 dark:hover:bg-neutral-800 dark:hover:text-neutral-50 dark:focus:bg-neutral-800 dark:focus:text-neutral-50 dark:data-[active]:bg-neutral-800/50 dark:data-[state=open]:bg-neutral-800/50 group !bg-transparent dark:text-white lg:text-lg text-black"
+                      data-radix-collection-item=""
+                      data-state="closed"
+                      id="radix-:r3:-trigger-radix-:r4:"
+                    >
+                      Getting Started
+                      <svg
+                        aria-hidden="true"
+                        class="relative top-[1px] ml-1 h-3 w-3 transition duration-300 group-data-[state=open]:rotate-180"
+                        fill="none"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        width="15"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          clip-rule="evenodd"
+                          d="M3.13523 6.15803C3.3241 5.95657 3.64052 5.94637 3.84197 6.13523L7.5 9.56464L11.158 6.13523C11.3595 5.94637 11.6759 5.95657 11.8648 6.15803C12.0536 6.35949 12.0434 6.67591 11.842 6.86477L7.84197 10.6148C7.64964 10.7951 7.35036 10.7951 7.15803 10.6148L3.15803 6.86477C2.95657 6.67591 2.94637 6.35949 3.13523 6.15803Z"
+                          fill="currentColor"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      aria-controls="radix-:r3:-content-radix-:r5:"
+                      aria-expanded="false"
+                      class="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-neutral-100 hover:text-neutral-900 focus:bg-neutral-100 focus:text-neutral-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-neutral-100/50 data-[state=open]:bg-neutral-100/50 dark:bg-neutral-950 dark:hover:bg-neutral-800 dark:hover:text-neutral-50 dark:focus:bg-neutral-800 dark:focus:text-neutral-50 dark:data-[active]:bg-neutral-800/50 dark:data-[state=open]:bg-neutral-800/50 group !bg-transparent dark:text-white lg:text-lg text-black"
+                      data-radix-collection-item=""
+                      data-state="closed"
+                      id="radix-:r3:-trigger-radix-:r5:"
+                    >
+                      Template Structures
+                      <svg
+                        aria-hidden="true"
+                        class="relative top-[1px] ml-1 h-3 w-3 transition duration-300 group-data-[state=open]:rotate-180"
+                        fill="none"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        width="15"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          clip-rule="evenodd"
+                          d="M3.13523 6.15803C3.3241 5.95657 3.64052 5.94637 3.84197 6.13523L7.5 9.56464L11.158 6.13523C11.3595 5.94637 11.6759 5.95657 11.8648 6.15803C12.0536 6.35949 12.0434 6.67591 11.842 6.86477L7.84197 10.6148C7.64964 10.7951 7.35036 10.7951 7.15803 10.6148L3.15803 6.86477C2.95657 6.67591 2.94637 6.35949 3.13523 6.15803Z"
+                          fill="currentColor"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      aria-controls="radix-:r3:-content-radix-:r6:"
+                      aria-expanded="false"
+                      class="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-neutral-100 hover:text-neutral-900 focus:bg-neutral-100 focus:text-neutral-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-neutral-100/50 data-[state=open]:bg-neutral-100/50 dark:bg-neutral-950 dark:hover:bg-neutral-800 dark:hover:text-neutral-50 dark:focus:bg-neutral-800 dark:focus:text-neutral-50 dark:data-[active]:bg-neutral-800/50 dark:data-[state=open]:bg-neutral-800/50 group !bg-transparent dark:text-white lg:text-lg text-black"
+                      data-radix-collection-item=""
+                      data-state="closed"
+                      id="radix-:r3:-trigger-radix-:r6:"
+                    >
+                      Explore More
+                      <svg
+                        aria-hidden="true"
+                        class="relative top-[1px] ml-1 h-3 w-3 transition duration-300 group-data-[state=open]:rotate-180"
+                        fill="none"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        width="15"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          clip-rule="evenodd"
+                          d="M3.13523 6.15803C3.3241 5.95657 3.64052 5.94637 3.84197 6.13523L7.5 9.56464L11.158 6.13523C11.3595 5.94637 11.6759 5.95657 11.8648 6.15803C12.0536 6.35949 12.0434 6.67591 11.842 6.86477L7.84197 10.6148C7.64964 10.7951 7.35036 10.7951 7.15803 10.6148L3.15803 6.86477C2.95657 6.67591 2.94637 6.35949 3.13523 6.15803Z"
+                          fill="currentColor"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="absolute left-0 top-full flex justify-center"
+              />
             </nav>
           </div>
           <div
             class="flex items-center gap-x-5 lg:hidden w-1/3 justify-end"
           >
             <button
-              aria-controls="radix-:r3:"
+              aria-controls="radix-:r7:"
               aria-expanded="false"
               aria-haspopup="dialog"
               class="hidden"
@@ -272,50 +338,116 @@ exports[`Render Header > Should match snapshot 1`] = `
             width="0"
           />
           <nav
-            class="hidden lg:flex items-center gap-x-8 mt-1.5"
+            aria-label="Main"
+            class="relative z-10 max-w-max flex-1 items-center justify-center mt-1 hidden lg:block"
+            data-orientation="horizontal"
             data-testid="navbar"
+            dir="ltr"
           >
-            <a
-              class="lg:hover:text-primary dark:text-white transition-all duration-150 ease-linear lg:text-lg relative text-gray"
-              href="/docs/introduction"
+            <div
+              style="position: relative;"
             >
-              Documents
-            </a>
-            <a
-              class="lg:hover:text-primary dark:text-white transition-all duration-150 ease-linear lg:text-lg relative text-gray"
-              href="https://github.com/Pet3r1512/DevIniter/issues/new?labels=enhancement&template=feature-request---.md"
-            >
-              Contribution
-            </a>
-            <a
-              class="lg:hover:text-primary dark:text-white transition-all duration-150 ease-linear lg:text-lg relative text-gray"
-              href="#demo"
-            >
-              Live Demo
-              <span
-                class="w-fit !text-[8.5px] bg-[#008000] text-white rounded-lg text-center relative ml-1.5 lg:ml-0 lg:top-[-12px] text-sm px-1.5 py-1"
+              <ul
+                class="group flex flex-1 list-none items-center justify-center space-x-1"
+                data-orientation="horizontal"
+                dir="ltr"
               >
-                New
-              </span>
-            </a>
-            <a
-              class="lg:hover:text-primary dark:text-white transition-all duration-150 ease-linear lg:text-lg relative text-gray"
-              href="#"
-            >
-              Release Notes
-              <span
-                class="w-fit !text-[8.5px] bg-[#e0ac00] dark:bg-[#e09b31] text-white rounded-lg text-center relative ml-1.5 lg:ml-0 lg:top-[-12px] text-sm px-1.5 py-1"
-              >
-                Coming
-              </span>
-            </a>
+                <li>
+                  <button
+                    aria-controls="radix-:r3:-content-radix-:r4:"
+                    aria-expanded="false"
+                    class="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-neutral-100 hover:text-neutral-900 focus:bg-neutral-100 focus:text-neutral-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-neutral-100/50 data-[state=open]:bg-neutral-100/50 dark:bg-neutral-950 dark:hover:bg-neutral-800 dark:hover:text-neutral-50 dark:focus:bg-neutral-800 dark:focus:text-neutral-50 dark:data-[active]:bg-neutral-800/50 dark:data-[state=open]:bg-neutral-800/50 group !bg-transparent dark:text-white lg:text-lg text-black"
+                    data-radix-collection-item=""
+                    data-state="closed"
+                    id="radix-:r3:-trigger-radix-:r4:"
+                  >
+                    Getting Started
+                    <svg
+                      aria-hidden="true"
+                      class="relative top-[1px] ml-1 h-3 w-3 transition duration-300 group-data-[state=open]:rotate-180"
+                      fill="none"
+                      height="15"
+                      viewBox="0 0 15 15"
+                      width="15"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        clip-rule="evenodd"
+                        d="M3.13523 6.15803C3.3241 5.95657 3.64052 5.94637 3.84197 6.13523L7.5 9.56464L11.158 6.13523C11.3595 5.94637 11.6759 5.95657 11.8648 6.15803C12.0536 6.35949 12.0434 6.67591 11.842 6.86477L7.84197 10.6148C7.64964 10.7951 7.35036 10.7951 7.15803 10.6148L3.15803 6.86477C2.95657 6.67591 2.94637 6.35949 3.13523 6.15803Z"
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                </li>
+                <li>
+                  <button
+                    aria-controls="radix-:r3:-content-radix-:r5:"
+                    aria-expanded="false"
+                    class="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-neutral-100 hover:text-neutral-900 focus:bg-neutral-100 focus:text-neutral-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-neutral-100/50 data-[state=open]:bg-neutral-100/50 dark:bg-neutral-950 dark:hover:bg-neutral-800 dark:hover:text-neutral-50 dark:focus:bg-neutral-800 dark:focus:text-neutral-50 dark:data-[active]:bg-neutral-800/50 dark:data-[state=open]:bg-neutral-800/50 group !bg-transparent dark:text-white lg:text-lg text-black"
+                    data-radix-collection-item=""
+                    data-state="closed"
+                    id="radix-:r3:-trigger-radix-:r5:"
+                  >
+                    Template Structures
+                    <svg
+                      aria-hidden="true"
+                      class="relative top-[1px] ml-1 h-3 w-3 transition duration-300 group-data-[state=open]:rotate-180"
+                      fill="none"
+                      height="15"
+                      viewBox="0 0 15 15"
+                      width="15"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        clip-rule="evenodd"
+                        d="M3.13523 6.15803C3.3241 5.95657 3.64052 5.94637 3.84197 6.13523L7.5 9.56464L11.158 6.13523C11.3595 5.94637 11.6759 5.95657 11.8648 6.15803C12.0536 6.35949 12.0434 6.67591 11.842 6.86477L7.84197 10.6148C7.64964 10.7951 7.35036 10.7951 7.15803 10.6148L3.15803 6.86477C2.95657 6.67591 2.94637 6.35949 3.13523 6.15803Z"
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                </li>
+                <li>
+                  <button
+                    aria-controls="radix-:r3:-content-radix-:r6:"
+                    aria-expanded="false"
+                    class="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-neutral-100 hover:text-neutral-900 focus:bg-neutral-100 focus:text-neutral-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-neutral-100/50 data-[state=open]:bg-neutral-100/50 dark:bg-neutral-950 dark:hover:bg-neutral-800 dark:hover:text-neutral-50 dark:focus:bg-neutral-800 dark:focus:text-neutral-50 dark:data-[active]:bg-neutral-800/50 dark:data-[state=open]:bg-neutral-800/50 group !bg-transparent dark:text-white lg:text-lg text-black"
+                    data-radix-collection-item=""
+                    data-state="closed"
+                    id="radix-:r3:-trigger-radix-:r6:"
+                  >
+                    Explore More
+                    <svg
+                      aria-hidden="true"
+                      class="relative top-[1px] ml-1 h-3 w-3 transition duration-300 group-data-[state=open]:rotate-180"
+                      fill="none"
+                      height="15"
+                      viewBox="0 0 15 15"
+                      width="15"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        clip-rule="evenodd"
+                        d="M3.13523 6.15803C3.3241 5.95657 3.64052 5.94637 3.84197 6.13523L7.5 9.56464L11.158 6.13523C11.3595 5.94637 11.6759 5.95657 11.8648 6.15803C12.0536 6.35949 12.0434 6.67591 11.842 6.86477L7.84197 10.6148C7.64964 10.7951 7.35036 10.7951 7.15803 10.6148L3.15803 6.86477C2.95657 6.67591 2.94637 6.35949 3.13523 6.15803Z"
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="absolute left-0 top-full flex justify-center"
+            />
           </nav>
         </div>
         <div
           class="flex items-center gap-x-5 lg:hidden w-1/3 justify-end"
         >
           <button
-            aria-controls="radix-:r3:"
+            aria-controls="radix-:r7:"
             aria-expanded="false"
             aria-haspopup="dialog"
             class="hidden"
