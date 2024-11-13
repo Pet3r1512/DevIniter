@@ -15,6 +15,7 @@ export default function Header() {
           <Logo />
           <Navbar />
         </div>
+        <div className="size-6 invisible" />
         <div className="lg:flex items-center gap-x-5 hidden">
           <Link
             href="https://github.com/Pet3r1512/DevIniter/issues/new?labels=enhancement&template=feature-request---.md"
