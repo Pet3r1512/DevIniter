@@ -26,29 +26,6 @@ export const BadgePattern: Record<string, React.ReactNode> = {
   coming: <ComingSoon className={badgeClassName} />,
 };
 
-export const navs = [
-  {
-    name: "Documents",
-    href: "/docs/introduction",
-  },
-  {
-    name: "Contribution",
-    href: "https://github.com/Pet3r1512/DevIniter/issues/new?labels=enhancement&template=feature-request---.md",
-  },
-  {
-    name: "Live Demo",
-    href: "#demo",
-    isHash: true,
-    status: "new",
-  },
-  {
-    name: "Release Notes",
-    href: "#",
-    isHash: true,
-    status: "coming",
-  },
-];
-
 const templates: {
   title: string;
   image: string;
@@ -88,6 +65,12 @@ const explores: {
     isHash: true,
     description: "Explore the powerful technologies behind our templates",
   },
+  {
+    title: "Templates Features",
+    href: "/features",
+    description:
+      "Discover all the built-in features and capabilities of our templates",
+  },
 ];
 
 const triggerClassName = "!bg-transparent dark:text-white lg:text-lg";
@@ -119,9 +102,7 @@ export function Navbar() {
                     href="/"
                   >
                     <Logo />
-                    <div className="mb-2 mt-4 text-lg font-medium flex-1">
-                      DevIniter
-                    </div>
+                    <div className="flex-1" />
                     <p className="text-sm leading-tight text-muted-foreground">
                       Blazing Starter Templates for Developers
                     </p>
@@ -133,7 +114,7 @@ export function Navbar() {
                   "Learn about DevIniter's core concepts, features and the technology stack we use."
                 }
               </ListItem>
-              <ListItem href="/docs/get_started" title="Overview">
+              <ListItem href="/docs/get_started" title="Documents">
                 Step-by-step guide to set up your project and understand the
                 project structure.
               </ListItem>
