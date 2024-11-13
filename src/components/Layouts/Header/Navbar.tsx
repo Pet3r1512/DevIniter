@@ -91,7 +91,7 @@ export function Navbar() {
   const { isAnimationInView } = useInViewStore();
 
   return (
-    <NavigationMenu className="mt-1 hidden lg:block">
+    <NavigationMenu data-testid="navbar" className="mt-1 hidden lg:block">
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger
