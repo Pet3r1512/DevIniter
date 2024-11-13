@@ -86,7 +86,7 @@ export default function Sidebar() {
 
   return (
     <Drawer direction="left">
-      <DrawerTrigger id="sidebar-trigger" className="lg:hidden w-1/3">
+      <DrawerTrigger id="sidebar-trigger" className="lg:hidden">
         <Menu size={24} />
       </DrawerTrigger>
       <DrawerContent className="lg:hidden h-[100dvh] w-2/3 flex flex-col p-5 gap-y-10">
