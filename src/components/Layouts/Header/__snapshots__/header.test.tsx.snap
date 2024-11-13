@@ -251,7 +251,6 @@ exports[`Render Header > Should match snapshot 1`] = `
             <a
               class="text-lg flex"
               href="/release"
-              target="_blank"
             >
               Release Notes
               <svg
@@ -571,7 +570,6 @@ exports[`Render Header > Should match snapshot 1`] = `
           <a
             class="text-lg flex"
             href="/release"
-            target="_blank"
           >
             Release Notes
             <svg
