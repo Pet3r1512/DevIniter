@@ -1,6 +1,5 @@
 import Github from "./Github";
 import Logo from "./Logo";
-import SearchBar from "./SearchBar/_index";
 import ThemeToggle from "../ThemeToggle";
 import Sidebar from "./Sidebar/_index";
 import { Navbar } from "./Navbar";
@@ -15,9 +14,6 @@ export default function Header() {
         <div className="flex items-center gap-x-8">
           <Logo />
           <Navbar />
-        </div>
-        <div className="flex items-center gap-x-5 lg:hidden w-1/3 justify-end">
-          <SearchBar />
         </div>
         <div className="lg:flex items-center gap-x-5 hidden">
           <Link
