@@ -2,6 +2,13 @@
 
 Thank you for considering contributing to our project! This document outlines the process and guidelines for contributing.
 
+In this repo, you can contribute these following:
+
+- DevIniter Official Website
+- Documents
+
+If you want to contribute to DevIniter CLI's behaviors, please check this [repo](https://github.com/Pet3r1512/DevIniter_CLI)
+
 ## Code of Conduct
 
 By participating in this project, you agree to abide by our [Code of Conduct](CODE_OF_CONDUCT.md). Please read it before contributing.
