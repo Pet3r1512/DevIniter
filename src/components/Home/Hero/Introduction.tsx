@@ -19,7 +19,7 @@ export default function Introduction() {
   return (
     <section
       ref={ref}
-      className="w-screen flex justify-center items-center min-h-[calc(100vh-16.75rem)] lg:min-h-[85dvh]"
+      className="w-screen flex justify-center items-center min-h-[calc(100vh-22.5rem)] lg:min-h-[85dvh]"
     >
       <div className="lg:pb-24 flex flex-col items-center gap-y-8">
         <p className=""></p>
