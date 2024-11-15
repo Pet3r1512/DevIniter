@@ -3,6 +3,27 @@ import Template from "@/components/Layouts/Template";
 import dynamic from "next/dynamic";
 import { useInViewStore } from "@/stores/useInViewStore";
 
+const DyanmicFeatures = dynamic(() => import("../components/Home/Features/"), {
+  loading: () => <></>,
+  ssr: false,
+});
+
+const DynamicAnimation = dynamic(
+  () => import("../components/Home/Hero/Process"),
+  {
+    loading: () => <></>,
+    ssr: false,
+  }
+);
+
+const DynamicHighlightSection = dynamic(
+  () => import("../components/Home/Highlight/_index"),
+  {
+    loading: () => <></>,
+    ssr: false,
+  }
+);
+
 const DynamicSupportedTechs = dynamic(
   () => import("../components/Home/SupportTechs/_index"),
   {
@@ -19,26 +40,13 @@ const DynamicTemplateDemos = dynamic(
   }
 );
 
-const DynamicHighlightSection = dynamic(
-  () => import("../components/Home/Highlight/_index"),
+const DynamicOpenSource = dynamic(
+  () => import("../components/Home/OpenSource/_index"),
   {
     loading: () => <></>,
     ssr: false,
   }
 );
-
-const DynamicAnimation = dynamic(
-  () => import("../components/Home/Hero/Process"),
-  {
-    loading: () => <></>,
-    ssr: false,
-  }
-);
-
-const DyanmicFeatures = dynamic(() => import("../components/Home/Features/"), {
-  loading: () => <></>,
-  ssr: false,
-});
 
 export default function Home() {
   const { isHeroInView } = useInViewStore();
@@ -55,6 +63,7 @@ export default function Home() {
         <DynamicHighlightSection />
         <DynamicSupportedTechs />
         <DynamicTemplateDemos />
+        <DynamicOpenSource />
       </section>
     </Template>
   );

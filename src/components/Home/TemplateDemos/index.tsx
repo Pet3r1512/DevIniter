@@ -223,13 +223,13 @@ export default function TemplateDemos() {
     <section
       ref={ref}
       id="demo"
-      className="flex flex-col justify-center items-center min-h-screen max-w-7xl mx-auto"
+      className="flex flex-col gap-y-24 lg:gap-y-48 justify-center items-center min-h-screen max-w-7xl mx-auto"
     >
       <SectionTitle
         title={"Templates in Action"}
         subtitle={"Preview our templates before you choose."}
       />
-      <div className="my-12 lg:my-24 flex flex-col lg:flex-row justify-center items-center gap-x-5 gap-y-10 md:gap-y-56">
+      <div className="flex flex-col lg:flex-row justify-center items-center gap-x-5 gap-y-10">
         {demos.map((demo, index) => {
           return <DemoCard key={index} props={demo} />;
         })}

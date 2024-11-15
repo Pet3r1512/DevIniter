@@ -48,7 +48,7 @@ export default function Features() {
   return (
     <section
       ref={ref}
-      className="w-screen px-8 flex flex-col gap-y-24 lg:gap-y-56 items-center justify-center min-h-screen"
+      className="w-screen px-8 lg:px-0 flex flex-col gap-y-24 lg:gap-y-56 items-center justify-center min-h-screen"
     >
       <SectionTitle
         title="A solid foundation to start creating your own products"
