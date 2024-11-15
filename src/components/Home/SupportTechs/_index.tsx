@@ -77,10 +77,16 @@ export default function SupportedTechs() {
       shadowColor: "lg:hover:shadow-[#4B32C3]",
     },
     {
-      name: "Prettier",
+      name: "Prettier + Husky",
       href: "https://prettier.io/",
       logoURL: "prettier.png",
       shadowColor: "lg:hover:shadow-[#c1121f]",
+    },
+    {
+      name: "Prisma",
+      href: "https://www.prisma.io/",
+      logoURL: "prisma.png",
+      shadowColor: "lg:hover:shadow-[#5A67D8]",
       isBuilt: false,
     },
     {
@@ -95,13 +101,6 @@ export default function SupportedTechs() {
       href: "https://tanstack.com/",
       logoURL: "tanstack.png",
       shadowColor: "lg:hover:shadow-[#EAB308]",
-      isBuilt: false,
-    },
-    {
-      name: "Prisma",
-      href: "https://www.prisma.io/",
-      logoURL: "prisma.png",
-      shadowColor: "lg:hover:shadow-[#5A67D8]",
       isBuilt: false,
     },
     {
