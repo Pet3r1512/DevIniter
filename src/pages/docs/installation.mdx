@@ -21,14 +21,20 @@ Ensure you have the following tools installed on your system:
 
 <strong>Note:</strong> We are actively working to expand support for additional Node.js versions and package managers such as Yarn.
 
-## Scaffolding Template
+## Installing Template
 
 We recommend starting a new template using `deviniter`, which downloads template for you automatically. To install a template, run:
 
-<ScriptBlock script={
-    {command: "npx",
-    content: "@deviniter/cli@latest"}
-}/>
+<InstallBlock command={[
+    {
+      value: "pnpm",
+      script: "pnpm dlx @deviniter/cli@latest",
+    },
+    {
+      value: "npm",
+      script: "npx @deviniter/cli@latest",
+    },
+]} />
 
 After running this command, our CLI will guide you through the setup process:
 
@@ -46,30 +52,9 @@ After running this command, our CLI will guide you through the setup process:
     },
 ]} />
 
+Once you've selected your template, DevIniter will automatically download and install all necessary dependencies for your project. This process may take a few minutes depending on your internet connection.
+
 If you’re new to DevIniter, refer to our <HighlightedText content={{href: "/docs/template_structure", text: "Template Structure"}} /> guide for a comprehensive overview and to enhance your experience with our templates.
-
-
-## Installing Dependencies
-
-Now, you need to navigate to your project:
-
-<ScriptBlock script={
-    {command: "cd",
-    content: "project-name"}
-}/>
-
-After successfully scaffolded your favorite template, you need to install all dependencies by running:
-
-<InstallBlock command={[
-    {
-      value: "pnpm",
-      script: "pnpm install",
-    },
-    {
-      value: "npm",
-      script: "npm install",
-    },
-  ]} />
 
 <TipsBlock tips={[
     <p>- Expected setup time is around 2-5 minutes for first-time users. </p>,
@@ -78,17 +63,17 @@ After successfully scaffolded your favorite template, you need to install all de
 
 ## Starting Your Project
 
-Then, start the project locally with one of the following commands:
+Navigate to your project directory and start it locally using one of these commands:
 
 <InstallBlock command={
     [
         {
             value: "pnpm",
-            script: "pnpm dev"
+            script: "cd your-project-name && pnpm dev"
         },
         {
             value: "npm",
-            script: "npm run dev"
+            script: "cd your-project-name && npm run dev"
         },
     ]
 }/>

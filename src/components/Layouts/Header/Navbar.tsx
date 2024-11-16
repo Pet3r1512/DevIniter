@@ -94,7 +94,7 @@ export function Navbar() {
             Getting Started
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr] shadow-2xl bg-black-main border-none !outline-none">
+            <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr] shadow-2xl dark:bg-black-main bg-white border-none !outline-none">
               <li className="row-span-3">
                 <NavigationMenuLink asChild>
                   <Link
@@ -134,7 +134,7 @@ export function Navbar() {
             Template Structures
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] dark:bg-black-main bg-white">
               {templates.map((template) => (
                 <ListItem
                   key={template.title}
@@ -158,7 +158,7 @@ export function Navbar() {
             Explore More
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] dark:bg-black-main bg-white">
               {explores.map((explore) => (
                 <ListItem
                   onClick={(e) => handleHashScroll(e, explore.isHash ?? false)}
