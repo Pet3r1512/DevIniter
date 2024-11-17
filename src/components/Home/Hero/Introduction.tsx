@@ -12,7 +12,9 @@ const DynamicInstallCommandBlock = dynamic(() => import("./InstallBox"), {
 });
 
 const DynamicTitle = dynamic(() => import("./Title"), {
-  loading: () => <div className="w-2/3 h-40 lg:h-80 lg:w-auto" />,
+  loading: () => (
+    <div className="min-w-64 min-h-40 md:h-36 md:w-[600px] lg:h-80 lg:w-auto " />
+  ),
   ssr: false,
 });
 
