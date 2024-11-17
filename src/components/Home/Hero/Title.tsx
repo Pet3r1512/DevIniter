@@ -8,7 +8,7 @@ export default function Title() {
   return (
     <HeroHighlight>
       <motion.h1
-        style={{ minHeight: "153.562px" }}
+        style={{ minHeight: "136.5px" }}
         initial={{
           opacity: 0,
           y: 20,
