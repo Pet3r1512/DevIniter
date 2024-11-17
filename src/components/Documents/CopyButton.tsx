@@ -5,9 +5,11 @@ import React, { useState } from "react";
 export default function CopyButton({
   copyContent,
   className,
+  isBash = true,
 }: {
   copyContent: string;
   className?: string;
+  isBash?: boolean;
 }) {
   const [done, setDone] = useState(false);
 
@@ -23,7 +25,7 @@ export default function CopyButton({
         className
       )}
     >
-      <p>bash</p>
+      {!isBash && <p>bash</p>}
       {!done ? <Clipboard /> : <ClipboardCheck className="text-secondary/50" />}
     </button>
   );
