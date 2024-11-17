@@ -6,13 +6,13 @@ import Instruction from "./Instructions";
 
 const DynamicInstallCommandBlock = dynamic(() => import("./InstallBox"), {
   loading: () => (
-    <div className="dark:bg-black bg-white w-[217.58px] h-[38.5px] md:w-[255.91px] md:h-[52.5px] lg:w-[329.08px] lg:h-[77px]" />
+    <div className="dark:bg-black bg-white h-10 w-52 md:h-11 md:w-60 lg:h-16 lg:w-80 rounded-lg md:rounded-xl lg:rounded-2xl" />
   ),
   ssr: false,
 });
 
 const DynamicTitle = dynamic(() => import("./Title"), {
-  loading: () => <div className="min-h-[136.5px] w-auto" />,
+  loading: () => <div className="w-2/3 h-40 lg:h-80 lg:w-auto" />,
   ssr: false,
 });
 

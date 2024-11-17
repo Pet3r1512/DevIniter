@@ -6,9 +6,8 @@ import { motion } from "framer-motion";
 
 export default function Title() {
   return (
-    <HeroHighlight>
+    <HeroHighlight className="w-2/3 h-40 lg:h-80 lg:w-auto">
       <motion.h1
-        style={{ minHeight: "136.5px" }}
         initial={{
           opacity: 0,
           y: 20,
