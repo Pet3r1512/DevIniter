@@ -2,16 +2,17 @@ import { Hero } from "@/components/Home/_index";
 import Template from "@/components/Layouts/Template";
 import dynamic from "next/dynamic";
 import { useInViewStore } from "@/stores/useInViewStore";
+import SectionSkeleton from "@/components/Layouts/Skeletons/SectionSkeleton";
 
 const DyanmicFeatures = dynamic(() => import("../components/Home/Features/"), {
-  loading: () => <></>,
+  loading: () => <SectionSkeleton />,
   ssr: false,
 });
 
 const DynamicAnimation = dynamic(
   () => import("../components/Home/Hero/Process"),
   {
-    loading: () => <></>,
+    loading: () => <SectionSkeleton />,
     ssr: false,
   }
 );
@@ -19,7 +20,7 @@ const DynamicAnimation = dynamic(
 const DynamicHighlightSection = dynamic(
   () => import("../components/Home/Highlight/_index"),
   {
-    loading: () => <></>,
+    loading: () => <SectionSkeleton />,
     ssr: false,
   }
 );
@@ -27,7 +28,7 @@ const DynamicHighlightSection = dynamic(
 const DynamicSupportedTechs = dynamic(
   () => import("../components/Home/SupportTechs/_index"),
   {
-    loading: () => <></>,
+    loading: () => <SectionSkeleton />,
     ssr: false,
   }
 );
@@ -35,7 +36,7 @@ const DynamicSupportedTechs = dynamic(
 const DynamicTemplateDemos = dynamic(
   () => import("../components/Home/TemplateDemos/index"),
   {
-    loading: () => <></>,
+    loading: () => <SectionSkeleton />,
     ssr: false,
   }
 );
@@ -43,7 +44,7 @@ const DynamicTemplateDemos = dynamic(
 const DynamicOpenSource = dynamic(
   () => import("../components/Home/OpenSource/_index"),
   {
-    loading: () => <></>,
+    loading: () => <SectionSkeleton />,
     ssr: false,
   }
 );
