@@ -69,7 +69,7 @@ export default function Features() {
               className="!w-fit p-6 rounded-2xl shadow-2xl lg:max-w-lg isolate ring-1 dark:bg-black/50 bg-white/75 ring-black/5 lg:hover:scale-105 lg:dark:hover:bg-black lg:hover:bg-white transition-all duration-200 ease-linear"
             >
               <div className="text-4xl mb-4">{feature.icon}</div>
-              <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
+              <p className="text-xl font-bold mb-2">{feature.title}</p>
               <p className="text-gray-400">{feature.description}</p>
             </div>
           ))}
