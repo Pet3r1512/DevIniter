@@ -1,10 +1,16 @@
 import Github from "./Github";
-import Logo from "./Logo";
 import ThemeToggle from "../ThemeToggle";
 import Sidebar from "./Sidebar/_index";
 import { Navbar } from "./Navbar";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
+import dynamic from "next/dynamic";
+import LogoSkeleton from "../Skeletons/LogoSkeleton";
+
+const DynamicLogo = dynamic(() => import("./Logo"), {
+  loading: () => <LogoSkeleton />,
+  ssr: false,
+});
 
 export default function Header() {
   return (
@@ -12,7 +18,7 @@ export default function Header() {
       <div className="max-w-[1440px] w-full mx-auto flex items-center justify-between">
         <Sidebar />
         <div className="flex items-center gap-x-8">
-          <Logo />
+          <DynamicLogo />
           <Navbar />
         </div>
         <div className="size-6 invisible" />
