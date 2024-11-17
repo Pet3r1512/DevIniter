@@ -6,6 +6,14 @@ import {
 import { useInViewStore } from "@/stores/useInViewStore";
 import { motion, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
+import dynamic from "next/dynamic";
+
+const DynamicInstallCommandBlock = dynamic(() => import("./InstallBox"), {
+  loading: () => (
+    <div className="dark:bg-black bg-white w-[217.58px] h-[38.5px] md:w-[255.91px] md:h-[52.5px] lg:w-[329.08px] lg:h-[77px]"></div>
+  ),
+  ssr: false,
+});
 
 export default function Introduction() {
   const { setHeroInView } = useInViewStore();
@@ -37,9 +45,9 @@ export default function Introduction() {
               duration: 0.5,
               ease: [0.4, 0.0, 0.2, 1],
             }}
-            className="text-4xl md:text-5xl lg:text-7xl lg:w-[650px] text-center bg-gradient-to-b dark:from-white dark:via-gray-light dark:to-gray from-primary via-primary-light to-secondary inline-block text-transparent bg-clip-text font-extrabold !leading-relaxed mx-auto"
+            className="text-4xl md:text-5xl lg:text-[84px] text-center bg-gradient-to-b dark:from-white dark:via-gray-light dark:to-gray from-primary via-primary-light to-secondary inline-block text-transparent bg-clip-text font-extrabold !leading-relaxed mx-auto"
           >
-            The Ultimate <br />
+            The Ultimate <br className="md:hidden" />
             <Highlight className="dark:text-white text-black-main">
               Starter Templates
             </Highlight>
@@ -47,13 +55,13 @@ export default function Introduction() {
             for Developers
           </motion.h1>
         </HeroHighlight>
-        <p className="text-lg lg:text-xl z-10 w-11/12 lg:w-[650px] text-center dark:text-gray-light text-gray-dark">
+        <p className="text-lg md:text-xl lg:text-2xl z-10 w-11/12 md:w-[500px] lg:w-[700px] text-center dark:text-gray-light text-gray-dark">
           DevIniter offers a collection of blazing fast starter templates to
           kickstart your development journey.
         </p>
         <div className="flex items-center gap-x-5">
           <GradientBackgroundButton
-            text="Get Started"
+            text="Documentation"
             href="/docs/introduction"
             className="w-max relative z-10 bg-gradient-to-br from-primary/85 to-secondary/85 lg:hover:from-primary lg:hover:to-secondary"
           />
@@ -115,6 +123,7 @@ export default function Introduction() {
             className="w-max relative z-10 shadow-2xl border-2 dark:border-white isolate ring-1 dark:bg-black/50 bg-white/75 ring-black/5"
           />
         </div>
+        <DynamicInstallCommandBlock />
       </div>
     </section>
   );
