@@ -32,7 +32,7 @@ export default function Introduction() {
       ref={ref}
       className="w-screen flex justify-center items-center min-h-[calc(100vh-22.5rem)] lg:min-h-[85dvh]"
     >
-      <div className="lg:pb-24 flex flex-col items-center gap-y-8 min-h-full">
+      <div className="lg:pb-24 flex flex-col items-center gap-y-8">
         <DynamicTitle />
         <p className="text-lg md:text-xl lg:text-2xl z-10 w-11/12 md:w-[500px] lg:w-[700px] text-center dark:text-gray-light text-gray-dark">
           DevIniter offers a collection of blazing fast starter templates to
