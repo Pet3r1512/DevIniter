@@ -1,4 +1,3 @@
-import { Hero } from "@/components/Home/_index";
 import Template from "@/components/Layouts/Template";
 import dynamic from "next/dynamic";
 import { useInViewStore } from "@/stores/useInViewStore";
@@ -49,6 +48,11 @@ const DynamicOpenSource = dynamic(
   }
 );
 
+const DynamicHero = dynamic(() => import("../components/Home/_index"), {
+  loading: () => <SectionSkeleton />,
+  ssr: false,
+});
+
 export default function Home() {
   const { isHeroInView } = useInViewStore();
   return (
@@ -57,7 +61,7 @@ export default function Home() {
       className="w-full max-w-none lg:w-screen px-0"
       sectionClassName="max-w-0"
     >
-      <Hero />
+      <DynamicHero />
       <DyanmicFeatures />
       <section className="relative w-screen lg:max-w-7xl min-h-screen mx-auto flex flex-col items-center mt-24 lg:mt-48 lg:mb-24 mb-16 md:mb-48 overflow-x-hidden lg:overflow-visible">
         {isHeroInView && <DynamicAnimation />}

@@ -6,7 +6,15 @@ import { motion } from "framer-motion";
 
 export default function Title() {
   return (
-    <HeroHighlight>
+    <HeroHighlight className="min-w-64 min-h-40 md:h-36 md:w-[600px] lg:h-80 lg:w-auto text-center">
+      <h1 className="text-4xl md:text-5xl lg:text-[84px] text-center bg-gradient-to-b dark:from-white dark:via-gray-light dark:to-gray from-primary via-primary-light to-secondary inline-block text-transparent bg-clip-text font-extrabold !leading-relaxed mx-auto">
+        The Ultimate <br className="md:hidden" />
+        <Highlight className="dark:text-white text-black-main">
+          Starter Templates
+        </Highlight>
+        <br />
+        for Developers
+      </h1>
       <motion.h1
         initial={{
           opacity: 0,
@@ -20,7 +28,7 @@ export default function Title() {
           duration: 0.5,
           ease: [0.4, 0.0, 0.2, 1],
         }}
-        className="text-4xl md:text-5xl lg:text-[84px] text-center bg-gradient-to-b dark:from-white dark:via-gray-light dark:to-gray from-primary via-primary-light to-secondary inline-block text-transparent bg-clip-text font-extrabold !leading-relaxed mx-auto"
+        className="hidden"
       >
         The Ultimate <br className="md:hidden" />
         <Highlight className="dark:text-white text-black-main">

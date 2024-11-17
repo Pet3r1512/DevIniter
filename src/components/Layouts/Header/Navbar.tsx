@@ -77,12 +77,15 @@ const triggerClassName = "!bg-transparent dark:text-white lg:text-lg";
 const itemClassName =
   "isolate ring-1 dark:bg-black/50 bg-white/75 ring-black/5 lg:hover:scale-105 lg:dark:hover:bg-black lg:hover:bg-white transition-all duration-200 ease-linear";
 
-export function Navbar() {
+export default function Navbar() {
   const { handleHashScroll } = useSmoothScroll();
   const { isAnimationInView } = useInViewStore();
 
   return (
-    <NavigationMenu data-testid="navbar" className="mt-1 hidden lg:block">
+    <NavigationMenu
+      data-testid="navbar"
+      className="mt-1 hidden lg:block lg:w-[500px] lg:h-9"
+    >
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger

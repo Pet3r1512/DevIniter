@@ -6,14 +6,14 @@ import Instruction from "./Instructions";
 
 const DynamicInstallCommandBlock = dynamic(() => import("./InstallBox"), {
   loading: () => (
-    <div className="dark:bg-black bg-white w-[217.58px] h-[38.5px] md:w-[255.91px] md:h-[52.5px] lg:w-[329.08px] lg:h-[77px]" />
+    <div className="dark:bg-black bg-white h-10 w-52 md:h-11 md:w-60 lg:h-16 lg:w-80 rounded-lg md:rounded-xl lg:rounded-2xl" />
   ),
   ssr: false,
 });
 
 const DynamicTitle = dynamic(() => import("./Title"), {
   loading: () => (
-    <div className="w-[256.484px] h-[153.562px] md:w-[591.234px] md:h-[136.5px] lg:w-[1175.45px] lg:h-[273px]" />
+    <div className="min-w-64 min-h-40 md:h-36 md:w-[600px] lg:h-80 lg:w-auto " />
   ),
   ssr: false,
 });
@@ -32,8 +32,7 @@ export default function Introduction() {
       ref={ref}
       className="w-screen flex justify-center items-center min-h-[calc(100vh-22.5rem)] lg:min-h-[85dvh]"
     >
-      <div className="lg:pb-24 flex flex-col items-center gap-y-8">
-        <p className=""></p>
+      <div className="pb-24 lg:pb-0 flex flex-col items-center gap-y-8">
         <DynamicTitle />
         <p className="text-lg md:text-xl lg:text-2xl z-10 w-11/12 md:w-[500px] lg:w-[700px] text-center dark:text-gray-light text-gray-dark">
           DevIniter offers a collection of blazing fast starter templates to
