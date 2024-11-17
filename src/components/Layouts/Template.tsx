@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { ReactNode } from "react";
+import { ReactNode, Suspense } from "react";
 import { Kanit } from "next/font/google";
 import Header from "./Header/_index";
 import { cn } from "@/utils/utils";
@@ -69,7 +69,13 @@ export default function Template({
                 className
               )}
             >
-              {children}
+              <Suspense
+                fallback={
+                  <div className="size-screen dark:bg-black-main bg-white-light" />
+                }
+              >
+                {children}
+              </Suspense>
             </div>
           </section>
           <Footer />
