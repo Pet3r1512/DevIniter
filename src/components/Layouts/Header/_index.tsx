@@ -12,7 +12,7 @@ const DynamicLogo = dynamic(() => import("./Logo"), {
 });
 
 const DynamicNavBar = dynamic(() => import("./Navbar"), {
-  loading: () => <header className="lg:w-[500px] lg:h-9" />,
+  loading: () => <header className="lg:w-[500px] lg:h-9 relative" />,
   ssr: false,
 });
 
