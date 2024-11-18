@@ -49,7 +49,9 @@ const DynamicOpenSource = dynamic(
 );
 
 const DynamicHero = dynamic(() => import("../components/Home/_index"), {
-  loading: () => <SectionSkeleton />,
+  loading: () => (
+    <SectionSkeleton className="h-[calc(100vh-22.5rem)] lg:h-[85dvh]" />
+  ),
   ssr: false,
 });
 

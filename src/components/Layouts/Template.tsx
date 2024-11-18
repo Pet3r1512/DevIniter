@@ -29,8 +29,16 @@ export default function Template({
       <Head>
         <title>{fullPageName}</title>
         <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+        ></meta>
+        <meta
           name="description"
           content="The Ultimate Starter Templates for Developers"
+        />
+        <meta
+          property="og:image"
+          content="https://raw.githubusercontent.com/Pet3r1512/DevIniter/refs/heads/master/public/images/logos/FullLogo.png"
         />
         <link rel="icon" href="/favicon/favicon.ico" type="image/x-icon" />
         <link
