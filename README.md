@@ -102,8 +102,16 @@ Ensure you have the following tools installed on your system:
 
 Installing your favorite template by running:
 
+- npm
+
 ```bash
   npx @deviniter/cli@latest
+```
+
+- pnpm
+
+```bash
+  pnpm dlx @deviniter/cli@latest
 ```
 
 _For more examples, please refer to the [Documentation](https://www.deviniter.site/docs/introduction)_
