@@ -9,6 +9,7 @@ export type TechProps = {
   logoURL: string;
   shadowColor: string;
   isBuilt?: boolean | true;
+  desc?: string;
 };
 
 const DynamicAnimatedTooltips = dynamic(
