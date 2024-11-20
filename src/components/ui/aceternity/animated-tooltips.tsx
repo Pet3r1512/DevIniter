@@ -65,10 +65,11 @@ export const AnimatedTooltip = ({ items }: { items: TechProps[] }) => {
                 <div className="font-bold text-white relative z-30 text-base">
                   {item.name}
                 </div>
-                {item.isBuilt === false ? (
+                {item.isBuilt === false && (
                   <div className="text-white text-xs">Coming Soon</div>
-                ) : (
-                  <></>
+                )}
+                {!item.isBuilt && item.desc && (
+                  <div className="text-white text-xs">{item.desc}</div>
                 )}
               </motion.div>
             )}
