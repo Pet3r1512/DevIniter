@@ -88,7 +88,7 @@ export default function SupportedTechs() {
       href: "https://www.prisma.io/",
       logoURL: "prisma.png",
       shadowColor: "lg:hover:shadow-[#5A67D8]",
-      isBuilt: false,
+      desc: "Next.js",
     },
     {
       name: "tRPC",
