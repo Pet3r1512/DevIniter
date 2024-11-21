@@ -1,0 +1,43 @@
+import Code from "../../components/Documents/Code"
+
+# Prisma ORM
+
+## Introduction
+
+**Prisma** is a next-generation Object-Relational Mapping (ORM) tool that provides a type-safe and auto-generated query builder specifically designed for Node.js & TypeScript. It also includes a robust migration system and a graphical user interface (GUI) that allows users to view and edit their database seamlessly.
+
+## Why Prisma?
+
+Prisma offers several advantages that make it a compelling choice for developers:
+
+1. **Type Safety**: With Prisma, you get type-safe database queries, which means that errors can be caught at compile time rather than runtime. This leads to more robust and maintainable code.
+
+2. **Auto-Generated Queries**: Prisma automatically generates queries based on your data model, reducing the amount of boilerplate code you need to write and allowing you to focus on your application logic.
+
+3. **Migration System**: Prisma includes a powerful migration system that helps you manage your database schema changes easily. You can track changes, roll back migrations, and ensure your database is always in sync with your application.
+
+4. **Graphical User Interface**: The Prisma Studio provides a user-friendly interface to interact with your database. You can view, edit, and manage your data without writing any SQL queries, making it accessible for developers and non-developers alike.
+
+5. **Cross-Database Support**: Prisma supports multiple databases, including PostgreSQL, MySQL, SQLite, and SQL Server, allowing you to choose the best database for your application without being locked into a specific technology.
+
+6. **Community and Ecosystem**: Prisma has a vibrant community and a rich ecosystem of plugins and tools that enhance its functionality, making it easier to integrate with other technologies and frameworks.
+
+By leveraging these features, Prisma simplifies database management and enhances developer productivity, making it an excellent choice for modern web applications.
+
+
+## Prisma Client
+
+The **@prisma/client** package is a type-safe database client for Node.js and TypeScript, providing an intuitive API for CRUD operations and complex queries. It auto-generates based on your Prisma schema, ensuring type alignment with your database, which improves error detection and enhances developer productivity.
+
+## Schema
+
+The schema section in Prisma defines your data model, including entities, fields, and relationships. It allows Prisma to auto-generate database migrations and the **@prisma/client** API, ensuring type safety and consistency between your application and the database. 
+
+By default, your schemas will located at <Code>/prisma/schema.prisma</Code>
+
+## Official Documents
+
+For furthur information or instructions, please visit Prisma's official websites:
+
+1. Prisma: https://www.prisma.io/docs
+2. Prisma Github: https://github.com/prisma/prisma
