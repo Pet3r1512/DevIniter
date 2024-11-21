@@ -11,7 +11,10 @@ export default function PatchNews() {
         now lets users choose whether to install Prisma when selecting the
         Next.js template.
       </p>
-
+      <p className="md:hidden">
+        🚀 <strong>DevIniter</strong> <span className="text-gold">v1.2.14</span>{" "}
+        is out now.
+      </p>
       <Link
         className="underline decoration-solid text-gold"
         href="/docs/installation"
