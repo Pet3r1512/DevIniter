@@ -62,7 +62,9 @@ export default function Template({
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
       <ReactLenis root>
-        <main className={cn("scrollbar-hide", kanit.className)}>
+        <main
+          className={cn("scrollbar-hide overflow-x-hidden", kanit.className)}
+        >
           <PatchNews />
           <Header />
           <section
