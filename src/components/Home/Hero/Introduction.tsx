@@ -30,7 +30,7 @@ export default function Introduction() {
   return (
     <section
       ref={ref}
-      className="w-screen flex justify-center items-center min-h-[100dvh]"
+      className="w-screen flex justify-center items-center min-h-screen"
     >
       <div className="pb-24 lg:pb-0 flex flex-col items-center gap-y-8">
         <DynamicTitle />
