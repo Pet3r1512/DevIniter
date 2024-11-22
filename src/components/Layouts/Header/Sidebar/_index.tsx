@@ -94,7 +94,7 @@ export default function Sidebar() {
           Drag to close <ChevronsRight />
         </p>
         <Logo className="h-auto w-32 md:w-56" />
-        <aside className="flex flex-col gap-y-2.5 px-2 md:px-5 flex-1">
+        <aside className="flex flex-col px-2 md:px-5 flex-1">
           <Accordion type="single" collapsible className="w-full">
             {navlinks.map((nav, index) => {
               return (
