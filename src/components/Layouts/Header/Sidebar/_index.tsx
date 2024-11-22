@@ -90,8 +90,11 @@ export default function Sidebar() {
       <DrawerTrigger id="sidebar-trigger" className="lg:hidden">
         <Menu size={24} />
       </DrawerTrigger>
-      <DrawerContent className="lg:hidden h-[100dvh] w-2/3 flex flex-col p-5 gap-y-10">
-        <Logo className="h-auto w-2/3 md:w-1/2" />
+      <DrawerContent className="lg:hidden h-[100dvh] flex flex-col p-8 gap-y-10">
+        <p className="flex items-center text-sx dark:text-gray-400 text-gray">
+          Drag to close <ChevronsRight />
+        </p>
+        <Logo className="h-auto w-32 md:w-56" />
         <aside className="flex flex-col gap-y-2.5 px-2 md:px-5 flex-1">
           <Accordion type="single" collapsible className="w-full">
             {navlinks.map((nav, index) => {
