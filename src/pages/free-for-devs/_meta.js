@@ -5,7 +5,7 @@ export default {
   introduction: "Introduction",
   ui_libraries: {
     title: (
-      <div className="flex items-center w-full justify-between">
+      <div className="flex items-center gap-x-2.5">
         <p>UI Libraries</p>
         <ComingSoon />
       </div>
