@@ -1,5 +1,5 @@
 import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer";
-import { ArrowUpRight, Menu } from "lucide-react";
+import { ArrowUpRight, ChevronsRight, Menu } from "lucide-react";
 import Link from "next/link";
 import Logo from "../Logo";
 import ThemeToggle from "../../ThemeToggle";
