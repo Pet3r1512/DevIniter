@@ -86,6 +86,7 @@ export default function Sidebar() {
 
   return (
     <Drawer direction="left">
+    <Drawer direction="right">
       <DrawerTrigger id="sidebar-trigger" className="lg:hidden">
         <Menu size={24} />
       </DrawerTrigger>
