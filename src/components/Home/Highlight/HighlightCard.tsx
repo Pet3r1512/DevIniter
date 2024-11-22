@@ -18,7 +18,11 @@ export default function HighlightCard({
   const { title, desc, image, style } = content;
   return (
     <div
-      style={style}
+      style={{
+        ...style,
+        transition: "all 0.3s ease", // Adjust this to your desired properties
+        backgroundColor: style.backgroundColor, // Ensure background color is set directly
+      }}
       key={index}
       className={cn(
         "isolate ring-1 dark:bg-black/50 bg-white/75 ring-black/5 lg:hover:scale-105 transition-all duration-100 ease-lineare rounded-[20px] p-2.5 md:p-3.5 lg:p-5 shadow-2xl md:h-96 md:w-96 lg:w-auto h-80 w-80 flex flex-col justify-center items-center gap-y-8",
