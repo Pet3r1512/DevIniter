@@ -4,7 +4,7 @@ import NewBadge from "../../components/Layouts/Badges/NewBadge";
 export default {
   prisma: {
     title: (
-      <div className="flex items-center w-full justify-between relative">
+      <div className="flex items-center gap-x-2.5">
         <p>Prisma ORM</p>
         <NewBadge />
       </div>
