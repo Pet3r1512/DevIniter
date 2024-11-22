@@ -20,7 +20,6 @@ export default function Header() {
   return (
     <header className="flex items-center justify-between py-5 px-5 lg:px-0 sticky top-0 z-30 !backdrop-filter !backdrop-blur-xl">
       <div className="max-w-[1440px] w-full mx-auto flex items-center justify-between">
-        <Sidebar />
         <div className="flex items-center gap-x-8">
           <DynamicLogo />
           <DynamicNavBar />
@@ -43,6 +42,7 @@ export default function Header() {
           <ThemeToggle />
           <Github size={20} />
         </div>
+        <Sidebar />
       </div>
     </header>
   );
