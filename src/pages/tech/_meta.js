@@ -10,4 +10,12 @@ export default {
       </div>
     ),
   },
+  vitest: {
+    title: (
+      <div className="flex items-center gap-x-2.5">
+        <p>Vitest</p>
+        <NewBadge />
+      </div>
+    ),
+  },
 };
