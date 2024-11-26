@@ -11,7 +11,7 @@ export default function PatchNews() {
         has been released with Next15
       </p>
       <p className="md:hidden">
-        🚀 <strong>DevIniter</strong> <span className="text-gold">v1.2.14</span>{" "}
+        🚀 <strong>DevIniter</strong> <span className="text-gold">v1.2.16</span>{" "}
         is out now.
       </p>
       <Link
