@@ -1,5 +1,6 @@
 import Code from "../../components/Documents/Code"
 import HighlightedText from "../../components/Documents/HighlightedText"
+import CodeBlock from "../../components/Documents/CodeBlock.tsx"
 
 # Vitest
 
@@ -24,6 +25,27 @@ Vitest offers several advantages that make it a compelling choice for developers
 6. **Community and Ecosystem**: As part of the Vite ecosystem, Vitest benefits from a growing community and a wealth of plugins and integrations, enhancing its functionality and ease of use.
 
 By choosing Vitest, developers can enjoy a powerful, efficient, and modern testing experience that aligns with contemporary development practices.
+
+## Simple test
+
+In this example, we will write a very simple test in order to verify output from a function: 
+
+<CodeBlock lang="ts" code={
+`// sum.ts
+export function sum(a: number, b: number) { 
+    return a + b 
+}`
+} />
+
+<CodeBlock lang="ts" code={
+`// sum.test.ts
+import { expect, it } from 'vitest'
+import { sum } from './sum.ts'
+
+it('should return 3 when adding 1 and 2', () => {
+    expect(sum(1, 2)).toBe(3)
+})`
+} />
 
 ## Official Documents
 
