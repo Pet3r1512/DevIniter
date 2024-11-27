@@ -4,9 +4,11 @@ import { codeToHtml } from "shiki";
 
 export default function CodeBlock({
   code,
+  filename,
   lang,
 }: {
   code: string;
+  filename?: string;
   lang: string;
 }) {
   const { theme } = useTheme();
