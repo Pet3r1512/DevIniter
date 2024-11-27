@@ -73,6 +73,50 @@ Then, use Prisma's migration system to create your database schema:
 `npm prisma migrate dev --name init
 `
 }/>
+
+## CRUD Operations
+
+Now, you can perform **CRUD operations** on your data by using generated Prisma Client API. For instance:
+
+### Create New Record
+
+<CodeBlock lang="ts" code={
+`// db/seed.ts
+import { PrismaClient } from '@prisma/client';
+
+const prisma = new PrismaClient();
+
+async function main() {
+  const user = await prisma.user.create({
+    data: {
+      name: 'John Doe',
+      email: 'john.doe@example.com',
+    },
+  });
+  console.log(user);
+}
+
+main();
+`
+} />
+
+### Find Records
+
+<CodeBlock lang="ts" code={
+`// db/seed.ts
+import { PrismaClient } from '@prisma/client';
+
+const prisma = new PrismaClient();
+
+async function main() {
+    const users = await prisma.user.findMany();
+    console.log(users);
+}
+
+main();
+`
+} />
+
 ## Official Documents
 
 For furthur information or instructions, please visit Prisma's official websites:
