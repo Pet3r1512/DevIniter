@@ -31,9 +31,8 @@ By leveraging these features, Prisma simplifies database management and enhances
 
 **Prisma** requires a connection to your database by an <Code>URL</Code>. For example:
 
-<CodeBlock lang="prisma" code={
-`// prisma/schema.prisma
-datasource db {
+<CodeBlock lang="prisma" filename="prisma/schema.prisma" code={
+`datasource db {
     provider = "postgresql"
     url      = env("DATABASE_URL")
 }
@@ -45,9 +44,8 @@ The schema section in Prisma defines your data model, including entities, fields
 
 By default, your schemas will located at <Code>/prisma/schema.prisma</Code>
 
-<CodeBlock lang="prisma" code={
-`// prisma/schema.prisma
-model User {
+<CodeBlock lang="prisma" filename="prisma/schema.prisma" code={
+`model User {
     user_id Int     @id @default(autoincrement())
     name    String?
     email   String  @unique
@@ -80,9 +78,8 @@ Now, you can perform **CRUD operations** on your data by using generated Prisma 
 
 ### Create New Record
 
-<CodeBlock lang="ts" code={
-`// db/seed.ts
-import { PrismaClient } from '@prisma/client';
+<CodeBlock lang="ts" filename="db/seed.ts" code={
+`import { PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient();
 
@@ -102,9 +99,8 @@ main();
 
 ### Find Records
 
-<CodeBlock lang="ts" code={
-`// db/seed.ts
-import { PrismaClient } from '@prisma/client';
+<CodeBlock lang="ts" filename="db/seed.ts" code={
+`import { PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient();
 
