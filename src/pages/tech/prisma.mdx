@@ -60,7 +60,7 @@ The **@prisma/client** package is a type-safe database client for Node.js and Ty
 
 After defining your schema, generate the **Prisma Client** by:
 
-<CodeBlock lang="bash" code={
+<CodeBlock lang="bash" filename="bash" code={
 `npm prisma generate
 ` 
 } />
@@ -69,7 +69,7 @@ After defining your schema, generate the **Prisma Client** by:
 
 Then, use Prisma's migration system to create your database schema:
 
-<CodeBlock lang="bash" code={
+<CodeBlock lang="bash" filename="bash" code={
 `npm prisma migrate dev --name init
 `
 }/>
