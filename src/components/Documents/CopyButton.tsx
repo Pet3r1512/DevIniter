@@ -6,10 +6,12 @@ export default function CopyButton({
   copyContent,
   className,
   isBash = true,
+  iconSize = 24,
 }: {
   copyContent: string;
   className?: string;
   isBash?: boolean;
+  iconSize?: number;
 }) {
   const [done, setDone] = useState(false);
 
@@ -26,7 +28,11 @@ export default function CopyButton({
       )}
     >
       {!isBash && <p>bash</p>}
-      {!done ? <Clipboard /> : <ClipboardCheck className="text-secondary/50" />}
+      {!done ? (
+        <Clipboard size={iconSize} />
+      ) : (
+        <ClipboardCheck size={iconSize} className="text-secondary/50" />
+      )}
     </button>
   );
 }
