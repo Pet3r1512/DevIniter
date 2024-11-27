@@ -5,7 +5,7 @@ type HighlightedTextProps = {
   href: string;
   text: string;
   className?: string;
-  target: "" | "_blank";
+  target?: "_blank";
 };
 
 export default function HighlightedText({
