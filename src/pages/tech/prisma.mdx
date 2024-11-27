@@ -27,9 +27,17 @@ Prisma offers several advantages that make it a compelling choice for developers
 By leveraging these features, Prisma simplifies database management and enhances developer productivity, making it an excellent choice for modern web applications.
 
 
-## Prisma Client
+## Data Source
 
-The **@prisma/client** package is a type-safe database client for Node.js and TypeScript, providing an intuitive API for CRUD operations and complex queries. It auto-generates based on your Prisma schema, ensuring type alignment with your database, which improves error detection and enhances developer productivity.
+**Prisma** requires a connection to your database by an <Code>URL</Code>. For example:
+
+<CodeBlock lang="prisma" code={
+`// prisma/schema.prisma
+datasource db {
+    provider = "postgresql"
+    url      = env("DATABASE_URL")
+}
+`} />
 
 ## Schema
 
@@ -38,7 +46,7 @@ The schema section in Prisma defines your data model, including entities, fields
 By default, your schemas will located at <Code>/prisma/schema.prisma</Code>
 
 <CodeBlock lang="prisma" code={
-`//prisma/schema.prisma
+`// prisma/schema.prisma
 model User {
     user_id Int     @id @default(autoincrement())
     name    String?
@@ -46,9 +54,74 @@ model User {
 }
 `} />
 
+## Generate Prisma Client
+
+The **@prisma/client** package is a type-safe database client for Node.js and TypeScript, providing an intuitive API for CRUD operations and complex queries. It auto-generates based on your Prisma schema, ensuring type alignment with your database, which improves error detection and enhances developer productivity.
+
+After defining your schema, generate the **Prisma Client** by:
+
+<CodeBlock lang="bash" code={
+`npm prisma generate
+` 
+} />
+
+## Migrations
+
+Then, use Prisma's migration system to create your database schema:
+
+<CodeBlock lang="bash" code={
+`npm prisma migrate dev --name init
+`
+}/>
+
+## CRUD Operations
+
+Now, you can perform **CRUD operations** on your data by using generated Prisma Client API. For instance:
+
+### Create New Record
+
+<CodeBlock lang="ts" code={
+`// db/seed.ts
+import { PrismaClient } from '@prisma/client';
+
+const prisma = new PrismaClient();
+
+async function main() {
+  const user = await prisma.user.create({
+    data: {
+      name: 'John Doe',
+      email: 'john.doe@example.com',
+    },
+  });
+  console.log(user);
+}
+
+main();
+`
+} />
+
+### Find Records
+
+<CodeBlock lang="ts" code={
+`// db/seed.ts
+import { PrismaClient } from '@prisma/client';
+
+const prisma = new PrismaClient();
+
+async function main() {
+    const users = await prisma.user.findMany();
+    console.log(users);
+}
+
+main();
+`
+} />
+
 ## Official Documents
 
 For furthur information or instructions, please visit Prisma's official websites:
 
-1. Prisma: <HighlightedText content={{href: "https://www.prisma.io/docs", text: "www.prisma.io/docs"}} />
-2. Prisma Github: <HighlightedText content={{href: "https://github.com/prisma/prisma", text: "github.com/prisma/prisma"}} />
+1. Prisma: <HighlightedText content={{href: "https://www.prisma.io/docs", text: "prisma.io/docs"}} />
+2. CRUD Operations: <HighlightedText content={{href: "https://www.prisma.io/docs/orm/prisma-client/queries/crud", text: "prisma.io/docs/orm/prisma-client/queries/crud"}} />
+3. Quick Start <HighlightedText content={{href: "https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch", text: "prisma.io/docs/getting-started/setup-prisma/start-from-scratch"}} />
+4. Prisma Github: <HighlightedText content={{href: "https://github.com/prisma/prisma", text: "github.com/prisma/prisma"}} />
