@@ -31,7 +31,10 @@ export default function CopyButton({
       {!done ? (
         <Clipboard size={iconSize} />
       ) : (
-        <ClipboardCheck size={iconSize} className="text-secondary/50" />
+        <ClipboardCheck
+          size={iconSize}
+          className="dark:text-secondary/75 text-green-700"
+        />
       )}
     </button>
   );
