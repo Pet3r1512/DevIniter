@@ -64,6 +64,15 @@ After defining your schema, generate the **Prisma Client** by:
 `npm prisma generate
 ` 
 } />
+
+## Migrations
+
+Then, use Prisma's migration system to create your database schema:
+
+<CodeBlock lang="bash" code={
+`npm prisma migrate dev --name init
+`
+}/>
 ## Official Documents
 
 For furthur information or instructions, please visit Prisma's official websites:
