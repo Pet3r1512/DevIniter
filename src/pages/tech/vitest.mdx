@@ -30,16 +30,14 @@ By choosing Vitest, developers can enjoy a powerful, efficient, and modern testi
 
 In this example, we will write a very simple test in order to verify output from a function: 
 
-<CodeBlock lang="ts" code={
-`// sum.ts
-export function sum(a: number, b: number) { 
+<CodeBlock lang="ts" filename="sum.ts" code={
+`export function sum(a: number, b: number) { 
     return a + b 
 }`
 } />
 
-<CodeBlock lang="ts" code={
-`// sum.test.ts
-import { expect, it } from 'vitest'
+<CodeBlock lang="ts" filename="sum.test.ts" code={
+`import { expect, it } from 'vitest'
 import { sum } from './sum.ts'
 
 it('should return 3 when adding 1 and 2', () => {
