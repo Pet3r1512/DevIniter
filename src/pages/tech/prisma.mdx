@@ -27,7 +27,17 @@ Prisma offers several advantages that make it a compelling choice for developers
 By leveraging these features, Prisma simplifies database management and enhances developer productivity, making it an excellent choice for modern web applications.
 
 
+## Data Source
 
+**Prisma** requires a connection to your database by an <Code>URL</Code>. For example:
+
+<CodeBlock lang="prisma" code={
+`// prisma/schema.prisma
+datasource db {
+    provider = "postgresql"
+    url      = env("DATABASE_URL")
+}
+`} />
 
 ## Schema
 
