@@ -2,15 +2,18 @@ import { useTheme } from "@/hooks/useTheme";
 import { useEffect, useState } from "react";
 import { codeToHtml } from "shiki";
 import CopyButton from "./CopyButton";
+import { cn } from "@/utils/utils";
 
 export default function CodeBlock({
   code,
   filename,
   lang,
+  className,
 }: {
   code: string;
   filename?: string;
   lang: string;
+  className?: string;
 }) {
   const { theme } = useTheme();
   const [htmlOutput, setHtmlOutput] = useState<string | null>(null);
@@ -36,7 +39,12 @@ export default function CodeBlock({
   }, [code, theme, lang]);
 
   return (
-    <div className="shiki-container dark:bg-[#17191e] bg-[#fff] rounded-2xl my-5 p-5">
+    <div
+      className={cn(
+        "shiki-container dark:bg-[#17191e] bg-[#fff] rounded-2xl my-5 p-5",
+        className
+      )}
+    >
       <div className="flex items-center justify-between">
         {filename ? (
           <p className="cursor-default text-gray-500 font-semibold italic select-none">

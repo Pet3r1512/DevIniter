@@ -1,6 +1,7 @@
 import Code from "../../components/Documents/Code"
 import HighlightedText from "../../components/Documents/HighlightedText"
 import CodeBlock from "../../components/Documents/CodeBlock.tsx"
+import CodeBlockWithPkg from "../../components/Documents/CodeBlockWithPkg.tsx"
 
 # Prisma ORM
 
@@ -58,19 +59,13 @@ The **@prisma/client** package is a type-safe database client for Node.js and Ty
 
 After defining your schema, generate the **Prisma Client** by:
 
-<CodeBlock lang="bash" filename="bash" code={
-`npm prisma generate
-` 
-} />
+<CodeBlockWithPkg lang="bash" npmCommand="npm prisma generate" pnpmCommand="pnpm prisma generate" />
 
 ## Migrations
 
 Then, use Prisma's migration system to create your database schema:
 
-<CodeBlock lang="bash" filename="bash" code={
-`npm prisma migrate dev --name init
-`
-}/>
+<CodeBlockWithPkg lang="bash" npmCommand="npm prisma migrate dev --name init" pnpmCommand="pnpm prisma migrate dev --name init" />
 
 ## CRUD Operations
 
