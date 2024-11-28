@@ -5,6 +5,7 @@ import ScriptBlock from "../../components/Documents/ScriptBlock.tsx"
 import HighlightedText from "../../components/Documents/HighlightedText.tsx"
 import ComingSoon from "../../components/Layouts/Badges/ComingSoon.tsx"
 import FrameworkGuide from "../../components/Documents/FrameworkGuide.tsx"
+import CodeBlockWithPkg from "../../components/Documents/CodeBlockWithPkg.tsx"
 
 # Installation
 
@@ -24,7 +25,9 @@ Ensure you have the following tools installed on your system:
 
 We recommend starting a new template using `deviniter`, which downloads template for you automatically. To install a template, run:
 
-<InstallBlock command={[
+<CodeBlockWithPkg />
+
+{/* <InstallBlock command={[
     {
       value: "pnpm",
       script: "pnpm dlx @deviniter/cli@latest",
@@ -33,7 +36,7 @@ We recommend starting a new template using `deviniter`, which downloads template
       value: "npm",
       script: "npx @deviniter/cli@latest",
     },
-]} />
+]} /> */}
 
 After running this command, our CLI will guide you through the setup process:
 
