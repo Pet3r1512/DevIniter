@@ -25,7 +25,7 @@ Ensure you have the following tools installed on your system:
 
 We recommend starting a new template using `deviniter`, which downloads template for you automatically. To install a template, run:
 
-<CodeBlockWithPkg npmCommand="npx @deviniter/cli@latest" pnpmCommand="pnpm dlx @deviniter/cli@latest" />
+<CodeBlockWithPkg lang="bash" npmCommand="npx @deviniter/cli@latest" pnpmCommand="pnpm dlx @deviniter/cli@latest" />
 
 After running this command, our CLI will guide you through the setup process:
 
@@ -67,7 +67,7 @@ Navigate to your project directory and start it locally using one of these comma
 
 <CodeBlock lang="bash" code="cd your-project" />
 
-<CodeBlockWithPkg npmCommand="npm run dev" pnpmCommand="pnpm dev" />
+<CodeBlockWithPkg lang="bash" npmCommand="npm run dev" pnpmCommand="pnpm dev" />
 
 If there is no other application running on port 3000, your project will start at <HighlightedText content={{href: "http://localhost:3000", text: "localhost:3000", target: "_blank"}} />.
 
@@ -98,7 +98,7 @@ Error: The engine "node" is incompatible with this module
 3. **Package Installation Fails**
 - Clear your package manager cache:
 
-<CodeBlockWithPkg npmCommand="npm cache clean --force" pnpmCommand="pnpm store prune" />
+<CodeBlockWithPkg lang="bash" npmCommand="npm cache clean --force" pnpmCommand="pnpm store prune" />
 
 - Ensure you have the necessary permissions
 - Check your network connection
