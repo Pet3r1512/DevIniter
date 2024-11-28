@@ -51,6 +51,44 @@ it('should return 3 when adding 1 and 2', () => {
 })`
 } />
 
+## Tests For Components
+
+If you want to make sure that a specific component or element is displayed correctly in DOM, you can use below way by using **React Testing Libirary**. For intance, you have a <Code>Title</Code> component to display a simple heading:
+
+<CodeBlock lang="tsx" filename="components/title.tsx" code={
+`export default function Title() {
+    return (
+        <h1 
+            // Define a data-testid attribute to make it easier to select in tests
+            data-testid="title" 
+        >
+            Welcome To DevIniter
+        </h1>
+    )
+}
+`} />
+
+Then, you can write a test to make sure it appear in DOM:
+
+<CodeBlock lang="tsx" filename="components/title.test.tsx" code={
+`import { expect, it } from 'vitest'
+import { render, screen } from "@testing-library/react";
+import Title from "./title"
+
+it("should render Title component in DOM" , async () => {
+    // Render Title component
+    render(<Title />)
+
+    // Wait to get the element by data-testid
+    const title = await screen.getByTestId("title")
+
+    // Expect it to be displayed in DOM
+    // by using toBeInTheDocument
+    // which is provided by @testing-library/react
+    expect(title).toBeInTheDocument()
+})
+`} />
+
 ## Official Documents
 
 For furthur information or instructions, please visit Vitest's official websites:
