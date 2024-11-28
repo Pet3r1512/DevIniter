@@ -8,6 +8,12 @@ import CodeBlock from "../../components/Documents/CodeBlock.tsx"
 
 **Vitest** is a next-generation testing framework powered by **Vite**. It includes a smart and instant watch mode and is compatible with **Jest**. Moreover, **TypeScript**, **ESM**, and **JSX** are also supported.
 
+**React Testing Library** is a simple and complete React DOM testing utilities that encourage good testing practices.
+
+## Reason for Mandatory Tool
+
+**DevIniter** believes that testing is one of the most important processes in the entire product development lifecycle. Testing ensures that everything works as expected, and changes should only occur when you decide. Therefore, <Code>Vitest</Code> and <Code>React Testing Library</Code> are included in our templates.
+
 ## Why Vitest?
 
 Vitest offers several advantages that make it a compelling choice for developers:
@@ -45,8 +51,47 @@ it('should return 3 when adding 1 and 2', () => {
 })`
 } />
 
+## Tests For Components
+
+If you want to make sure that a specific component or element is displayed correctly in DOM, you can use below way by using **React Testing Libirary**. For intance, you have a <Code>Title</Code> component to display a simple heading:
+
+<CodeBlock lang="tsx" filename="components/title.tsx" code={
+`export default function Title() {
+    return (
+        <h1 
+            // Define a data-testid attribute to make it easier to select in tests
+            data-testid="title" 
+        >
+            Welcome To DevIniter
+        </h1>
+    )
+}
+`} />
+
+Then, you can write a test to make sure it appear in DOM:
+
+<CodeBlock lang="tsx" filename="components/title.test.tsx" code={
+`import { expect, it } from 'vitest'
+import { render, screen } from "@testing-library/react";
+import Title from "./title"
+
+it("should render Title component in DOM" , async () => {
+    // Render Title component
+    render(<Title />)
+
+    // Wait to get the element by data-testid
+    const title = await screen.getByTestId("title")
+
+    // Expect it to be displayed in DOM
+    // by using toBeInTheDocument
+    // which is provided by @testing-library/jest-dom
+    expect(title).toBeInTheDocument()
+})
+`} />
+
 ## Official Documents
 
-For furthur information or instructions, please visit Vitest's official websites:
+For furthur information or instructions, please visit React Testing Library and Vitest's official websites:
 
-Vitest: <HighlightedText content={{href: "https://vitest.dev", text: "vitest.dev"}} />
+1. Vitest: <HighlightedText content={{href: "https://vitest.dev", text: "vitest.dev"}} />
+2. React Testing Library Github: <HighlightedText content={{href: "https://github.com/testing-library/react-testing-library#readme", text: "github.com/testing-library/react-testing-library"}} />
