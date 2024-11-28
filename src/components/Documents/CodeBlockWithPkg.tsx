@@ -4,11 +4,15 @@ import CodeBlock from "./CodeBlock";
 interface CodeBlockWithPkgProps {
   npmCommand: string;
   pnpmCommand: string;
+  lang: string;
+  filename?: string;
 }
 
 export default function CodeBlockWithPkg({
   npmCommand,
   pnpmCommand,
+  lang,
+  filename,
 }: CodeBlockWithPkgProps) {
   const [selectedPM, setSelectedPM] = useState("npm");
 
@@ -94,7 +98,12 @@ export default function CodeBlockWithPkg({
           </button>
         ))}
       </div>
-      <CodeBlock className="my-0 p-0" lang="bash" code={selectedCommand!} />
+      <CodeBlock
+        filename={filename}
+        className="my-0 p-0"
+        lang={lang}
+        code={selectedCommand!}
+      />
     </div>
   );
 }
