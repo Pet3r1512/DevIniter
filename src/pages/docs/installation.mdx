@@ -1,4 +1,3 @@
-import InstallBlock from "../../components/Documents/InstallBlock"
 import QuestionBlock from "../../components/Documents/QuestionsBlock"
 import TipsBlock from "../../components/Documents/TipsBlock.tsx"
 import ScriptBlock from "../../components/Documents/ScriptBlock.tsx"
@@ -6,6 +5,7 @@ import HighlightedText from "../../components/Documents/HighlightedText.tsx"
 import ComingSoon from "../../components/Layouts/Badges/ComingSoon.tsx"
 import FrameworkGuide from "../../components/Documents/FrameworkGuide.tsx"
 import CodeBlockWithPkg from "../../components/Documents/CodeBlockWithPkg.tsx"
+import CodeBlock from "../../components/Documents/CodeBlock.tsx"
 
 # Installation
 
@@ -25,18 +25,7 @@ Ensure you have the following tools installed on your system:
 
 We recommend starting a new template using `deviniter`, which downloads template for you automatically. To install a template, run:
 
-<CodeBlockWithPkg />
-
-{/* <InstallBlock command={[
-    {
-      value: "pnpm",
-      script: "pnpm dlx @deviniter/cli@latest",
-    },
-    {
-      value: "npm",
-      script: "npx @deviniter/cli@latest",
-    },
-]} /> */}
+<CodeBlockWithPkg npmCommand="npx @deviniter/cli@latest" pnpmCommand="pnpm dlx @deviniter/cli@latest" />
 
 After running this command, our CLI will guide you through the setup process:
 
@@ -76,18 +65,9 @@ If you’re new to DevIniter, refer to our <HighlightedText content={{href: "/do
 
 Navigate to your project directory and start it locally using one of these commands:
 
-<InstallBlock command={
-    [
-        {
-            value: "pnpm",
-            script: "cd your-project-name && pnpm dev"
-        },
-        {
-            value: "npm",
-            script: "cd your-project-name && npm run dev"
-        },
-    ]
-}/>
+<CodeBlock lang="bash" code="cd your-project" />
+
+<CodeBlockWithPkg npmCommand="npm run dev" pnpmCommand="pnpm dev" />
 
 If there is no other application running on port 3000, your project will start at <HighlightedText content={{href: "http://localhost:3000", text: "localhost:3000", target: "_blank"}} />.
 
@@ -118,16 +98,7 @@ Error: The engine "node" is incompatible with this module
 3. **Package Installation Fails**
 - Clear your package manager cache:
 
-<InstallBlock command={[
-    {
-      value: "pnpm",
-      script: "pnpm store prune",
-    },
-    {
-      value: "npm",
-      script: "npm cache clean --force",
-    },
-]} />
+<CodeBlockWithPkg npmCommand="npm cache clean --force" pnpmCommand="pnpm store prune" />
 
 - Ensure you have the necessary permissions
 - Check your network connection
