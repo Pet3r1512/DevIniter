@@ -18,6 +18,7 @@ Ensure you have the following tools installed on your system:
 - <HighlightedText content={{href: "https://nodejs.org/", text: "Nodejs", target: "_blank" }} /> (v20.0.0 or higher)
 - <HighlightedText content={{href: "https://pnpm.io/", text: "pnpm", target: "_blank" }} /> (v9.0.0 or higher)
 - <HighlightedText content={{href: "https://www.npmjs.com/", text: "npm", target: "_blank" }} /> (v10.0.0 or higher)
+- <HighlightedText content={{href: "https://yarnpkg.com/", text: "yarn", target: "_blank" }} /> (v4.0.0 - Beta)
 
 <strong>Note:</strong> We are actively working to expand support for additional Node.js versions and package managers such as Yarn.
 
@@ -25,7 +26,7 @@ Ensure you have the following tools installed on your system:
 
 We recommend starting a new template using `deviniter`, which downloads template for you automatically. To install a template, run:
 
-<CodeBlockWithPkg lang="bash" npmCommand="npx @deviniter/cli@latest" pnpmCommand="pnpm dlx @deviniter/cli@latest" />
+<CodeBlockWithPkg lang="bash" npmCommand="npx @deviniter/cli@latest" pnpmCommand="pnpm dlx @deviniter/cli@latest" yarnCommand="yarn dlx @deviniter/cli@latest" />
 
 After running this command, our CLI will guide you through the setup process:
 
@@ -67,7 +68,7 @@ Navigate to your project directory and start it locally using one of these comma
 
 <CodeBlock lang="bash" code="cd your-project" />
 
-<CodeBlockWithPkg lang="bash" npmCommand="npm run dev" pnpmCommand="pnpm dev" />
+<CodeBlockWithPkg lang="bash" npmCommand="npm run dev" pnpmCommand="pnpm dev" yarnCommand="yarn dev" />
 
 If there is no other application running on port 3000, your project will start at <HighlightedText content={{href: "http://localhost:3000", text: "localhost:3000", target: "_blank"}} />.
 
@@ -98,7 +99,7 @@ Error: The engine "node" is incompatible with this module
 3. **Package Installation Fails**
 - Clear your package manager cache:
 
-<CodeBlockWithPkg lang="bash" npmCommand="npm cache clean --force" pnpmCommand="pnpm store prune" />
+<CodeBlockWithPkg lang="bash" npmCommand="npm cache clean --force" pnpmCommand="pnpm store prune" yarnCommand="yarn cache clean" />
 
 - Ensure you have the necessary permissions
 - Check your network connection
