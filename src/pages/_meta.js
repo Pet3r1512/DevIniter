@@ -4,5 +4,4 @@ export default {
   features: "Features Overview",
   tech: "Techs Stack",
   release: "Release Notes",
-  "free-for-devs": "Free For Devs",
 };
