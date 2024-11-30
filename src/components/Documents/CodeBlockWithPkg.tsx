@@ -4,6 +4,7 @@ import CodeBlock from "./CodeBlock";
 interface CodeBlockWithPkgProps {
   npmCommand: string;
   pnpmCommand: string;
+  yarnCommand: string;
   lang: string;
   filename?: string;
 }
@@ -11,6 +12,7 @@ interface CodeBlockWithPkgProps {
 export default function CodeBlockWithPkg({
   npmCommand,
   pnpmCommand,
+  yarnCommand,
   lang,
   filename,
 }: CodeBlockWithPkgProps) {
