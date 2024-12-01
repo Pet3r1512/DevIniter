@@ -95,8 +95,9 @@ Ensure you have the following tools installed on your system:
 - Nodejs (v20.0.0 or higher)
 - pnpm (v9.0.0 or higher)
 - npm (v10.0.0 or higher)
+- yarn (v4.0.0 only) - Beta
 
-<strong>Note</strong>: We are actively working to expand support for additional Node.js versions and package managers such as Yarn.
+<strong>Note</strong>: We are actively working to expand support for additional Node.js versions and package managers such as Bun.
 
 ### Installation
 
@@ -112,6 +113,12 @@ Installing your favorite template by running:
 
 ```bash
   pnpm dlx @deviniter/cli@latest
+```
+
+- yarn - v4.0.0 (Beta)
+
+```bash
+  yarn dlx @deviniter/cli@latest
 ```
 
 _For more examples, please refer to the [Documentation](https://www.deviniter.site/docs/introduction)_
