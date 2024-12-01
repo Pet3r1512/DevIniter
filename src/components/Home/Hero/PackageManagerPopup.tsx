@@ -17,6 +17,7 @@ export default function PackageManagerPopup() {
     {
       name: "pnpm",
       cmd: "pnpm dlx @deviniter/cli@latest",
+      name: "yarn (Beta)",
     },
   ];
 
