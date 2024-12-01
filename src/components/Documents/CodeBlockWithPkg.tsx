@@ -115,7 +115,7 @@ export default function CodeBlockWithPkg({
           <button
             key={index}
             onClick={() => setSelectedPM(pm.name)}
-            className={`px-4 flex items-center dark:lg:hover:bg-gray-800 lg:hover:bg-gray-300 rounded-t-xl gap-x-2.5 py-2 font-bold transition-all duration-150 ease-linear border-b-2 ${
+            className={`px-4 flex items-center dark:lg:hover:bg-gray-800 lg:hover:bg-gray-300 rounded-t-xl gap-x-2.5 py-2 font-bold transition-all duration-150 ease-linear border-b-2 select-none ${
               selectedPM === pm.name
                 ? "border-primary dark:text-white text-black"
                 : "border-transparent"
