@@ -141,9 +141,10 @@ export default function PackageManagerPopup() {
                 setOpen(false);
               }}
               key={index}
-              className="cursor-pointer lg:hover:text-primary lg:hover:scale-105 transition-all duration-150 ease-linear"
+              className="cursor-pointer lg:hover:text-primary lg:hover:scale-105 transition-all duration-150 ease-linear flex items-center gap-x-2.5"
             >
-              {pkg.name}
+              <div className="w-6 h-auto">{pkg.icon}</div>
+              <p className="font-semibold">{pkg.name}</p>
             </p>
           );
         })}
