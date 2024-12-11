@@ -62,7 +62,12 @@ export default function Template({
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
       <ReactLenis root>
-        <main className={cn("scrollbar-hide", kanit.className)}>
+        <main
+          className={cn(
+            "scrollbar-hide max-w-screen overflow-x-hidden",
+            kanit.className
+          )}
+        >
           <PatchNews />
           <Header />
           <section
@@ -79,7 +84,7 @@ export default function Template({
             >
               <Suspense
                 fallback={
-                  <div className="size-screen dark:bg-black-main bg-white-light overflow-x-hidden" />
+                  <div className="size-screen dark:bg-black-main bg-white-light" />
                 }
               >
                 {children}

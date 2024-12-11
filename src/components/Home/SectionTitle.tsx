@@ -19,7 +19,7 @@ export default function SectionTitle({
         opacity: isInView ? 1 : 0,
         transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.25s",
       }}
-      className="flex flex-col gap-y-5 items-center relative z-10"
+      className="flex flex-col gap-y-5 items-center justify-center h-fit relative z-10"
     >
       <div className="bg-gradient-to-br from-secondary via-primary dark:to-white to-secondary inline-block text-transparent bg-clip-text text-3xl md:text-4xl lg:text-5xl font-bold text-center w-full md:max-w-[50vw] lg:max-w-[35vw]">
         {title}

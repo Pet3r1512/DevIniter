@@ -60,13 +60,13 @@ export default function Home() {
   return (
     <Template
       pageName="Developer Initializer"
-      className="w-full max-w-none lg:w-screen px-0"
+      className="w-full max-w-screen lg:w-screen px-0"
       sectionClassName="max-w-0"
     >
       <DynamicHero />
       <DyanmicFeatures />
-      <section className="relative w-screen lg:max-w-7xl min-h-screen mx-auto flex flex-col items-center mt-24 lg:mt-48 lg:mb-24 mb-16 md:mb-48 max-w-screen overflow-x-hidden">
-        {isHeroInView && <DynamicAnimation />}
+      {isHeroInView && <DynamicAnimation />}
+      <section className="relative w-screen lg:max-w-7xl min-h-screen lg:mx-auto flex flex-col items-center mt-24 lg:mt-48 lg:mb-24 mb-16 md:mb-48">
         <DynamicHighlightSection />
         <DynamicSupportedTechs />
         <DynamicTemplateDemos />
