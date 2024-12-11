@@ -34,7 +34,7 @@ exports[`Render Header > Should render Header after loading 1`] = `
         class="size-6 invisible"
       />
       <div
-        class="lg:flex items-center gap-x-5 hidden"
+        class="lg:flex items-center gap-x-5 hidden text-black"
       >
         <a
           class="text-lg flex"
@@ -202,7 +202,7 @@ exports[`Render Header > Should render a skeleton 1`] = `
         class="size-6 invisible"
       />
       <div
-        class="lg:flex items-center gap-x-5 hidden"
+        class="lg:flex items-center gap-x-5 hidden text-black"
       >
         <a
           class="text-lg flex"
