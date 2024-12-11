@@ -24,7 +24,7 @@ export default function Process() {
   return (
     <div
       ref={ref}
-      className="hidden lg:flex items-center justify-center min-h-screen w-screen mt-32 bg-gray-dark dark:bg-black-main"
+      className="hidden lg:flex items-center justify-center min-h-screen lg:w-screen mt-32 bg-gray-dark dark:bg-black-main"
     >
       <DotLottiesReact
         className="lg:w-3/5 lg:max-w-6xl h-auto relative z-10"

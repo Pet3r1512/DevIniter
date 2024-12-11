@@ -5,6 +5,8 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import dynamic from "next/dynamic";
 import LogoSkeleton from "../Skeletons/LogoSkeleton";
+import { useInViewStore } from "@/stores/useInViewStore";
+import { cn } from "@/utils/utils";
 
 const DynamicLogo = dynamic(() => import("./Logo"), {
   loading: () => <LogoSkeleton />,
@@ -17,6 +19,7 @@ const DynamicNavBar = dynamic(() => import("./Navbar"), {
 });
 
 export default function Header() {
+  const { isAnimationInView } = useInViewStore();
   return (
     <header
       data-testid="header"
@@ -28,7 +31,12 @@ export default function Header() {
           <DynamicNavBar />
         </div>
         <div className="size-6 invisible" />
-        <div className="lg:flex items-center gap-x-5 hidden">
+        <div
+          className={cn(
+            "lg:flex items-center gap-x-5 hidden",
+            isAnimationInView ? "text-white" : "text-black"
+          )}
+        >
           <Link
             href="https://github.com/Pet3r1512/DevIniter/issues/new?labels=enhancement&template=feature-request---.md"
             target="_blank"
