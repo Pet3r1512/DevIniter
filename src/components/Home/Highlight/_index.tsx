@@ -3,7 +3,7 @@ import BentoGrid from "./BentoGrid";
 
 export default function Highlight() {
   return (
-    <section className="flex flex-col gap-y-24 lg:gap-y-48 justify-center min-h-screen lg:mt-32">
+    <section className="flex flex-col gap-y-24 lg:gap-y-48 justify-center items-center h-full min-h-screen mt-0 lg:mt-32">
       <SectionTitle
         title={
           <p>

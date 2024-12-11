@@ -65,7 +65,7 @@ export default function Home() {
     >
       <DynamicHero />
       <DyanmicFeatures />
-      <section className="relative w-screen lg:max-w-7xl min-h-screen mx-auto flex flex-col items-center mt-24 lg:mt-48 lg:mb-24 mb-16 md:mb-48">
+      <section className="relative w-screen lg:max-w-7xl min-h-screen mx-auto flex flex-col items-center mt-24 lg:mt-48 lg:mb-24 mb-16 md:mb-48 max-w-screen overflow-x-hidden">
         {isHeroInView && <DynamicAnimation />}
         <DynamicHighlightSection />
         <DynamicSupportedTechs />
