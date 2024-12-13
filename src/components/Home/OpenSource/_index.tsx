@@ -9,7 +9,7 @@ export default function OpenSource() {
   return (
     <section
       ref={ref}
-      className="py-16 min-h-screen flex flex-col gap-y-24 lg:gap-y-48 justify-center items-center max-w-7xl mx-auto px-8 lg:mx-0"
+      className="py-16 min-h-screen flex flex-col gap-y-24 lg:gap-y-48 justify-center items-center max-w-7xl mx-auto px-8 lg:mx-0  overflow-x-hidden"
     >
       <SectionTitle
         title="Always free and Open Source"

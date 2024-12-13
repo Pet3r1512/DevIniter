@@ -243,7 +243,7 @@ export default function TemplateDemos() {
     <section
       ref={ref}
       id="demo"
-      className="flex flex-col gap-y-24 lg:gap-y-48 justify-center items-center min-h-screen max-w-7xl mx-auto"
+      className="flex flex-col gap-y-24 lg:gap-y-48 justify-center items-center min-h-screen max-w-7xl mx-auto overflow-x-hidden"
     >
       <SectionTitle
         title={"Templates in Action"}
