@@ -33,7 +33,7 @@ export default function Header() {
         <div className="size-6 invisible" />
         <div
           className={cn(
-            "lg:flex items-center gap-x-5 hidden",
+            "lg:flex items-center gap-x-5 hidden dark:text-white text-black",
             isAnimationInView ? "text-white" : "text-black"
           )}
         >
