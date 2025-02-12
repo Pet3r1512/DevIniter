@@ -238,6 +238,78 @@ export default function TemplateDemos() {
         transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.75s",
       },
     },
+    {
+      image: [
+        "/images/templates/vitestack-dark.png",
+        "/images/templates/vitestack-light.png",
+      ],
+      logo: "/images/templates/Vitestack.png",
+      templateName: "Vitestack",
+      techStacks: (
+        <div className="flex items-center justify-center lg:justify-start gap-x-2.5 mt-5">
+          <Image
+            src="/images/techstacks/vite.png"
+            alt=""
+            height={0}
+            width={0}
+            sizes="100vw"
+            className="size-5 lg:size-8"
+          />
+          <svg
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#000000"
+            className="size-5 lg:size-8 inline"
+          >
+            <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <title>file_type_typescript_official</title>
+              <rect
+                x="2"
+                y="2"
+                width="28"
+                height="28"
+                rx="1.312"
+                fill="#3178c6"
+              ></rect>
+              <path
+                d="M18.245,23.759v3.068a6.492,6.492,0,0,0,1.764.575,11.56,11.56,0,0,0,2.146.192,9.968,9.968,0,0,0,2.088-.211,5.11,5.11,0,0,0,1.735-.7,3.542,3.542,0,0,0,1.181-1.266,4.469,4.469,0,0,0,.186-3.394,3.409,3.409,0,0,0-.717-1.117,5.236,5.236,0,0,0-1.123-.877,12.027,12.027,0,0,0-1.477-.734q-.6-.249-1.08-.484a5.5,5.5,0,0,1-.813-.479,2.089,2.089,0,0,1-.516-.518,1.091,1.091,0,0,1-.181-.618,1.039,1.039,0,0,1,.162-.571,1.4,1.4,0,0,1,.459-.436,2.439,2.439,0,0,1,.726-.283,4.211,4.211,0,0,1,.956-.1,5.942,5.942,0,0,1,.808.058,6.292,6.292,0,0,1,.856.177,5.994,5.994,0,0,1,.836.3,4.657,4.657,0,0,1,.751.422V13.9a7.509,7.509,0,0,0-1.525-.4,12.426,12.426,0,0,0-1.9-.129,8.767,8.767,0,0,0-2.064.235,5.239,5.239,0,0,0-1.716.733,3.655,3.655,0,0,0-1.171,1.271,3.731,3.731,0,0,0-.431,1.845,3.588,3.588,0,0,0,.789,2.34,6,6,0,0,0,2.395,1.639q.63.26,1.175.509a6.458,6.458,0,0,1,.942.517,2.463,2.463,0,0,1,.626.585,1.2,1.2,0,0,1,.23.719,1.1,1.1,0,0,1-.144.552,1.269,1.269,0,0,1-.435.441,2.381,2.381,0,0,1-.726.292,4.377,4.377,0,0,1-1.018.105,5.773,5.773,0,0,1-1.969-.35A5.874,5.874,0,0,1,18.245,23.759Zm-5.154-7.638h4V13.594H5.938v2.527H9.92V27.375h3.171Z"
+                fill="#fff"
+              ></path>
+            </g>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="size-5 lg:size-8 inline"
+            viewBox="0 0 32 32"
+          >
+            <path
+              fill="#4db6ac"
+              d="M23.5 12H8c.89-2.3 4.02-4 7.75-4 3.73 0 6.86 1.7 7.75 4ZM14 12h15.5c-.89 2.3-4.02 4-7.75 4-3.73 0-6.86-1.7-7.75-4Zm3.5 8H2c.89-2.3 4.02-4 7.75-4 3.73 0 6.86 1.7 7.75 4ZM8 20h15.5c-.89 2.3-4.02 4-7.75 4-3.73 0-6.86-1.7-7.75-4Z"
+            />
+          </svg>
+          <Image
+            src="/images/techstacks/tanstack.png"
+            width={28}
+            height={28}
+            alt="tanstack"
+          />
+        </div>
+      ),
+      liveDemoURL:
+        "https://deviniter-vite-react-typescript-template.vercel.app/",
+      className: "text-yellow-500",
+      style: {
+        transform: isInView ? "none" : "translateX(200px)",
+        opacity: isInView ? 1 : 0,
+        transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.75s",
+      },
+    },
   ];
   return (
     <section
@@ -249,7 +321,7 @@ export default function TemplateDemos() {
         title={"Templates in Action"}
         subtitle={"Preview our templates before you choose."}
       />
-      <div className="flex flex-col lg:flex-row justify-center items-center gap-x-5 gap-y-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-x-5 gap-y-10">
         {demos.map((demo, index) => {
           return <DemoCard key={index} props={demo} />;
         })}
