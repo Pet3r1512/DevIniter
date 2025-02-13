@@ -48,7 +48,7 @@ const templates: {
   {
     title: "Vitestack",
     image: "/images/templates/ViteStack.png",
-    href: "",
+    href: "/docs/template_structure/vitestack",
     description: "A modern and stunning frontend web application template.",
   },
 ];
