@@ -36,13 +36,20 @@ const templates: {
     title: "Next.js",
     image: "/images/templates/nextjs-deviniter.png",
     href: "/docs/template_structure/nextjs",
-    description: "A Fullstack React.js Framework",
+    description:
+      "A fullstack React framework for building scalable web applications.",
   },
   {
     title: "Vite",
-    image: "/images/templates/vite-deviniter.png",
+    image: "/images/templates/Vite_logo.png",
     href: "/docs/template_structure/vite",
-    description: "Fast and Modern React.js Build Tool",
+    description: "A fast and modern build tool for React applications.",
+  },
+  {
+    title: "Vitestack",
+    image: "/images/templates/ViteStack.png",
+    href: "/docs/template_structure/vitestack",
+    description: "A modern and stunning frontend web application template.",
   },
 ];
 

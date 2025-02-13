@@ -19,12 +19,25 @@ export default {
     title: (
       <p className="flex items-center gap-x-1">
         <Image
-          src="/images/templates/vite-deviniter.png"
+          src="/images/templates/Vite_logo.png"
           width={24}
           height={24}
           alt="Vite - DevIniter"
         />{" "}
         <span className="mt-[0.75px]">Vite</span>
+      </p>
+    ),
+  },
+  vitestack: {
+    title: (
+      <p className="flex items-center gap-x-1">
+        <Image
+          src="/images/templates/ViteStack.png"
+          width={24}
+          height={24}
+          alt="ViteStack"
+        />{" "}
+        <span className="mt-[0.75px]">ViteStack</span>
       </p>
     ),
   },
