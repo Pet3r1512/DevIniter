@@ -41,7 +41,7 @@ const templates: {
   },
   {
     title: "Vite",
-    image: "/images/templates/Vite.png",
+    image: "/images/templates/Vite_logo.png",
     href: "/docs/template_structure/vite",
     description: "A fast and modern build tool for React applications.",
   },
