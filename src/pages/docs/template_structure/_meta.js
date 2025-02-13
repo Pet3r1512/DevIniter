@@ -6,7 +6,7 @@ export default {
     title: (
       <p className="flex items-center gap-x-1">
         <Image
-          src="/images/templates/Nextjs.png"
+          src="/images/templates/nextjs-deviniter.png"
           width={24}
           height={24}
           alt="Nextjs - DevIniter"
@@ -19,7 +19,7 @@ export default {
     title: (
       <p className="flex items-center gap-x-1">
         <Image
-          src="/images/templates/Vite.png"
+          src="/images/templates/Vite_logo.png"
           width={24}
           height={24}
           alt="Vite - DevIniter"

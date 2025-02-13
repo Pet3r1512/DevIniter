@@ -142,7 +142,7 @@ export default function TemplateDemos() {
     },
     {
       image: ["/images/templates/vite-dark.png", "/images/templates/vite.png"],
-      logo: "/images/templates/vite-deviniter.png",
+      logo: "/images/templates/Vite_logo.png",
       templateName: "Vite - React.js",
       techStacks: (
         <div className="flex items-center justify-center lg:justify-start gap-x-2.5 mt-5">
