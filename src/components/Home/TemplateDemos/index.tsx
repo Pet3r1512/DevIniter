@@ -243,7 +243,7 @@ export default function TemplateDemos() {
         "/images/templates/vitestack-dark.png",
         "/images/templates/vitestack-light.png",
       ],
-      logo: "/images/templates/Vitestack.png",
+      logo: "/images/logos/ViteStack.png",
       templateName: "Vitestack",
       techStacks: (
         <div className="flex items-center justify-center lg:justify-start gap-x-2.5 mt-5">
@@ -301,8 +301,7 @@ export default function TemplateDemos() {
           />
         </div>
       ),
-      liveDemoURL:
-        "https://deviniter-vite-react-typescript-template.vercel.app/",
+      liveDemoURL: "https://deviniter-vitestack-template.vercel.app/",
       className: "text-yellow-500",
       style: {
         transform: isInView ? "none" : "translateX(200px)",
