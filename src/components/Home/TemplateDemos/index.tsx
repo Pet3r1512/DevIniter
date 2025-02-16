@@ -243,7 +243,7 @@ export default function TemplateDemos() {
         "/images/templates/vitestack-dark.png",
         "/images/templates/vitestack-light.png",
       ],
-      logo: "/images/templates/Vitestack.png",
+      logo: "/images/logos/ViteStack.png",
       templateName: "Vitestack",
       techStacks: (
         <div className="flex items-center justify-center lg:justify-start gap-x-2.5 mt-5">
