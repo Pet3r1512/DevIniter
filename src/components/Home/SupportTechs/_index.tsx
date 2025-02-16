@@ -91,17 +91,17 @@ export default function SupportedTechs() {
       desc: "Next.js",
     },
     {
-      name: "tRPC",
-      href: "https://trpc.io/",
-      logoURL: "trpc.png",
-      shadowColor: "lg:hover:shadow-[#398CCB]",
-      isBuilt: false,
-    },
-    {
       name: "Tanstack",
       href: "https://tanstack.com/",
       logoURL: "tanstack.png",
       shadowColor: "lg:hover:shadow-[#EAB308]",
+      desc: "New",
+    },
+    {
+      name: "tRPC",
+      href: "https://trpc.io/",
+      logoURL: "trpc.png",
+      shadowColor: "lg:hover:shadow-[#398CCB]",
       isBuilt: false,
     },
     {
