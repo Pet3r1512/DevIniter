@@ -72,7 +72,7 @@
 
 ## Templates
 
-Until now, DevIniter provides 2 templates: Next.js - Page Router and Vite - React.js
+Until now, DevIniter provides 3 templates: Next.js - Page Router, Vite - React.js and Vitestack
 
 ### <img src="public/images/templates/nextjs-deviniter.png" alt="ViteLogo" height="24" width="24" > Next.js - Page Router
 
