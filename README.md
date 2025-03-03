@@ -82,6 +82,10 @@ Until now, DevIniter provides 2 templates: Next.js - Page Router and Vite - Reac
 
 <a href="https://deviniter-vite-react-typescript-template.vercel.app/" target="_blank"><img src="public/images/templates/vite-dark.png" alt="Vite" ></a>
 
+### <img src="public/images/templates/ViteStack.png" alt="ViteStack" height="24" width="24" > ViteStack
+
+<a href="https://deviniter-vitestack-template.vercel.app/" target="_blank"><img src="public/images/templates/vitestack-dark.png" alt="Vitestack" ></a>
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Getting Started
