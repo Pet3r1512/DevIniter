@@ -100,7 +100,7 @@ export default function Template({
                 behavior: "smooth",
               });
             }}
-            className="bg-primary p-2.5 rounded-full flex items-center justify-center fixed bottom-10 right-10"
+            className="bg-primary lg:p-2.5 p-1.5 md:p-2 rounded-full flex items-center justify-center fixed lg:bottom-10 bottom-5 right-5 lg:right-10 z-50"
           >
             <Triangle />
           </button>
