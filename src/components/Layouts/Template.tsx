@@ -6,6 +6,7 @@ import { cn } from "@/utils/utils";
 import Footer from "./Footer/_index";
 import { ReactLenis } from "lenis/react";
 import PatchNews from "./PatchNews";
+import { Triangle } from "lucide-react";
 
 export const kanit = Kanit({
   weight: "400",
@@ -62,7 +63,12 @@ export default function Template({
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
       <ReactLenis root>
-        <main className={cn("scrollbar-hide max-w-screen", kanit.className)}>
+        <main
+          className={cn(
+            "scrollbar-hide max-w-screen relative",
+            kanit.className
+          )}
+        >
           <PatchNews />
           <Header />
           <section
@@ -87,6 +93,17 @@ export default function Template({
             </div>
           </section>
           <Footer />
+          <button
+            onClick={() => {
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              });
+            }}
+            className="bg-primary lg:p-2.5 p-1.5 md:p-2 rounded-full flex items-center justify-center fixed lg:bottom-10 bottom-5 right-5 lg:right-10 z-50"
+          >
+            <Triangle />
+          </button>
         </main>
       </ReactLenis>
     </>
